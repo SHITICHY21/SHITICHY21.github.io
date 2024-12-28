@@ -214,3 +214,15 @@ footer {
 .contact-section form button:hover {
   background-color: #d35400; /* Darker orange on hover */
 }
+
+
+@media (max-width: 768px) {
+  .contact-section form {
+    padding: 20px;
+    width: 90%;
+  }
+  .contact-section form button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
