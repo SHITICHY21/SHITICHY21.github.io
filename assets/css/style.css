@@ -227,3 +227,61 @@ footer {
     padding: 10px;
   }
 }
+/* Centering the Contact Form */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures it fills the viewport height */
+  background: linear-gradient(to bottom, #3a539b, #e4cba8); /* Background gradient */
+  padding: 20px;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px; /* Adjusted width for proper alignment */
+  width: 100%; /* Ensures it adapts to smaller screens */
+  background-color: #34495e;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-section form input,
+.contact-section form textarea {
+  width: 100%; /* Ensures inputs take the full width */
+  padding: 10px;
+  border: 1px solid #e4cba8; /* Brown Accent */
+  border-radius: 5px;
+  background-color: #2c3e50; /* Form Field Background */
+  color: #ffffff;
+  box-sizing: border-box; /* Ensures padding doesn't break alignment */
+}
+
+.contact-section form textarea {
+  resize: none; /* Prevents resizing for better design control */
+}
+
+.contact-section form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #e67e22;
+  color: #ffffff;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-section form button:hover {
+  background-color: #d35400;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .contact-section form {
+    max-width: 90%; /* Makes the form fit smaller screens */
+  }
+}
