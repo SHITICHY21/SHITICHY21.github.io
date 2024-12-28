@@ -4,87 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shiti Chowdhury | Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header class="hero-section">
-        <nav class="navbar">
-            <div class="logo">Shiti Chowdhury</div>
-            <ul class="nav-links">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <h1>SC</h1>
+        <nav>
+            <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#tech">Tech Stack</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="hero-content">
-            <h1>Namaste(); I'm <span>Shiti Chowdhury.</span></h1>
-            <h2>Software Engineer, Designer & Writer</h2>
-            <p>
-                I'm a passionate developer and open-source contributor, dedicated to learning and building impactful software.
-            </p>
-            <div class="social-icons">
-                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/shiti-chowdhury" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:shitichowdhury21@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
-    </header>
+    </aside>
 
+    <!-- Main Content -->
     <main>
-        <!-- About Section -->
-        <section id="about" class="about-section">
-            <h2>&lt;/&gt; About Me</h2>
-            <p>
-                Hi! My name is Shiti. I'm a web developer and a student of Computer Science and Engineering. 
-                I enjoy creating things for the web and have a passion for design and development.
-            </p>
-            <p>
-                <strong>Career Objective:</strong><br>
-                I have a background in computer science and engineering and I am currently building my expertise in various technical
-                fields. I am gaining a solid understanding of emerging technologies and continuously improving my skills. I enjoy collaborating with
-                innovative and skilled individuals who inspire me to grow and contribute effectively.
-            </p>
+        <!-- Hero Section -->
+        <section id="hero">
+            <h1>Hi, I'm <span>Shiti Chowdhury</span></h1>
+            <p>Software Developer | Python Enthusiast | Designer</p>
+            <a href="#contact" class="btn">Let's Connect</a>
         </section>
 
-        <!-- Tech Stack Section -->
-        <section id="tech" class="tech-stack-section">
-            <h2>Tech Stack</h2>
-            <div class="tech-icons">
-                <i class="fab fa-html5" title="HTML5"></i>
-                <i class="fab fa-css3-alt" title="CSS3"></i>
-                <i class="fab fa-js-square" title="JavaScript"></i>
-                <i class="fab fa-bootstrap" title="Bootstrap"></i>
-                <i class="fab fa-react" title="React"></i>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="your-image.jpg" alt="Shiti Chowdhury" class="profile-pic">
+                <p>
+                    I'm a passionate software developer with expertise in web development and machine learning. I thrive on building 
+                    innovative projects and solving challenging problems. Let's collaborate to bring ideas to life!
+                </p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>B.Tech in CSE</h3>
+                    <p>Chittagong University of Engineering & Technology</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Higher Secondary Certificate</h3>
+                    <p>East Nasirabad High School</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-item">
+                    <h3>Junior Web Developer</h3>
+                    <p>CUET</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Python Developer</h3>
+                    <p>Freelance</p>
+                </div>
             </div>
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="projects-section">
-            <h2>&lt;/Projects&gt;</h2>
-            <div class="project-card">
-                <h3>MamaJaba</h3>
-                <p>A web development project focused on implementing the frontend with proper documentation.</p>
-            </div>
-            <div class="project-card">
-                <h3>CUET Store System</h3>
-                <p>A software engineering project developed for university requirements.</p>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>MamaJaba</h3>
+                    <p>A responsive web application with a clean UI.</p>
+                </div>
+                <div class="project-card">
+                    <h3>CUET Store System</h3>
+                    <p>An e-commerce platform for university students.</p>
+                </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="contact-section">
+        <section id="contact">
             <h2>Contact</h2>
-            <p><strong>Mailing Address:</strong> Technical, East Nasirabad, Chattogram.</p>
-            <p><strong>Cell:</strong> +8801856307675</p>
-            <p><strong>Email:</strong> <a href="mailto:shitichowdhury21@gmail.com">shitichowdhury21@gmail.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shiti-chowdhury" target="_blank">linkedin.com/in/shiti-chowdhury</a></p>
-            <div class="social-icons">
-                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/shiti-chowdhury" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:shitichowdhury21@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-            </div>
+            <form action="#" method="post">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
 
@@ -92,6 +104,6 @@
         <p>Designed & Built by Shiti Chowdhury © 2024</p>
     </footer>
 
-    <script src="assets/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
