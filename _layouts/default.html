@@ -5,106 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shiti Chowdhury | Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Sidebar Navigation -->
-    <aside class="sidebar">
-        <h1>SC</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </aside>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">SC</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section id="hero">
-            <h1>Hi, I'm <span>Shiti Chowdhury</span></h1>
-            <p>Software Developer | Python Enthusiast | Designer</p>
-            <a href="#contact" class="btn">Let's Connect</a>
-        </section>
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <h1>Hi, I'm <span>Shiti Chowdhury</span></h1>
+        <h2>Software Developer | Python Enthusiast | Designer</h2>
+        <button class="hero-btn">Let's Connect</button>
+    </header>
 
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <img src="your-image.jpg" alt="Shiti Chowdhury" class="profile-pic">
-                <p>
-                    I'm a passionate software developer with expertise in web development and machine learning. I thrive on building 
-                    innovative projects and solving challenging problems. Let's collaborate to bring ideas to life!
-                </p>
-            </div>
-        </section>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate software developer with expertise in web development and machine learning.
+            I thrive on building innovative projects and solving challenging problems.
+            Let’s collaborate to bring ideas to life!
+        </p>
+    </section>
 
-        <!-- Education Section -->
-        <section id="education">
-            <h2>Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>B.Tech in CSE</h3>
-                    <p>Chittagong University of Engineering & Technology</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Higher Secondary Certificate</h3>
-                    <p>East Nasirabad High School</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="experience-grid">
-                <div class="experience-item">
-                    <h3>Junior Web Developer</h3>
-                    <p>CUET</p>
-                </div>
-                <div class="experience-item">
-                    <h3>Python Developer</h3>
-                    <p>Freelance</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>MamaJaba</h3>
-                    <p>A responsive web application with a clean UI.</p>
-                </div>
-                <div class="project-card">
-                    <h3>CUET Store System</h3>
-                    <p>An e-commerce platform for university students.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <form action="#" method="post">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
     <footer>
-        <p>Designed & Built by Shiti Chowdhury © 2024</p>
+        <p>Built by Shiti Chowdhury © 2024</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
