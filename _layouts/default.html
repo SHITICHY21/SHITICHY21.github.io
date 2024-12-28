@@ -1,240 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shiti Chowdhury | Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiti Chowdhury | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0a192f;
+      color: #ccd6f6;
+    }
 
-    <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/svgs/solid/code.svg" type="image/svg+xml">
-    <title>Shiti Chowdhury | Portfolio</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            color: #333;
-            background: linear-gradient(to bottom, #1e90ff, #f0f8ff);
-        }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #0a192f;
+      position: sticky;
+      top: 0;
+    }
 
-        /* Navbar */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #004080;
-            padding: 15px 30px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+    header a {
+      color: #64ffda;
+      text-decoration: none;
+      margin-left: 1rem;
+    }
 
-        .navbar .logo {
-            color: white;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
+    header a.resume {
+      padding: 0.5rem 1rem;
+      border: 1px solid #64ffda;
+      border-radius: 5px;
+    }
 
-        .navbar .nav-links {
-            display: flex;
-            gap: 20px;
-        }
+    .hero {
+      text-align: center;
+      margin-top: 5rem;
+      padding: 0 2rem;
+    }
 
-        .navbar .nav-links li {
-            list-style: none;
-        }
+    .hero h1 {
+      font-size: 2rem;
+      color: #64ffda;
+    }
 
-        .navbar .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 1rem;
-        }
+    .hero h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin: 1rem 0;
+    }
 
-        .navbar .nav-links a:hover {
-            text-decoration: underline;
-        }
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto;
+      color: #a8b2d1;
+    }
 
-        /* Hero Section */
-        .hero-section {
-            text-align: center;
-            padding: 100px 20px;
-            background: #1e90ff;
-            color: white;
-        }
+    .hero .btn {
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background-color: transparent;
+      border: 1px solid #64ffda;
+      color: #64ffda;
+      cursor: pointer;
+      border-radius: 5px;
+    }
 
-        .hero-section h1 span {
-            color: #ffdd00;
-        }
+    .about, .experience, .projects, .contact {
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
 
-        .hero-btn {
-            background: #ffdd00;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-        }
+    h2.section-title {
+      color: #64ffda;
+      margin-bottom: 2rem;
+    }
 
-        .hero-btn:hover {
-            background: #ffd700;
-        }
+    .experience ul, .projects ul {
+      list-style: none;
+      padding: 0;
+    }
 
-        /* Section Styles */
-        section {
-            padding: 50px 20px;
-        }
+    .experience li, .projects li {
+      margin-bottom: 1rem;
+    }
 
-        h2 {
-            text-align: center;
-            color: #004080;
-            margin-bottom: 20px;
-        }
+    .contact {
+      text-align: center;
+    }
 
-        /* About Section */
-        .about-section {
-            text-align: center;
-            background: #f0f8ff;
-        }
+    .contact .btn {
+      padding: 0.75rem 1.5rem;
+      background-color: transparent;
+      border: 1px solid #64ffda;
+      color: #64ffda;
+      cursor: pointer;
+      border-radius: 5px;
+    }
 
-        /* Cards */
-        .education-section, .experience-section, .projects-section {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            align-items: center;
-        }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #0a192f;
+      color: #a8b2d1;
+      font-size: 0.9rem;
+    }
 
-        .education-card, .experience-card, .project-card {
-            background: #ffffff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            width: 90%;
-            max-width: 600px;
-        }
+    .social-icons {
+      position: fixed;
+      left: 1rem;
+      bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+    }
 
-        /* Contact Section */
-        .contact-section form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        .contact-section input, .contact-section textarea {
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-
-        .contact-section button {
-            background: #004080;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .contact-section button:hover {
-            background: #002a5c;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #004080;
-            color: white;
-        }
-    </style>
+    .social-icons a {
+      color: #64ffda;
+      margin: 0.5rem 0;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">SC</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+  <header>
+    <div>SC</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#" class="resume">Resume</a>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <header class="hero-section">
-        <h1>Hi, I'm <span>Shiti Chowdhury</span></h1>
-        <h2>Software Developer | Python Enthusiast | Designer</h2>
-        <p>Building innovative solutions and solving challenging problems.</p>
-        <button class="hero-btn">Let's Connect</button>
-    </header>
+  <div class="hero">
+    <h1>Hi, my name is</h1>
+    <h2>Shiti Chowdhury.</h2>
+    <p>I specialize in web development and creating innovative digital experiences. Let's build something amazing together.</p>
+    <button class="btn">View My Work</button>
+  </div>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <h2>About Me</h2>
-        <p>
-            I am a passionate software developer with expertise in web development and machine learning.
-            I thrive on building innovative projects and solving challenging problems.
-            Let’s collaborate to bring ideas to life!
-        </p>
-    </section>
+  <section id="about" class="about">
+    <h2 class="section-title">01. About Me</h2>
+    <p>Hi! I'm Shiti Chowdhury, a passionate software developer with a strong focus on web development and design. I love solving complex problems and creating seamless user experiences.</p>
+  </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education-section">
-        <h2>Education</h2>
-        <div class="education-card">
-            <h3>Bachelor of Technology in CSE</h3>
-            <p>University of Engineering & Technology - 2022 to 2026</p>
-        </div>
-        <div class="education-card">
-            <h3>Higher Secondary Certificate</h3>
-            <p>Seva Sadan Junior High School - 2020 to 2022</p>
-        </div>
-    </section>
+  <section id="experience" class="experience">
+    <h2 class="section-title">02. Where I’ve Worked</h2>
+    <ul>
+      <li>Frontend Developer @ XYZ Company (2022 – Present)</li>
+      <li>Volunteer Mentor @ Microverse (2021 – 2022)</li>
+    </ul>
+  </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section">
-        <h2>Work Experience</h2>
-        <div class="experience-card">
-            <h3>Frontend Developer</h3>
-            <p>Company Name - Aug 2021 to Feb 2022</p>
-        </div>
-        <div class="experience-card">
-            <h3>Volunteer Mentor</h3>
-            <p>Microverse - Mar 2022 to May 2022</p>
-        </div>
-    </section>
+  <section id="projects" class="projects">
+    <h2 class="section-title">03. Noteworthy Projects</h2>
+    <ul>
+      <li><strong>E-commerce Website:</strong> Developed a responsive platform for online shopping with a focus on user experience.</li>
+      <li><strong>Portfolio Website:</strong> Created an interactive and visually appealing portfolio showcasing my skills and work.</li>
+    </ul>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>MamaJaba</h3>
-            <p>A web development project focused on frontend implementation.</p>
-        </div>
-        <div class="project-card">
-            <h3>CUET Store System</h3>
-            <p>A software engineering project for university requirements.</p>
-        </div>
-    </section>
+  <section id="contact" class="contact">
+    <h2 class="section-title">04. Get In Touch</h2>
+    <p>If you’d like to chat or collaborate on a project, feel free to reach out!</p>
+    <button class="btn">Say Hello</button>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+  <footer>
+    Designed & Built by Shiti Chowdhury
+  </footer>
 
-    <!-- Footer -->
-    <footer>
-        <p>Built by Shiti Chowdhury © 2024</p>
-    </footer>
+  <div class="social-icons">
+    <a href="#">GitHub</a>
+    <a href="#">Twitter</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Instagram</a>
+  </div>
 </body>
 </html>
