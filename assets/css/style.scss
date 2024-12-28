@@ -1,124 +1,37 @@
-/* General Styling */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  color: #ddd;
-  background-color: #121212;
+/* Tech Icons */
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
 }
 
-h1, h2, h3 {
-  margin: 0.5rem 0;
-}
-
-a {
-  text-decoration: none;
-  color: #ddd;
-}
-
-/* Hero Section */
-.hero-section {
-  text-align: center;
-  padding: 4rem 2rem;
-  background: linear-gradient(145deg, #2c2c54, #121212);
-  color: white;
-}
-
-.hero-section h1 span {
+.tech-icons i {
+  font-size: 2.5rem;
   color: #7289da;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.hero-btn {
-  background-color: #7289da;
-  color: white;
-  padding: 0.5rem 1.5rem;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+.tech-icons i:hover {
+  transform: scale(1.2);
+  color: #5865f2;
 }
 
-.hero-btn:hover {
-  background-color: #5865f2;
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
-/* About Section */
-.about-section {
-  padding: 2rem;
-  background: #1f1f1f;
-  text-align: center;
-}
-
-.about-section h2 {
-  color: #7289da;
-}
-
-/* Tech Stack Section */
-.tech-stack-section {
-  padding: 2rem;
-  background: #121212;
-  text-align: center;
-}
-
-.tech-icons img {
-  width: 80px;
-  margin: 1rem;
-  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
-}
-
-/* Projects Section */
-.projects-section {
-  padding: 2rem;
-  background: #1f1f1f;
-}
-
-.project-card {
-  background: #2c2c54;
-  color: white;
-  padding: 1.5rem;
-  margin: 1rem 0;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
-.project-card .btn {
-  background: #7289da;
-  color: white;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
-  margin: 0.5rem;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.project-card .btn:hover {
-  background: #5865f2;
-}
-
-/* Contact Section */
-.contact-section {
-  padding: 2rem;
-  background: #121212;
-  text-align: center;
-}
-
-.social-icons a img {
-  width: 50px;
-  margin: 0.5rem;
-  filter: grayscale(100%);
-  transition: filter 0.3s ease;
-}
-
-.social-icons a img:hover {
-  filter: grayscale(0%);
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #1f1f1f;
+.social-icons i {
+  font-size: 2rem;
   color: #ddd;
-  font-size: 0.8rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: #7289da;
+  transform: scale(1.2);
 }
