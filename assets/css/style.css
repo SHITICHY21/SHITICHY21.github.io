@@ -1,4 +1,60 @@
-/* Tech Icons */
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+a {
+  color: #7289da;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  background: linear-gradient(145deg, #7289da, #5865f2);
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.hero-section h1 span {
+  color: #ffbf00;
+}
+
+.hero-btn {
+  background-color: #ffbf00;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.hero-btn:hover {
+  background-color: #f1c40f;
+}
+
+/* About Section */
+.about-section {
+  padding: 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+/* Tech Stack Section */
+.tech-stack-section {
+  padding: 2rem;
+  text-align: center;
+}
+
 .tech-icons {
   display: flex;
   justify-content: center;
@@ -17,21 +73,53 @@
   color: #5865f2;
 }
 
-/* Social Icons */
+/* Projects Section */
+.projects-section {
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+
+.project-card {
+  text-align: center;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  max-width: 600px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 2rem;
+  background: #fff;
+  text-align: center;
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .social-icons i {
   font-size: 2rem;
-  color: #ddd;
-  transition: color 0.3s ease, transform 0.3s ease;
+  color: #7289da;
+  transition: transform 0.3s, color 0.3s ease-in-out;
 }
 
 .social-icons i:hover {
-  color: #7289da;
   transform: scale(1.2);
+  color: #5865f2;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  font-size: 0.9rem;
 }
