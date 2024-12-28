@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shiti Chowdhury | Portfolio</title>
   <style>
+    /* General Styling */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -51,12 +52,6 @@
       margin: 1rem 0;
     }
 
-    .hero p {
-      max-width: 600px;
-      margin: 0 auto;
-      color: #a8b2d1;
-    }
-
     .hero .btn {
       margin-top: 2rem;
       padding: 0.75rem 1.5rem;
@@ -73,31 +68,22 @@
       margin: 0 auto;
     }
 
+    .about-content, .experience-content, .projects-content, .contact-content {
+      padding: 1rem;
+      background-color: #112240;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .about-content p, .experience-content p, .projects-content p, .contact-content p {
+      margin: 0;
+      line-height: 1.6;
+      color: #a8b2d1;
+    }
+
     h2.section-title {
       color: #64ffda;
       margin-bottom: 2rem;
-    }
-
-    .experience ul, .projects ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .experience li, .projects li {
-      margin-bottom: 1rem;
-    }
-
-    .contact {
-      text-align: center;
-    }
-
-    .contact .btn {
-      padding: 0.75rem 1.5rem;
-      background-color: transparent;
-      border: 1px solid #64ffda;
-      color: #64ffda;
-      cursor: pointer;
-      border-radius: 5px;
     }
 
     footer {
@@ -107,25 +93,12 @@
       color: #a8b2d1;
       font-size: 0.9rem;
     }
-
-    .social-icons {
-      position: fixed;
-      left: 1rem;
-      bottom: 2rem;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .social-icons a {
-      color: #64ffda;
-      margin: 0.5rem 0;
-      text-decoration: none;
-    }
   </style>
 </head>
 <body>
+  <!-- Navbar -->
   <header>
-    <div>SC</div>
+    <div>Shiti Chowdhury</div>
     <nav>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
@@ -135,49 +108,57 @@
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <div class="hero">
-    <h1>Hi, my name is</h1>
-    <h2>Shiti Chowdhury.</h2>
-    <p>I specialize in web development and creating innovative digital experiences. Let's build something amazing together.</p>
-    <button class="btn">View My Work</button>
+    <h1>Hi, I'm</h1>
+    <h2>Shiti Chowdhury</h2>
+    <div>
+      <p>I am a passionate software developer specializing in web development and design. Let’s build something amazing together!</p>
+    </div>
+    <button class="btn">Check out my work!</button>
   </div>
 
+  <!-- About Section -->
   <section id="about" class="about">
     <h2 class="section-title">01. About Me</h2>
-    <p>Hi! I'm Shiti Chowdhury, a passionate software developer with a strong focus on web development and design. I love solving complex problems and creating seamless user experiences.</p>
+    <div class="about-content">
+      <p>
+        Hi! I'm Shiti Chowdhury, a passionate software developer with a strong focus on web development and design.
+        I love solving complex problems and creating seamless user experiences.
+      </p>
+    </div>
   </section>
 
+  <!-- Experience Section -->
   <section id="experience" class="experience">
     <h2 class="section-title">02. Where I’ve Worked</h2>
-    <ul>
-      <li>Frontend Developer @ XYZ Company (2022 – Present)</li>
-      <li>Volunteer Mentor @ Microverse (2021 – 2022)</li>
-    </ul>
+    <div class="experience-content">
+      <p>Frontend Developer @ Example Company (2021 - 2022)</p>
+      <p>Volunteer Mentor @ Microverse (2022 - 2023)</p>
+    </div>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects" class="projects">
     <h2 class="section-title">03. Noteworthy Projects</h2>
-    <ul>
-      <li><strong>E-commerce Website:</strong> Developed a responsive platform for online shopping with a focus on user experience.</li>
-      <li><strong>Portfolio Website:</strong> Created an interactive and visually appealing portfolio showcasing my skills and work.</li>
-    </ul>
+    <div class="projects-content">
+      <p>Project 1: E-commerce website frontend</p>
+      <p>Project 2: Machine Learning dashboard</p>
+    </div>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2 class="section-title">04. Get In Touch</h2>
-    <p>If you’d like to chat or collaborate on a project, feel free to reach out!</p>
-    <button class="btn">Say Hello</button>
+    <div class="contact-content">
+      <p>If you’d like to chat or have questions, feel free to reach out!</p>
+      <button class="btn">Say Hello</button>
+    </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     Designed & Built by Shiti Chowdhury
   </footer>
-
-  <div class="social-icons">
-    <a href="#">GitHub</a>
-    <a href="#">Twitter</a>
-    <a href="#">LinkedIn</a>
-    <a href="#">Instagram</a>
-  </div>
 </body>
 </html>
