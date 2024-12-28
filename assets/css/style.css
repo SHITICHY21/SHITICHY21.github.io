@@ -1,58 +1,123 @@
-/* General Styling */
+/* General Styles */
 body {
   font-family: 'Arial', sans-serif;
-  color: #333;
+  color: #ffffff;
+  background-color: #121212;
   margin: 0;
-  background-color: #f9f9f9;
+  padding: 0;
+  line-height: 1.6;
 }
 
 h1, h2, h3 {
-  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
 }
 
-a {
-  color: #7289da;
+header {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: #181818;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0fdf8f;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar .nav-links li {
+  display: inline;
+}
+
+.navbar .nav-links a {
+  color: #ffffff;
   text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #0fdf8f;
 }
 
 /* Hero Section */
 .hero-section {
-  text-align: center;
-  background: linear-gradient(145deg, #7289da, #5865f2);
-  color: white;
   padding: 4rem 2rem;
+  background-color: #1f1f1f;
+  text-align: center;
 }
 
 .hero-section h1 span {
-  color: #ffbf00;
+  color: #0fdf8f;
 }
 
-.hero-btn {
-  background-color: #ffbf00;
-  color: white;
-  padding: 0.7rem 1.5rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
+.hero-section p {
+  font-size: 1.2rem;
+  color: #b3b3b3;
   margin-top: 1rem;
 }
 
+.hero-btn {
+  background-color: #0fdf8f;
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
 .hero-btn:hover {
-  background-color: #f1c40f;
+  background-color: #0fbf7f;
+  transform: scale(1.05);
 }
 
 /* About Section */
 .about-section {
-  padding: 2rem;
-  background-color: #f4f4f4;
+  padding: 4rem 2rem;
+  background-color: #121212;
+}
+
+.about-section h2 {
+  color: #0fdf8f;
   text-align: center;
 }
 
-/* Tech Stack Section */
-.tech-stack-section {
-  padding: 2rem;
+.about-section p {
+  color: #b3b3b3;
   text-align: center;
+  margin-top: 1rem;
+}
+
+/* Tech Stack */
+.tech-stack-section {
+  padding: 4rem 2rem;
+  background-color: #181818;
+  text-align: center;
+}
+
+.tech-stack-section h2 {
+  color: #0fdf8f;
 }
 
 .tech-icons {
@@ -65,7 +130,7 @@ a {
 .tech-icons i {
   font-size: 2.5rem;
   color: #7289da;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s, color 0.3s;
 }
 
 .tech-icons i:hover {
@@ -75,51 +140,72 @@ a {
 
 /* Projects Section */
 .projects-section {
-  padding: 2rem;
-  background-color: #f4f4f4;
+  padding: 4rem 2rem;
+  background-color: #121212;
+  text-align: center;
+}
+
+.projects-section h2 {
+  color: #0fdf8f;
 }
 
 .project-card {
-  text-align: center;
+  background-color: #1f1f1f;
   margin: 1rem auto;
-  padding: 1rem;
-  border: 1px solid #ddd;
+  padding: 1.5rem;
   border-radius: 8px;
-  background-color: white;
-  max-width: 600px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  text-align: left;
+}
+
+.project-card h3 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  color: #b3b3b3;
 }
 
 /* Contact Section */
 .contact-section {
-  padding: 2rem;
-  background: #fff;
+  padding: 4rem 2rem;
+  background-color: #181818;
   text-align: center;
+}
+
+.contact-section h2 {
+  color: #0fdf8f;
+}
+
+.contact-section p {
+  color: #b3b3b3;
+  margin: 0.5rem 0;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 .social-icons i {
   font-size: 2rem;
-  color: #7289da;
-  transition: transform 0.3s, color 0.3s ease-in-out;
+  color: #ddd;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .social-icons i:hover {
+  color: #7289da;
   transform: scale(1.2);
-  color: #5865f2;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color: #333;
-  color: white;
-  font-size: 0.9rem;
+  padding: 2rem 1rem;
+  background-color: #121212;
+  color: #b3b3b3;
 }
