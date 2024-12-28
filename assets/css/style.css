@@ -196,7 +196,8 @@ footer {
 
 .contact-section form textarea {
   resize: none; /* Prevent resizing */
-  height: 120px; /* Fixed height for textarea */
+  height: 120px;
+  width:auto /* Fixed height for textarea */
 }
 
 .contact-section form button {
