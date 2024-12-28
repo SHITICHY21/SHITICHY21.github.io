@@ -285,3 +285,9 @@ footer {
     max-width: 90%; /* Makes the form fit smaller screens */
   }
 }
+<button type="submit" id="submitBtn">
+  <span id="btnText">Send Message</span>
+  <span id="loadingSpinner" style="display: none;">
+    <i class="fas fa-spinner fa-spin"></i>
+  </span>
+</button>
