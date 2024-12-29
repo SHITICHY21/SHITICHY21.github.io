@@ -1,1 +1,1 @@
-CLick here: https://shitichy21.github.io/
+CLICK HERE: https://shitichy21.github.io/
