@@ -1,240 +1,1075 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shiti Chowdhury | Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shiti Chowdhury Portfolio</title>
 
-    <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/svgs/solid/code.svg" type="image/svg+xml">
-    <title>Shiti Chowdhury | Portfolio</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            color: #333;
-            background: linear-gradient(to bottom, #1e90ff, #f0f8ff);
-        }
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        /* Navbar */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #004080;
-            padding: 15px 30px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+  <style>
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Poppins",sans-serif;
+}
 
-        .navbar .logo {
-            color: white;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
+/* COLORS */
+:root{
+  --bg-main:#1E1E2F;
+  --bg-card:#2A2A40;
+  --primary:#f4a88a;
+  --secondary:#f4a88a;
+  --accent:#FD79A8;
+  --text-main:#F5F5FF;
+  --text-light:#C7C7D9;
+}
 
-        .navbar .nav-links {
-            display: flex;
-            gap: 20px;
-        }
+body{
+  background:var(--bg-main);
+  color:var(--text-main);
+  padding:25px 15px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
 
-        .navbar .nav-links li {
-            list-style: none;
-        }
+/* LINKS */
+a{
+  color:var(--secondary);
+  text-decoration:none;
+  transition:.3s;
+}
+a:hover{
+  color:var(--accent);
+}
 
-        .navbar .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 1rem;
-        }
+/* HEADER */
+header{
+  width:100%;
+  max-width:1250px;
+  padding-bottom:25px;
+  display:flex;
+  justify-content:space-between;
+  border-bottom:2px solid rgba(255,255,255,0.15);
+  align-items:center;
+  position: static;
+  z-index: 9999;
+  
 
-        .navbar .nav-links a:hover {
-            text-decoration: underline;
-        }
 
-        /* Hero Section */
-        .hero-section {
-            text-align: center;
-            padding: 100px 20px;
-            background: #1e90ff;
-            color: white;
-        }
+}
 
-        .hero-section h1 span {
-            color: #ffdd00;
-        }
+header.scrolled {
+  box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+}
 
-        .hero-btn {
-            background: #ffdd00;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-        }
+header .logo{
+  font-size:1.8rem;
+  font-weight:900;
+  background:linear-gradient(45deg,var(--primary),var(--secondary));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
 
-        .hero-btn:hover {
-            background: #ffd700;
-        }
+header nav a{
+  margin-left:22px;
+  font-weight:600;
+  color:var(--text-light);
+  padding:5px 8px;
+  border-radius:5px;
+}
 
-        /* Section Styles */
-        section {
-            padding: 50px 20px;
-        }
+header nav a:hover,
+header nav a.active{
+  background:var(--bg-card);
+  color:var(--accent);
+}
 
-        h2 {
-            text-align: center;
-            color: #004080;
-            margin-bottom: 20px;
-        }
+/* HERO SECTION */
+.hero-new{
+  width:100%;
+  max-width:1200px;
+  margin-top:40px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:#4a243b;
+  border-radius:12px;
+  padding:60px 50px;
+  gap:40px;
+}
 
-        /* About Section */
-        .about-section {
-            text-align: center;
-            background: #f0f8ff;
-        }
+.hero-left{ flex:1; }
+.hero-right{ flex:1; display:flex; justify-content:center; }
 
-        /* Cards */
-        .education-section, .experience-section, .projects-section {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            align-items: center;
-        }
+.hero-title{
+  font-size:3.5rem;
+  font-weight:800;
+  color:#f4c6a7;
+  font-family:'Georgia',serif;
+  margin-bottom:20px;
+}
 
-        .education-card, .experience-card, .project-card {
-            background: #ffffff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            width: 90%;
-            max-width: 600px;
-        }
+.hero-sub{
+  font-size:1.35rem;
+  color:#f6d1b5;
+  margin-top:18px;
+  line-height:1.6;
+  min-height:55px;
+  opacity:0;
+  transition:opacity 1s ease-in;
+   margin-bottom: 40px; 
+   min-height: 65px;
+    min-height: 80px;   /* 🔥 keeps the area fixed */
+  display: block;
+}
 
-        /* Contact Section */
-        .contact-section form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            max-width: 500px;
-            margin: 0 auto;
-        }
+.hero-buttons {
+  display: flex;
+  gap: 18px !important;  /* force proper spacing */
+}
 
-        .contact-section input, .contact-section textarea {
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
 
-        .contact-section button {
-            background: #004080;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+.btn-primary{
+  padding:12px 28px;
+  background:#f4a88a;
+  color:#2d1b1b;
+  border-radius:30px;
+  font-weight:700;
+  text-transform:uppercase;
+}
+.btn-primary:hover{ background:#ffc6ae; }
 
-        .contact-section button:hover {
-            background: #002a5c;
-        }
+.btn-outline{
+  padding:12px 28px;
+  border-radius:30px;
+  border:2px solid #f4a88a;
+  color:#f4a88a;
+  font-weight:700;
+  text-transform:uppercase;
+}
+.btn-outline:hover{
+  background:#f4a88a;
+  color:#2d1b1b;
+}
 
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #004080;
-            color: white;
-        }
-    </style>
+.hero-img-illustration{
+  width:420px;
+  border-radius:8px;
+  box-shadow:0 0 22px #f4a88a66;
+  object-fit:cover;
+}
+
+/* ABOUT ME */
+.about-simple{
+  background: #f4c6a7 ;
+  padding:50px 60px;
+  border-radius:18px;
+  width:75%;
+  margin:50px auto;
+  box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+.about-title{
+  font-size:2.6rem;
+  font-weight:800;
+  color:#222;
+  margin-bottom:20px;
+}
+
+.about-text{
+  font-size:1.08rem;
+  color:#333;
+  line-height:1.7;
+  margin-bottom:15px;
+}
+
+/* SOCIAL ICONS FIXED */
+.about-icons{
+  margin-top:25px;
+  display:flex;
+  gap:32px;
+}
+
+.about-icons i{
+  font-size:32px;
+  color:#333;
+  transition:0.3s;
+}
+.about-icons i:hover{
+  color:#d72f55;
+  transform:translateY(-4px);
+}
+
+/* SECTIONS */
+.section-title{
+  font-size:2.4rem;
+  font-weight:900;
+  margin:40px 0;
+  text-align:center;
+  background:linear-gradient(45deg,var(--primary),var(--secondary));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* GRIDS / CARDS */
+.education-cards,
+.skills-grid,
+.projects-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:24px;
+  justify-content:center;
+}
+
+.card{
+  background:var(--bg-card);
+  padding:22px 30px;
+  border-radius:18px;
+  box-shadow:0 0 15px var(--primary);
+  width:360px;
+}
+
+.skill-card{
+  padding:15px;
+  background:var(--bg-card);
+  border-radius:12px;
+}
+
+.skill-name{
+  color:var(--secondary);
+  font-weight:700;
+}
+
+.project-card{
+  background:var(--bg-card);
+  padding:20px;
+  border-radius:18px;
+  box-shadow:0 0 15px var(--primary);
+  width:330px;
+}
+
+.project-title{
+  font-size:1.3rem;
+  font-weight:800;
+  color:var(--secondary);
+}
+
+.project-desc{ color:var(--text-light); margin-top:10px; }
+
+/* CONTACT */
+.contact-container{
+  display:flex;
+  gap:30px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.contact-info,.contact-form{
+  background:var(--bg-card);
+  padding:25px;
+  border-radius:20px;
+  width:360px;
+  box-shadow:0 0 15px var(--primary);
+}
+
+.contact-item{ margin-bottom:15px; color:var(--secondary); font-weight:600; }
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  background:#1b1b2d;
+  border:none;
+  padding:12px;
+  margin-bottom:12px;
+  border-radius:10px;
+  color:white;
+}
+
+.btn-send{
+  background:var(--accent);
+  padding:12px;
+  width:100%;
+  border-radius:30px;
+  font-weight:900;
+  cursor:pointer;
+}
+.btn-send:hover{
+  background:var(--primary);
+  color:#fff;
+}
+
+/* ===== EDUCATION SECTION ===== */
+
+.edu-section {
+  width: 100%;
+  max-width: 1100px;
+  margin: 80px auto;
+}
+
+.edu-title {
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #f4c6a7;
+  text-align: left;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+
+.edu-intro {
+  font-size: 1.05rem;
+  color: #e4d1d1;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  margin-left: 30px;
+  border-left: 3px solid #c44a58; /* vertical line */
+  padding-left: 25px;
+}
+
+/* Single item layout */
+.timeline-item {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+/* Dots */
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background: #ff6f7d;
+  border-radius: 50%;
+  position: absolute;
+  left: -39px;
+  top: 8px;
+  border: 2px solid #ffc6ae;
+  box-shadow: 0 0 5px #ffb1b1;
+}
+
+/* Cards */
+.timeline-card {
+  background: #2b1a2e;
+  padding: 22px 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 178, 156, 0.25);
+}
+
+.timeline-card h3 {
+  color: #ffe0c4;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.timeline-card h4 {
+  color: #f4a88a;
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.timeline-card .year {
+  font-size: 0.9rem;
+  color: #d8b9b9;
+  margin-bottom: 10px;
+}
+
+.timeline-card .details {
+  font-size: 0.95rem;
+  color: #e8d5d5;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media(max-width: 700px) {
+  .timeline {
+    margin-left: 18px;
+  }
+  .timeline-dot {
+    left: -30px;
+  }
+}
+
+.skills-category {
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.skill-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.skill-box-card {
+  background: #ffffff10;
+  padding: 25px;
+  border-radius: 22px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+.skill-box-card h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #ffceb7;
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 20px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 45%;
+  font-size: 1rem;
+  color: #ffeadd;
+  font-weight: 500;
+}
+
+.skill-item img {
+  width: 32px;
+  height: 32px;
+}
+
+.skill-item i {
+  font-size: 28px;
+  color: #ffb099;
+}
+
+#skills {
+  margin-top: 2px !important;   /* আগে হয়তো 60px বা 80px ছিল */
+  padding-top: 2px;
+  margin-bottom: -2px !important;
+}
+
+#education {
+  margin-bottom: 2px !important;
+  padding-bottom: 2px !important;
+}
+
+.pub-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #4a243b;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.22);
+}
+
+.pub-title {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #f4c6a7;
+  margin-bottom: 35px;
+  font-family: Georgia, serif;
+}
+
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.pub-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.bullet {
+  font-size: 2rem;
+  color: #ffb39c;
+  font-weight: bold;
+}
+
+.pub-main {
+  font-size: 1.2rem;
+  color: #ffe2d5;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.pub-sub {
+  font-size: 1rem;
+  color: #d9bfd0;
+  line-height: 1.5;
+}
+
+.pub-link {
+  color: #ffb39c;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.pub-link:hover {
+  color: #ffd5c7;
+}
+
+
+
+  </style>
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">SC</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <!-- Hero Section -->
-    <header class="hero-section">
-        <h1>Hi, I'm <span>Shiti Chowdhury</span></h1>
-        <h2>Software Developer | Python Enthusiast | Designer</h2>
-        <p>Building innovative solutions and solving challenging problems.</p>
-        <button class="hero-btn">Let's Connect</button>
-    </header>
+<!-- HEADER -->
+<header>
+  <div class="logo">Shiti Chowdhury</div>
+  <nav>
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About me</a>
+    <a href="#education">Education</a>
+    <a href="#skills-category">Skills</a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Projects</a>
+    <!-- <a href="#publications">Publications</a> -->
+    <a href="#contact">Contact me</a>
+  </nav>
+</header>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <h2>About Me</h2>
-        <p>
-            I am a passionate software developer with expertise in web development and machine learning.
-            I thrive on building innovative projects and solving challenging problems.
-            Let’s collaborate to bring ideas to life!
+<!-- HERO -->
+<section class="hero-new" id="home">
+
+  <div class="hero-left">
+
+    <h1 class="hero-title">I am Shiti Chowdhury</h1>
+
+    <p id="typingText" class="hero-sub"></p>
+
+    <div class="hero-buttons">
+      <a class="btn-primary" 
+         href="https://drive.google.com/file/d/11kE-8F9vHn-OfJq0q8pKQeYedqo0HPWs/view?usp=drive_link"
+         target="_blank">
+        Download CV
+      </a>
+
+      <a class="btn-outline" href="#contact">Contact Me</a>
+    </div>
+
+  </div>
+
+  <div class="hero-right">
+    <img src="me.png" class="hero-img-illustration" alt="Shiti Chowdhury">
+  </div>
+
+</section>
+
+<!-- ABOUT ME -->
+<section class="about-simple" id="about">
+
+  <h2 class="about-title">ABOUT ME</h2>
+
+  <p class="about-text">
+    I am a final-year CSE undergraduate at CUET with a strong passion for Artificial Intelligence, 
+    Machine Learning, NLP, Large Language Models (LLMs) and Data-Driven Innovation. 
+  </p>
+
+  <p class="about-text">
+    I enjoy exploring intelligent systems, performing impactful research and building 
+    real-world applications that blend creativity with engineering.
+    I actively participate in AI/ML competitions, collaborative problem-solving and 
+    community learning initiatives. My goal is to create meaningful AI solutions 
+    that positively impact society.
+  </p>
+
+  <div class="about-icons">
+    <a href="https://www.linkedin.com/in/shiti-chowdhury/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/SHITICHY21" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.kaggle.com/" target="_blank"><i class="fab fa-kaggle"></i></a>
+    <a href="mailto:shitichowdhury21@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+
+</section>
+
+<section id="education" class="edu-section">
+  <h2 class="edu-title">Education</h2>
+
+  <p class="edu-intro">
+    My academic journey reflects a strong commitment to excellence in engineering,
+    analytical thinking and continuous learning. I have consistently worked to strengthen
+    my understanding of software, AI/ML, research and problem-solving.
+  </p>
+
+  <div class="timeline">
+
+    <!-- CUET -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <h3>Chittagong University of Engineering & Technology (CUET)</h3>
+        <h4>Bachelor of Science in Computer Science and Engineering (CSE)</h4>
+        <p class="year">Final Year (Ongoing) — Chattogram, Bangladesh</p>
+        <p class="details">
+          Currently specializing in Artificial Intelligence, Machine Learning, Deep Learning
+          and advanced software development. Engaged in academic research and collaborative work.
         </p>
-    </section>
+      </div>
+    </div>
 
-    <!-- Education Section -->
-    <section id="education" class="education-section">
-        <h2>Education</h2>
-        <div class="education-card">
-            <h3>Bachelor of Technology in CSE</h3>
-            <p>University of Engineering & Technology - 2022 to 2026</p>
-        </div>
-        <div class="education-card">
-            <h3>Higher Secondary Certificate</h3>
-            <p>Seva Sadan Junior High School - 2020 to 2022</p>
-        </div>
-    </section>
+    <!-- College -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <h3>Chattogram College</h3>
+        <h4>Higher Secondary Certificate (HSC) — Science</h4>
+        <p class="year">2020 — GPA 5.00 — Chattogram, Bangladesh</p>
+        <p class="details">
+          Focused on science subjects with strong analytical, mathematical
+          and problem-solving foundations essential for engineering.
+        </p>
+      </div>
+    </div>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section">
-        <h2>Work Experience</h2>
-        <div class="experience-card">
-            <h3>Frontend Developer</h3>
-            <p>Company Name - Aug 2021 to Feb 2022</p>
-        </div>
-        <div class="experience-card">
-            <h3>Volunteer Mentor</h3>
-            <p>Microverse - Mar 2022 to May 2022</p>
-        </div>
-    </section>
+    <!-- School -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <h3>Chittagong Govt. Girls’ High School</h3>
+        <h4>Secondary School Certificate (SSC) — Science</h4>
+        <p class="year">2018 — GPA 5.00 — Chattogram, Bangladesh</p>
+        <p class="details">
+          Achieved strong academic results and developed a lifelong passion
+          for learning, leadership and scientific exploration.
+        </p>
+      </div>
+    </div>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>MamaJaba</h3>
-            <p>A web development project focused on frontend implementation.</p>
-        </div>
-        <div class="project-card">
-            <h3>CUET Store System</h3>
-            <p>A software engineering project for university requirements.</p>
-        </div>
-    </section>
+  </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+<section id="skills-category" class="skills-category">
 
-    <!-- Footer -->
-    <footer>
-        <p>Built by Shiti Chowdhury © 2024</p>
-    </footer>
+  <h2 class="section-title">Technical Skills</h2>
+
+  <div class="skill-card-grid">
+
+    <!-- PROGRAMMING LANGUAGES / TECH STACK -->
+    <div class="skill-box-card">
+      <h3>Programming Languages / Tech Stack</h3>
+      <div class="skill-items">
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+          <span>Python</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">
+          <span>C++</span>
+        </div>
+
+
+
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+          <span>HTML5</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+          <span>CSS3</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+          <span>JavaScript</span>
+        </div>
+
+        <!-- VS Code -->
+<div class="skill-item">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+  <span>VS Code</span>
+</div>
+
+        <!-- Django -->
+<div class="skill-item">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+  <span>Django</span>
+</div>
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+          <span>MySQL</span>
+        </div>
+
+                <!-- Bootstrap -->
+<div class="skill-item">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+  <span>Bootstrap</span>
+</div>
+
+
+
+      </div>
+    </div>
+
+
+
+    <!-- ML / DL / DATA SCIENCE -->
+    <div class="skill-box-card">
+      <h3>ML / DL & Data Science</h3>
+      <div class="skill-items">
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg">
+          <span>PyTorch</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg">
+          <span>TensorFlow</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg">
+          <span>Keras</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="openCV.png">
+          <span>OpenCV</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png">
+          <span>Scikit-learn</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg">
+          <span>NumPy</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg">
+          <span>Pandas</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://matplotlib.org/stable/_static/logo_dark.svg">
+          <span>Matplotlib</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="seaborn.png">
+          <span>Seaborn</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://images.plot.ly/logo/new-branding/plotly-logomark.png">
+          <span>Plotly</span>
+        </div>
+        
+        <div class="skill-item">
+          <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg">
+          <span>HuggingFace Transformers</span>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!-- MULTIMODAL / NLP (EXTENDED) -->
+    <div class="skill-box-card">
+      <h3>Multimodal & NLP</h3>
+      <div class="skill-items">
+
+        <div class="skill-item">
+          <i class="fas fa-microphone"></i>
+          <span>Speech Processing</span>
+        </div>
+
+        <div class="skill-item">
+          <i class="fas fa-image"></i>
+          <span>Image Processing</span>
+        </div>
+
+        <div class="skill-item">
+          <i class="fas fa-chart-line"></i>
+          <span>Model Evaluation</span>
+        </div>
+
+        <div class="skill-item">
+          <i class="fas fa-brain"></i>
+          <span>LLM Fine-Tuning</span>
+        </div>
+
+        <div class="skill-item">
+          <i class="fas fa-keyboard"></i>
+          <span>Prompt Engineering</span>
+        </div>
+
+        <div class="skill-item">
+          <i class="fas fa-language"></i>
+          <span>Text Classification </span>
+        </div>
+
+        <!-- <div class="skill-item">
+          <img src="https://avatars.githubusercontent.com/u/37282678?s=200&v=4">
+          <span>ASR (Whisper)</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://upload.wikimedia.org/wikipedia/1/17/Tesseract_OCR_logo.png">
+          <span>OCR (Tesseract / EasyOCR)</span>
+        </div> -->
+
+      </div>
+    </div>
+
+
+
+    <!-- TOOLS -->
+    <div class="skill-box-card">
+      <h3>Tools</h3>
+      <div class="skill-items">
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+          <span>Git</span>
+        </div>
+
+        <!-- GitHub -->
+         <div class="skill-item">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+  <span>GitHub</span>
+</div>
+        
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg">
+          <span>Linux</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg">
+          <span>LaTeX</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="palette.png">
+          <span>Canva</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg">
+          <span>Figma</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968517.png">
+          <span>MS Office</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="jira.png">
+          <span>Jira</span>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!-- SOFT SKILLS -->
+    <div class="skill-box-card">
+      <h3>Soft Skills</h3>
+      <div class="skill-items">
+
+        <div class="skill-item"><i class="fas fa-lightbulb"></i><span>Critical Thinking</span></div>
+        <div class="skill-item"><i class="fas fa-brain"></i><span>Problem-Solving</span></div>
+        <div class="skill-item"><i class="fas fa-user-tie"></i><span>Leadership</span></div>
+        <div class="skill-item"><i class="fas fa-users"></i><span>Team Collaboration</span></div>
+        <div class="skill-item"><i class="fas fa-project-diagram"></i><span>Project Management</span></div>
+        <div class="skill-item"><i class="fas fa-clock"></i><span>Time Management</span></div>
+        <div class="skill-item"><i class="fas fa-rocket"></i><span>Initiative & Ownership</span></div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="publications" class="pub-section">
+
+  <h2 class="pub-title">Research Publications</h2>
+
+  <div class="pub-list">
+
+        <!-- Publication 3 -->
+    <div class="pub-item">
+      <span class="bullet">•</span>
+      <div>
+        <p class="pub-main">
+          <strong>Team_Luminaries_0227 @ LT-EDI-2025:</strong>  
+          A Transformer-Based Fusion Approach to Misogyny Detection in Chinese Memes
+        </p>
+        <p class="pub-sub">
+          <strong>5th Workshop on Language Technology for Equality, Diversity & Inclusion (LT-EDI 2025) , October 2025 </strong>
+          <br>
+          Expected Link:
+          <a href="https://aclanthology.org/2025.ltedi-1.20/" 
+             target="_blank" 
+             class="pub-link">
+             ACL Anthology
+          </a>
+        </p>
+      </div>
+    </div>
+
+
+    <!-- Publication 2 -->
+    <div class="pub-item">
+      <span class="bullet">•</span>
+      <div>
+        <p class="pub-main">
+          <strong>Think Tank:</strong>  
+          A Home Appliance and Vehicle Repair Assistance Smartphone Application  
+          with Technician Hiring & Repair Schedule Booking Features
+        </p>
+        <p class="pub-sub">
+          <strong>
+          2025 4th OPJU International Technology Conference (OTCON) on  
+          Smart Computing for Innovation & Advancement in Industry 5.0, July 2025 </strong>
+          <br>
+          Available at:
+          <a href="https://doi.org/10.1109/OTCON65728.2025.11070814" 
+             target="_blank" 
+             class="pub-link">
+             IEEE Xplore
+          </a>
+        </p>
+      </div>
+    </div>
+
+
+        <!-- Publication 1 -->
+    <div class="pub-item">
+      <span class="bullet">•</span>
+      <div>
+        <p class="pub-main">
+          <strong>Team ML_Forge @ DravidianLangTech 2025:</strong>  
+          Multimodal Hate Speech Detection in Dravidian Languages
+        </p>
+        <p class="pub-sub">
+          <strong>
+          NAACL 2025 Shared Task – Association for Computational Linguistics (ACL), May 2025  </strong>
+          <br>
+          Available at:
+          <a href="https://aclanthology.org/2025.dravidianlangtech-1.68/" 
+             target="_blank" 
+             class="pub-link">
+             ACL Anthology
+          </a>
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-title">Bangla Physics MCQ Challenge</div>
+      <p class="project-desc">Qwen3-14B with few-shot prompting.</p>
+    </div>
+
+    <div class="project-card">
+      <div class="project-title">Misogyny Meme Detection</div>
+      <p class="project-desc">Multimodal model using VGG16 + BERT.</p>
+    </div>
+
+    <div class="project-card">
+      <div class="project-title">Heart Disease Prediction</div>
+      <p class="project-desc">Flask + RandomForest Classifier.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="section-title">Contact Me</h2>
+
+  <div class="contact-container">
+
+    <div class="contact-info">
+      <div class="contact-item">📧 Email: shitichowdhury21@gmail.com</div>
+      <div class="contact-item">📞 Phone: +8801856307675</div>
+      <div class="contact-item">📍 Chattogram, Bangladesh</div>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message"></textarea>
+      <button class="btn-send">Send Message</button>
+    </form>
+
+  </div>
+</section>
+
+<!-- TYPING SCRIPT -->
+<script>
+const text =
+"Final-year CSE Undergraduate at CUET | Passionate about AI, Machine Learning, NLP and Data-Driven Innovation";
+
+const words = text.split(" ");
+const typingElement = document.getElementById("typingText");
+
+let index = 0;
+
+function typeWord() {
+  if (index === 0) typingElement.innerHTML = "";  // reset text
+  typingElement.style.opacity = 1;
+
+  if (index < words.length) {
+    typingElement.innerHTML += words[index] + " ";
+    index++;
+    setTimeout(typeWord, 150);
+  } else {
+    setTimeout(() => {
+      index = 0;
+      typeWord();
+    }, 1200); // restart after 1.2s
+  }
+}
+
+window.onload = typeWord;
+
+window.addEventListener("scroll", () => {
+  document.querySelector("header")
+    .classList.toggle("scrolled", window.scrollY > 20);
+});
+
+</script>
+
 </body>
 </html>
