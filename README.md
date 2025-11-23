@@ -1,1 +1,1 @@
-View Portfolio: https://shitichy21.github.io/
+Personal Portfolio: https://shitichy21.github.io/
