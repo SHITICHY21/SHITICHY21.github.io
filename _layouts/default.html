@@ -373,15 +373,16 @@ header nav a.active{
 
 /* Dots */
 .timeline-dot {
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   background: #ff6f7d;
   border-radius: 50%;
   position: absolute;
-  left: -20px;
+  left: -2px;
   top: 8px;
+
   border: 2px solid #ffc6ae;
-  box-shadow: 0 0 5px #ffb1b1;
+  box-shadow: 2px 2px 5px #ffb1b1;
 }
 
 /* Cards */
@@ -944,6 +945,397 @@ header nav a.active{
   }
 }
 
+.thesis-title{
+    text-align: center;
+    font-weight: 1200;
+}
+#thesis .timeline-card{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+.research-instructor-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 45px;
+  background: var(--bg-card);
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.35);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.research-title {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #f6bf9b;
+  margin-bottom: 38px;
+  font-family: Georgia, serif;
+}
+
+.research-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.research-card {
+  background: #36253b;
+  padding: 24px 28px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(244,168,138,0.25);
+  transition: 0.3s ease;
+  opacity: 0;
+  transform: translateY(35px);
+}
+
+.research-card.show-research-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.research-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(244,168,138,0.45);
+}
+
+.research-card h3 {
+  color: #ffe0c4;
+  font-size: 1.22rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.research-card p {
+  color: #e8d5d5;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.research-card strong {
+  color: #f4a88a;
+}
+
+.research-card a {
+  color: #ffb39c;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.research-card a:hover {
+  color: #ffd5c7;
+}
+
+@media (max-width: 768px) {
+  .research-instructor-section {
+    width: 95%;
+    padding: 30px 20px;
+  }
+
+  .research-title {
+    font-size: 2rem;
+  }
+
+  .research-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .research-card p {
+    font-size: 0.92rem;
+  }
+}
+
+.pub-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px;
+  background: var(--bg-card);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.pub-title {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #f4c6a7;
+  margin-bottom: 35px;
+  font-family: Georgia, serif;
+}
+
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pub-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: #36253b;
+  padding: 22px 26px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.06);
+  opacity: 0;
+  transform: translateY(22px);
+  transition: 0.35s ease;
+}
+
+.pub-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pub-item:hover {
+  background: #3b2941;
+  border-color: rgba(244,168,138,0.3);
+}
+
+.bullet {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  border-radius: 50%;
+  background: #f4a88a;
+  color: #1e1e2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 4px;
+}
+
+.pub-main {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #ffe0c4;
+  line-height: 1.55;
+  margin-bottom: 8px;
+}
+
+.pub-sub {
+  font-size: 0.98rem;
+  color: #d9bfd0;
+  line-height: 1.6;
+}
+
+.pub-link {
+  color: #ffb39c;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: 0.25s;
+}
+
+.pub-link:hover {
+  color: #ffd5c7;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .pub-section {
+    width: 95%;
+    padding: 26px 20px;
+  }
+
+  .pub-title {
+    font-size: 2rem;
+  }
+
+  .pub-item {
+    padding: 20px;
+    gap: 12px;
+  }
+
+  .pub-main {
+    font-size: 1.05rem;
+  }
+
+  .pub-sub {
+    font-size: 0.92rem;
+  }
+}
+
+.service-section{
+  width:90%;
+  max-width:1100px;
+  margin:60px auto;
+  padding:40px;
+  background:var(--bg-card);
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,0.08);
+  box-shadow:0 4px 14px rgba(0,0,0,0.25);
+}
+
+.service-title{
+  text-align:center;
+  font-size:2.5rem;
+  font-weight:900;
+  color:#f6bf9b;
+  margin-bottom:30px;
+  font-family:Georgia,serif;
+}
+
+.service-card{
+  background:#36253b;
+  border-radius:16px;
+  padding:28px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.22);
+  opacity:0;
+  transform:translateY(18px);
+  transition:0.4s ease;
+}
+
+.service-card.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.service-card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 6px 16px rgba(0,0,0,0.28);
+}
+
+.service-card h3{
+  color:#ffe0c4;
+  font-size:1.45rem;
+  margin-bottom:12px;
+}
+
+.service-description{
+  color:#e7d8d8;
+  line-height:1.7;
+  margin-bottom:22px;
+}
+
+.review-list{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.review-item{
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+  padding:17px;
+  background:#2a2a40;
+  border-radius:13px;
+}
+
+.review-number{
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  background:#f4a88a;
+  color:#1e1e2f;
+  font-weight:700;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-shrink:0;
+}
+
+.review-item h4{
+  color:#ffe0c4;
+  font-size:1.05rem;
+  margin-bottom:5px;
+}
+
+.review-item p{
+  color:#ba5b5b;
+}
+
+.review-item strong{
+  color:#f4a88a;
+}
+
+@media(max-width:768px){
+  .service-section{
+    width:95%;
+    padding:25px;
+  }
+
+  .service-title{
+    font-size:2rem;
+  }
+
+  .service-card{
+    padding:24px 20px;
+  }
+}
+
+.pub-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: #36253b;
+  padding: 22px 26px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.07);
+
+  opacity: 0;
+  transform: translateY(22px);
+  transition: 
+    opacity 0.45s ease,
+    transform 0.45s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.pub-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pub-item:hover {
+  transform: translateY(-4px);
+  background: #372240;
+  border-color: rgba(188, 128, 104, 0.35);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.22);
+}
+
+.pub-item:hover .bullet {
+  transform: scale(1.08);
+}
+
+.bullet {
+  transition: 0.3s ease;
+}
+
+.pub-item{
+    transition: all .35s ease;
+}
+
+.pub-item:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.22);
+    border-color: rgba(252, 146, 104, 0.35);
+}
+
+.pub-item:hover .pub-main{
+    color:#ffd8c7;
+}
+
+.pub-item:hover .bullet{
+    transform:scale(1.1);
+}
+
+.pub-item:hover .pub-link{
+    color:#f58965;
+}
+
+.bullet,
+.pub-main,
+.pub-link{
+    transition:.3s ease;
+}
 
   </style>
 </head>
@@ -1074,6 +1466,57 @@ header nav a.active{
     </div>
 
   </div>
+</section>
+
+<!-- ================= Undergraduate Thesis ================= -->
+<section id="thesis" class="edu-section">
+
+  <h2 class="edu-title thesis-title">Undergraduate Thesis</h2>
+
+  <p class="edu-intro">
+    My undergraduate thesis focuses on multimodal artificial intelligence for
+    automated abusive content detection in online videos by integrating visual,
+    textual and audio information for robust content understanding.
+  </p>
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+
+      <div class="timeline-card">
+
+        <h3>
+          A Multimodal Multiclass Framework for Automated Detection of
+          Abusive Content in Online Videos
+        </h3>
+
+        <p class="year">
+          <b>30<sup>th</sup> June 2026</b>
+        </p>
+
+        <p class="details">
+          <strong>Thesis Supervisor:</strong>
+          Saadman Sakib,
+          Assistant Professor,
+          Department of CSE,
+          Chittagong University of Engineering and Technology (CUET).
+        </p>
+
+        <br>
+
+        <p class="details">
+          Designed a multimodal abusive content detection framework using XLM-RoBERTa,
+          CLIP and Wav2Vec2 with cross-modal attention and multi-task learning.
+          Built and annotated a Bangla-English video dataset and validated the model
+          across multiple public benchmarks with explainable AI analysis.
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+
 </section>
 
 <section class="experience-section" id="experience">
@@ -1434,9 +1877,66 @@ header nav a.active{
 
   <div class="pub-list">
 
+    <!-- Publication -->
+<div class="pub-item">
+  <!-- <span class="bullet">•</span> -->
+
+  <div>
+    <p class="pub-main">
+      <strong>
+        Invariance-Oriented Representation Learning for Robust AI-Generated Code Detection
+      </strong>
+    </p>
+
+    <p class="pub-sub">
+      <strong>
+        1st Author — Proceedings of the 20th International Workshop on Semantic Evaluation (SemEval-2026), Association for Computational Linguistics (ACL), July 2026
+      </strong>
+
+      <br>
+
+      Publication Link:
+      <a href="https://aclanthology.org/2026.semeval-1.81/"
+         target="_blank"
+         class="pub-link">
+         ACL Anthology
+      </a>
+    </p>
+  </div>
+</div>
+
+<!-- Publication -->
+<div class="pub-item">
+  <!-- <span class="bullet">•</span> -->
+
+  <div>
+    <p class="pub-main">
+      <strong>
+        Disentangling Logical Validity from Semantic Plausibility through Canonical Abstraction
+      </strong>
+    </p>
+
+    <p class="pub-sub">
+      <strong>
+        2nd Author — Proceedings of the 20th International Workshop on Semantic Evaluation (SemEval-2026), Association for Computational Linguistics (ACL), July 2026
+      </strong>
+
+      <br>
+
+      Publication Link:
+      <a href="https://aclanthology.org/2026.semeval-1.70/"
+         target="_blank"
+         class="pub-link">
+        ACL Anthology
+      </a>
+    </p>
+  </div>
+</div>
+
+
    <!-- Publication -->
 <div class="pub-item">
-  <span class="bullet">•</span>
+  <!-- <span class="bullet">•</span> -->
 
   <div>
     <p class="pub-main">
@@ -1466,10 +1966,10 @@ header nav a.active{
 
         <!-- Publication 3 -->
     <div class="pub-item">
-      <span class="bullet">•</span>
+      <!-- <span class="bullet">•</span> -->
       <div>
         <p class="pub-main">
-          <strong>Team_Luminaries_0227 @ LT-EDI-2025:</strong>  
+          
           A Transformer-Based Fusion Approach to Misogyny Detection in Chinese Memes
         </p>
         <p class="pub-sub">
@@ -1488,7 +1988,7 @@ header nav a.active{
 
     <!-- Publication 2 -->
     <div class="pub-item">
-      <span class="bullet">•</span>
+      <!-- <span class="bullet">•</span> -->
       <div>
         <p class="pub-main">
           <strong>Think Tank:</strong>  
@@ -1513,10 +2013,9 @@ header nav a.active{
 
         <!-- Publication 1 -->
     <div class="pub-item">
-      <span class="bullet">•</span>
+      <!-- <span class="bullet">•</span> -->
       <div>
-        <p class="pub-main">
-          <strong>Team ML_Forge @ DravidianLangTech 2025:</strong>  
+        <p class="pub-main"> 
           Multimodal Hate Speech Detection in Dravidian Languages
         </p>
         <p class="pub-sub">
@@ -1536,6 +2035,44 @@ header nav a.active{
 
   </div>
 
+</section>
+
+<section id="research-instructor" class="research-instructor-section">
+
+  <h2 class="research-title">Research Instructor Experience</h2>
+
+  <div class="research-list">
+
+    <div class="research-card">
+      <h3>CUET_SYNTHETICA@DravidianLangTech 2026: Multilingual Transformer-Based Hope Speech Detection for Coarse and Fine-Grained Classification in Tulu</h3>
+      <p><strong>Research Instructor (Author)</strong> — Proceedings of the Sixth Workshop on Speech, Vision, and Language Technologies for Dravidian Languages (DravidianLangTech 2026), co-located with ACL 2026, July 2026</p>
+
+      <span>Publication link: </span>
+      <a href="https://aclanthology.org/2026.dravidianlangtech-1.30/" target="_blank">ACL Anthology</a>
+    </div>
+
+    <div class="research-card">
+      <h3>CUET_SYNTHETICA@DravidianLangTech 2026: Multi-Architecture Transformer Ensemble for Detecting Abusive Tamil Text Targeting Women</h3>
+      <p><strong>Research Instructor (Author)</strong> — Proceedings of the Sixth Workshop on Speech, Vision, and Language Technologies for Dravidian Languages (DravidianLangTech 2026), co-located with ACL 2026, July 2026</p>
+      <span>Publication link: </span>
+      <a href="https://aclanthology.org/2026.dravidianlangtech-1.29/" target="_blank">ACL Anthology</a>
+    </div>
+
+    <div class="research-card">
+      <h3>ERROR_500@DravidianLangTech 2026: Automatic Prompt Style Classification in Telugu Using Transformer-Based Language Models</h3>
+      <p><strong>Research Instructor (Author)</strong> — Proceedings of the Sixth Workshop on Speech, Vision, and Language Technologies for Dravidian Languages (DravidianLangTech 2026), co-located with ACL 2026, July 2026</p>
+      <span>Publication link: </span>
+      <a href="https://aclanthology.org/2026.dravidianlangtech-1.37/" target="_blank">ACL Anthology</a>
+    </div>
+
+    <div class="research-card">
+      <h3>CUET_SYNTHETICA@EEUCA 2026: Gated Cross-Modal Attention with Domain-Adapted Text Encoding for Vaccine-Critical Meme Detection</h3>
+      <p><strong>Research Instructor (Author)</strong> — Proceedings of the 9th Workshop on Event Extraction and Understanding: Challenges and Applications (EEUCA 2026), co-located with ACL 2026, July 2026</p>
+      <span>Publication link: </span>
+      <a href="https://aclanthology.org/2026.eeuca-1.14/" target="_blank">ACL Anthology</a>
+    </div>
+
+  </div>
 </section>
 
 
@@ -1901,6 +2438,46 @@ header nav a.active{
   </div>
 </section>
 
+<section id="professional-service" class="service-section">
+
+    <h2 class="service-title">Professional Service</h2>
+
+    <div class="service-card">
+
+        <h3>Invited Reviewer</h3>
+
+        <p class="service-description">
+            Reviewed <strong>3 papers</strong> for the Association for Computational Linguistics (ACL) and the Association for Computing Machinery (ACM) conferences in NLP and multimodal AI research evaluation.
+        </p>
+
+        <div class="review-list">
+
+            <div class="review-item">
+                <span class="review-number">1</span>
+
+                <div>
+                    <h4>ACM ICMI 2026 — Cross-Cultural Misogynistic Meme Detection (CC-MMD) Challenge</h4>
+                    <p>Reviewed <strong>1 Paper</strong></p>
+
+                    
+                </div>
+            </div>
+
+            <div class="review-item">
+                <span class="review-number">2</span>
+
+                <div>
+                    <h4>ACL 2026 — DravidianLangTech-2026: Sixth Workshop on Speech, Vision, and Language Technologies for Dravidian Languages</h4>
+                    <p>Reviewed <strong>2 Papers</strong></p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 <center>
 <hr style="margin: 20px 0; border: 2px solid #ff9e85; width: 500px; " >
 </center>
@@ -2004,7 +2581,51 @@ window.addEventListener("scroll", () => {
 
     cards.forEach(card => observer.observe(card));
   })();
+
+  const researchCards = document.querySelectorAll(".research-card");
+
+const researchObserver = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show-research-card");
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
+
+researchCards.forEach(card => researchObserver.observe(card));
+
+const serviceCards = document.querySelectorAll(".service-card");
+
+const serviceObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+serviceCards.forEach(card => serviceObserver.observe(card));
+
+const pubItems = document.querySelectorAll(".pub-item");
+
+const pubObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+pubItems.forEach(item => pubObserver.observe(item));
 </script>
+
 
 
 </body>
