@@ -1,0 +1,959 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Experience | Shiti Chowdhury</title>
+
+    <meta name="description"
+        content="Professional and research experience of Shiti Chowdhury in artificial intelligence, computer vision, and research mentoring.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        /* ==========================================
+           EXPERIENCE PAGE — COLOR PALETTE
+        ========================================== */
+
+        .experience-body {
+            --exp-navy: #25354b;
+            --exp-burgundy: #783d59;
+            --exp-teal: #2c6267;
+            --exp-gold: #a2804e;
+            --exp-text: #465365;
+            --exp-muted: #738092;
+            --exp-border: #e1e5ec;
+            --exp-pink: #f7eaf4;
+            --exp-lavender: #f5f0f8;
+        }
+
+        .experience-body .page-container {
+            overflow: visible !important;
+        }
+
+        .experience-body .main-content.experience-page {
+            min-width: 0;
+            width: 100%;
+        }
+
+        /* ==========================================
+           STICKY PROFILE SIDEBAR
+        ========================================== */
+
+        @media (min-width: 901px) {
+
+            .experience-body .profile-sidebar {
+                position: sticky !important;
+                top: 88px !important;
+                align-self: start !important;
+                height: fit-content !important;
+                max-height: calc(100vh - 105px) !important;
+                overflow-y: auto !important;
+                z-index: 5;
+            }
+
+        }
+
+        /* ==========================================
+           PAGE HEADING
+        ========================================== */
+
+        .experience-page .experience-heading {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+
+            margin: 0 0 32px;
+            padding: 0;
+        }
+
+        .experience-page .experience-heading::before {
+            content: "";
+            display: block;
+            flex: 0 0 5px;
+
+            width: 5px;
+            height: 34px;
+
+            border-radius: 4px;
+
+            background: linear-gradient(
+                to bottom,
+                #2c9296 0%,
+                #6f809c 48%,
+                #d5a05b 100%
+            );
+        }
+
+        .experience-page .experience-heading h1 {
+            margin: 0 !important;
+            padding: 0 !important;
+
+            color: var(--exp-navy) !important;
+
+            font-family: Georgia, "Times New Roman", serif !important;
+            font-size: 29px !important;
+            font-weight: 700 !important;
+            line-height: 1.3 !important;
+
+            border: none !important;
+            background: transparent !important;
+        }
+
+        /* ==========================================
+           EXPERIENCE LIST
+        ========================================== */
+
+        .experience-page .experience-list {
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ==========================================
+           EXPERIENCE CARD
+        ========================================== */
+
+        .experience-page .experience-item {
+            position: relative;
+
+            display: grid !important;
+            grid-template-columns: 18px minmax(0, 1fr);
+            gap: 15px;
+
+            margin: 0 !important;
+            padding: 24px 25px 23px !important;
+
+            background: #ffffff !important;
+
+            border: 1px solid var(--exp-border) !important;
+            border-radius: 9px !important;
+
+            box-shadow: 0 2px 5px rgba(30, 45, 65, 0.035) !important;
+
+            transform: none !important;
+
+            transition:
+                border-color 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .experience-page .experience-item:hover {
+            border-color: #d5c9da !important;
+
+            box-shadow: 0 5px 16px rgba(
+                37, 53, 75, 0.065
+            ) !important;
+
+            transform: none !important;
+        }
+
+        /* ==========================================
+           TIMELINE DOT
+        ========================================== */
+
+        .experience-page .experience-timeline {
+            padding-top: 3px;
+        }
+
+        .experience-page .experience-dot {
+            display: block;
+
+            width: 15px;
+            height: 15px;
+
+            border: 2px solid var(--exp-teal);
+            border-radius: 50%;
+
+            background: #ffffff;
+
+            position: relative;
+        }
+
+        .experience-page .experience-dot::after {
+            content: "";
+
+            position: absolute;
+            inset: 3px;
+
+            border-radius: 50%;
+            background: var(--exp-teal);
+        }
+
+        /* ==========================================
+           CARD CONTENT
+        ========================================== */
+
+        .experience-page .experience-details {
+            min-width: 0;
+        }
+
+        .experience-page .experience-date {
+            display: block;
+
+            margin: 0 0 11px !important;
+            padding: 0 !important;
+
+            color: var(--exp-teal) !important;
+
+            font-size: 12px !important;
+            font-weight: 650 !important;
+            line-height: 1.5 !important;
+            letter-spacing: 0.15px;
+        }
+
+        .experience-page .experience-item h3 {
+            margin: 0 0 9px !important;
+            padding: 0 !important;
+
+            color: var(--exp-navy) !important;
+
+            font-family: inherit !important;
+            font-size: 16px !important;
+            font-weight: 750 !important;
+            line-height: 1.55 !important;
+
+            border: none !important;
+            background: transparent !important;
+        }
+
+        .experience-page .experience-organization {
+            margin: 0 0 6px !important;
+
+            color: var(--exp-burgundy) !important;
+
+            font-size: 12.5px !important;
+            font-weight: 650 !important;
+            line-height: 1.6 !important;
+        }
+
+        .experience-page .experience-location {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+
+            margin: 0 0 11px !important;
+
+            color: var(--exp-muted) !important;
+
+            font-size: 11.5px !important;
+            line-height: 1.6 !important;
+        }
+
+        .experience-page .experience-location i {
+            color: #8a819c;
+            font-size: 10px;
+        }
+
+        /* ==========================================
+           DESCRIPTION
+        ========================================== */
+
+        .experience-page .experience-description {
+            margin: 0 !important;
+            padding: 0 !important;
+
+            color: var(--exp-text) !important;
+
+            font-size: 12.5px !important;
+            font-weight: 400 !important;
+            line-height: 1.85 !important;
+        }
+
+        .experience-page .experience-description strong {
+            color: var(--exp-navy) !important;
+            font-weight: 650 !important;
+        }
+
+        /* ==========================================
+           RESEARCH AREAS / SKILLS
+        ========================================== */
+
+        .experience-page .experience-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+
+            margin-top: 15px;
+        }
+
+        .experience-page .experience-skill {
+            display: inline-flex;
+            align-items: center;
+
+            padding: 5px 9px;
+
+            background: var(--exp-pink);
+            color: #66547d;
+
+            border: 1px solid #f0dfeb;
+            border-radius: 4px;
+
+            font-size: 10px;
+            font-weight: 550;
+            line-height: 1.4;
+        }
+
+        /* ==========================================
+           MOBILE RESPONSIVENESS
+        ========================================== */
+
+        @media (max-width: 900px) {
+
+            .experience-body .profile-sidebar {
+                position: static !important;
+                max-height: none !important;
+                overflow: visible !important;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .experience-page .experience-heading {
+                margin-bottom: 25px;
+            }
+
+            .experience-page .experience-heading h1 {
+                font-size: 25px !important;
+            }
+
+            .experience-page .experience-list {
+                gap: 14px;
+            }
+
+            .experience-page .experience-item {
+                grid-template-columns: 15px minmax(0, 1fr);
+                gap: 11px;
+
+                padding: 19px 16px !important;
+            }
+
+            .experience-page .experience-dot {
+                width: 13px;
+                height: 13px;
+            }
+
+            .experience-page .experience-dot::after {
+                inset: 3px;
+            }
+
+            .experience-page .experience-item h3 {
+                font-size: 14px !important;
+            }
+
+            .experience-page .experience-description {
+                font-size: 12px !important;
+            }
+
+            .experience-page .experience-date {
+                font-size: 11px !important;
+            }
+
+        }
+
+        
+/* ==========================================
+   FIXED LEFT SIDEBAR — DESKTOP
+   SAME AS PUBLICATIONS PAGE
+========================================== */
+
+@media (min-width: 901px) {
+
+    .experience-body .page-container {
+        overflow: visible !important;
+        align-items: start !important;
+    }
+
+    .experience-body .profile-sidebar {
+        position: fixed !important;
+
+        top: 125px !important;
+        left: max(80px, calc((100vw - 1604px) / 2)) !important;
+
+        width: 252px !important;
+        height: auto !important;
+
+        max-height: calc(100vh - 140px) !important;
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+
+        margin: 0 !important;
+        z-index: 100 !important;
+    }
+
+    .experience-body .main-content {
+        min-width: 0 !important;
+    }
+}
+
+/* ==========================================
+   MOBILE — NORMAL SIDEBAR
+========================================== */
+
+@media (max-width: 900px) {
+
+    .experience-body .profile-sidebar {
+        position: static !important;
+
+        top: auto !important;
+        left: auto !important;
+
+        width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+
+        overflow: visible !important;
+    }
+}
+
+
+
+    </style>
+
+</head>
+
+
+<body class="experience-body">
+
+    <!-- ==========================================
+         NAVIGATION
+    =========================================== -->
+
+    <header class="top-header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="site-name">
+                Shiti Chowdhury
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-controls="nav-links"
+                aria-expanded="false">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+            <div class="nav-links" id="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="publications.html">
+                    Publications
+                </a>
+
+                <a href="experience.html"
+                    class="active"
+                    aria-current="page">
+                    Experience
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="awards.html">
+                    Achievements
+                </a>
+
+                <a
+                    href="https://drive.google.com/file/d/1kw05QwyxLwFirVmzz2g6GJeNXBdNhBDl/view"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    CV
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ==========================================
+         MAIN PAGE CONTAINER
+    =========================================== -->
+
+    <main class="page-container">
+
+        <!-- ======================================
+             LEFT PROFILE SIDEBAR
+        ======================================= -->
+
+        <aside class="profile-sidebar">
+
+            <div class="profile-image-wrapper">
+
+                <img
+                    src="assets/images/photo.jpg"
+                    alt="Shiti Chowdhury"
+                    class="profile-image">
+
+            </div>
+
+            <h2 class="profile-name">
+                Shiti Chowdhury
+            </h2>
+
+            <p class="pronouns">
+                she/her
+            </p>
+
+            <p class="profile-role">
+                Prospective M.Sc. / Ph.D. Applicant
+            </p>
+
+            <p class="profile-email">
+                shitichowdhury21@gmail.com
+            </p>
+
+            <div class="profile-links">
+
+                <div class="profile-link">
+
+                    <i class="fa-solid fa-location-dot icon-location"></i>
+
+                    <span>
+                        Chattogram, Bangladesh
+                    </span>
+
+                </div>
+
+                <div class="profile-link">
+
+                    <i class="fa-solid fa-graduation-cap icon-university"></i>
+
+                    <span>
+                        B.Sc., CUET
+                    </span>
+
+                </div>
+
+                <a
+                    href="mailto:shitichowdhury21@gmail.com"
+                    class="profile-link">
+
+                    <i class="fa-solid fa-envelope icon-email"></i>
+
+                    <span>
+                        Email
+                    </span>
+
+                </a>
+
+                <a
+                    href="https://www.researchgate.net/profile/Shiti-Chowdhury"
+                    class="profile-link"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <i class="fa-brands fa-researchgate icon-researchgate"></i>
+
+                    <span>
+                        ResearchGate
+                    </span>
+
+                </a>
+
+                <a
+                    href="https://scholar.google.com/citations?user=ePL4eSoAAAAJ&amp;hl=en&amp;oi=ao"
+                    class="profile-link"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <i class="fa-brands fa-google-scholar icon-scholar"></i>
+
+                    <span>
+                        Google Scholar
+                    </span>
+
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/shiti-chowdhury/"
+                    class="profile-link"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <i class="fa-brands fa-linkedin icon-linkedin"></i>
+
+                    <span>
+                        LinkedIn
+                    </span>
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- ======================================
+             EXPERIENCE CONTENT
+        ======================================= -->
+
+        <section class="main-content experience-page">
+
+            <!-- ==================================
+                 HEADING
+            =================================== -->
+
+            <div class="experience-heading">
+
+                <h1>
+                    Professional Experience
+                </h1>
+
+            </div>
+
+
+            <!-- ==================================
+                 EXPERIENCE CARDS
+            =================================== -->
+
+            <div class="experience-list">
+
+
+                <!-- ==============================
+                     EXPERIENCE 1
+                =============================== -->
+
+                <article class="experience-item">
+
+                    <div class="experience-timeline">
+    <i class="fa-solid fa-chalkboard-user experience-icon"></i>
+</div>
+
+                    <div class="experience-details">
+
+                        <span class="experience-date">
+                            July 2025 – February 2026
+                        </span>
+
+                        <h3>
+                            Instructor – Shared Task Hunt 2026
+                        </h3>
+
+                        <p class="experience-organization">
+                            Andromeda Space &amp; Robotics Research
+                            Organization (ASRRO)
+                        </p>
+
+                        <p class="experience-location">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            Chattogram, Bangladesh · Hybrid
+
+                        </p>
+
+                        <p class="experience-description">
+
+                            Conducted classes and mentoring sessions
+                            on <strong>Machine Learning</strong>,
+                            <strong>Deep Learning</strong>,
+                            <strong>Natural Language Processing</strong>,
+                            and <strong>Computer Vision</strong>.
+                            Guided students in coding, research
+                            methodology, and academic paper writing,
+                            contributing to multiple papers accepted
+                            at <strong>international workshops and conferences</strong> 
+
+                        </p>
+
+                        <div class="experience-skills">
+
+                            <span class="experience-skill">
+                                Machine Learning
+                            </span>
+
+                            <span class="experience-skill">
+                                Deep Learning
+                            </span>
+
+                            <span class="experience-skill">
+                                NLP
+                            </span>
+
+                            <span class="experience-skill">
+                                Computer Vision
+                            </span>
+
+                            <span class="experience-skill">
+                                Research Mentoring
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ==============================
+                     EXPERIENCE 2
+                =============================== -->
+
+                <article class="experience-item">
+
+                   <div class="experience-timeline">
+    <i class="fa-solid fa-laptop-code experience-icon"></i>
+</div>
+
+
+                    <div class="experience-details">
+
+                        <span class="experience-date">
+                            June 2025 – December 2025
+                        </span>
+
+                        <h3>
+                            Computer Vision Analysis Intern
+                        </h3>
+
+                        <p class="experience-organization">
+                            Brain Machine AI
+                        </p>
+
+                        <p class="experience-location">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            Chattogram, Bangladesh · Hybrid
+
+                        </p>
+
+                        <p class="experience-description">
+
+                            Worked on CCTV-based computer vision
+                            systems for monitoring and attendance
+                            analysis. Trained and evaluated
+                            multimodal deep learning models using
+                            image, video, and audio data, with
+                            <strong>Python</strong> and
+                            <strong>OpenCV</strong> for
+                            computer vision development.
+
+                        </p>
+
+                        <div class="experience-skills">
+
+                            <span class="experience-skill">
+                                Computer Vision
+                            </span>
+
+                            <span class="experience-skill">
+                                Deep Learning
+                            </span>
+
+                            <span class="experience-skill">
+                                Multimodal AI
+                            </span>
+
+                            <span class="experience-skill">
+                                Python
+                            </span>
+
+                            <span class="experience-skill">
+                                OpenCV
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ==============================
+                     EXPERIENCE 3
+                =============================== -->
+
+                <!-- <article class="experience-item">
+
+                    <div class="experience-timeline">
+    <i class="fa-solid fa-users experience-icon"></i>
+</div>
+
+                    <div class="experience-details">
+
+                        <span class="experience-date">
+                            September 2025 – December 2025
+                        </span>
+
+                        <h3>
+                            Campus Ambassador
+                        </h3>
+
+                        <p class="experience-organization">
+                            OmniStart 1.0 – National Startup Competition
+                        </p>
+
+                        <p class="experience-location">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            Kaizen SUST · Remote
+
+                        </p>
+
+                        <p class="experience-description">
+
+                            Selected as a Campus Ambassador
+                            representing <strong>CUET</strong>
+                            in a national startup competition.
+                            Coordinated campus-level promotional
+                            activities and communication between
+                            CUET students and the organizing team.
+
+                        </p>
+
+                        <div class="experience-skills">
+
+                            <span class="experience-skill">
+                                Leadership
+                            </span>
+
+                            <span class="experience-skill">
+                                Communication
+                            </span>
+
+                            <span class="experience-skill">
+                                Event Coordination
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article> -->
+
+                
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <p class="footer-copyright">
+                &copy; 2026 Shiti Chowdhury · All rights reserved
+            </p>
+
+            <div class="footer-social-links">
+
+                <a href="mailto:shitichowdhury21@gmail.com"
+                   class="footer-social footer-email"
+                   aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+                <a href="https://scholar.google.com/citations?user=ePL4eSoAAAAJ&amp;hl=en&amp;oi=ao"
+                   class="footer-social footer-scholar"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Google Scholar">
+                    <i class="fa-brands fa-google-scholar"></i>
+                </a>
+
+                <a href="https://github.com/SHITICHY21"
+                   class="footer-social footer-github"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/shiti-chowdhury/"
+                   class="footer-social footer-linkedin"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://www.researchgate.net/profile/Shiti-Chowdhury"
+                   class="footer-social footer-researchgate"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="ResearchGate">
+                    <i class="fa-brands fa-researchgate"></i>
+                </a>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ==========================================
+         EXISTING JAVASCRIPT
+    =========================================== -->
+
+    <script src="js/script.js"></script>
+
+    <!-- ==========================================
+         MOBILE NAVIGATION FALLBACK
+    =========================================== -->
+
+    <script>
+
+        (function () {
+
+            const toggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+
+            if (!toggle || !navLinks) return;
+
+            /*
+             * Uses the existing portfolio menu behavior.
+             * This fallback handles navigation if the
+             * shared script does not already do so.
+             */
+
+            if (!toggle.hasAttribute("data-menu-initialized")) {
+
+                toggle.addEventListener("click", function () {
+
+                    const isOpen = navLinks.classList.toggle("open");
+
+                    toggle.setAttribute(
+                        "aria-expanded",
+                        String(isOpen)
+                    );
+
+                });
+
+            }
+
+        })();
+
+    </script>
+
+</body>
+</html>

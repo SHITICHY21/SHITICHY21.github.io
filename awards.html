@@ -1,0 +1,1258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Achievements | Shiti Chowdhury</title>
+
+    <meta
+      name="description"
+      content="Awards, recognitions, professional development, certificates, and academic activities of Shiti Chowdhury."
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <style>
+      /* ==========================================
+   ACHIEVEMENTS PAGE
+========================================== */
+
+      .awards-body {
+        --navy: #25354b;
+        --teal: #2c6267;
+        --burgundy: #783d59;
+        --gold: #a2804e;
+        --text: #465365;
+        --muted: #738092;
+        --border: #e1e5ec;
+        --card: #fbfaf7;
+      }
+
+      .awards-body,
+      .awards-body * {
+        box-sizing: border-box;
+      }
+
+      .awards-body .page-container {
+        overflow: visible !important;
+      }
+
+      .awards-body .main-content.awards-page {
+        min-width: 0 !important;
+        width: 100%;
+      }
+
+      /* ==========================================
+   PAGE HEADING
+========================================== */
+
+      .awards-page .awards-page-title {
+        margin: 0 0 8px !important;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 30px !important;
+        font-weight: 700;
+        color: var(--navy) !important;
+        line-height: 1.35;
+      }
+
+      .awards-page .awards-page-intro {
+        margin: 0 0 32px !important;
+        color: var(--text);
+        font-size: 13px;
+        line-height: 1.7;
+      }
+
+      /* ==========================================
+   SECTION HEADINGS
+========================================== */
+
+      .awards-page .achievement-section {
+        margin-bottom: 42px;
+      }
+
+      .awards-page .achievement-section-heading {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 0 0 19px !important;
+        padding-bottom: 12px;
+        border-bottom: 1px solid var(--border);
+        color: var(--navy) !important;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 21px !important;
+        font-weight: 700;
+        line-height: 1.4;
+      }
+
+      .awards-page .achievement-section-heading::before {
+        content: "";
+        width: 4px;
+        height: 25px;
+        flex: 0 0 4px;
+        border-radius: 4px;
+        background: linear-gradient(to bottom, var(--teal), var(--gold));
+      }
+
+      /* ==========================================
+   TWO CARDS PER ROW
+========================================== */
+
+      .awards-page .achievement-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        align-items: stretch;
+      }
+
+      /* ==========================================
+   CARD DESIGN
+========================================== */
+
+      .awards-page .achievement-card {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        height: 100%;
+        overflow: hidden;
+
+        background: var(--card);
+        border: 1px solid #dce3e1;
+        border-radius: 5px;
+
+        transition:
+          border-color 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .awards-page .achievement-card:hover {
+        border-color: #b6c9c8;
+        box-shadow: 0 5px 17px rgba(37, 53, 75, 0.06);
+      }
+
+      /* ==========================================
+   CERTIFICATE IMAGES
+========================================== */
+
+      .awards-page .achievement-image-box {
+        position: relative;
+        width: 100%;
+        height: 220px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden;
+        background: #ffffff;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .awards-page .achievement-image {
+        display: block;
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        object-fit: contain !important;
+        object-position: center !important;
+      }
+
+      .awards-page .achievement-fallback {
+        display: none;
+        position: absolute;
+        inset: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+        text-align: center;
+        background: linear-gradient(135deg, #f8edf4, #f5f0f8, #eef4f8);
+      }
+
+      .awards-page .achievement-fallback i {
+        font-size: 34px;
+        color: var(--teal);
+      }
+
+      .awards-page .achievement-fallback span {
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--burgundy);
+      }
+
+      .awards-page .achievement-image-box.image-missing .achievement-image {
+        display: none !important;
+      }
+
+      .awards-page .achievement-image-box.image-missing .achievement-fallback {
+        display: flex;
+      }
+
+      /* ==========================================
+   COMPACT CONTENT
+========================================== */
+
+      .awards-page .achievement-content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 15px 18px 17px !important;
+      }
+
+      .awards-page .achievement-date {
+        display: block;
+        margin: 0 0 6px !important;
+        color: var(--teal);
+        font-size: 10.5px;
+        font-weight: 700;
+        letter-spacing: 1.1px;
+        text-transform: uppercase;
+        line-height: 1.4;
+      }
+
+      .awards-page .achievement-title {
+        margin: 0 0 5px !important;
+        color: var(--navy) !important;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 18px !important;
+        font-weight: 700;
+        line-height: 1.35 !important;
+      }
+
+      .awards-page .achievement-organization {
+        margin: 0 0 7px !important;
+        color: var(--burgundy) !important;
+        font-size: 12.5px !important;
+        font-weight: 700;
+        line-height: 1.45 !important;
+      }
+
+      .awards-page .achievement-description {
+        margin: 0 0 12px !important;
+        color: var(--text) !important;
+        font-size: 12.5px !important;
+        line-height: 1.65 !important;
+      }
+
+      .awards-page .achievement-link-wrap {
+        margin-top: auto;
+        padding-top: 2px;
+      }
+
+      .awards-page .achievement-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        color: var(--teal) !important;
+        font-size: 12px;
+        font-weight: 700;
+        text-decoration: none !important;
+      }
+
+      .awards-page .achievement-link:hover {
+        color: var(--burgundy) !important;
+        text-decoration: underline !important;
+      }
+
+      .awards-page .achievement-link i {
+        font-size: 10px;
+      }
+
+      /* ==========================================
+   FIXED SIDEBAR
+========================================== */
+
+      @media (min-width: 901px) {
+        .awards-body .page-container {
+          overflow: visible !important;
+          align-items: start !important;
+        }
+
+        .awards-body .profile-sidebar {
+          position: fixed !important;
+          top: 125px !important;
+          left: max(80px, calc((100vw - 1604px) / 2)) !important;
+          width: 252px !important;
+          height: auto !important;
+          max-height: calc(100vh - 140px) !important;
+          overflow-x: hidden !important;
+          overflow-y: auto !important;
+          margin: 0 !important;
+          z-index: 100 !important;
+        }
+      }
+
+      /* ==========================================
+   RESPONSIVE
+========================================== */
+
+      @media (max-width: 1100px) and (min-width: 901px) {
+        .awards-page .achievement-grid {
+          gap: 14px;
+        }
+
+        .awards-page .achievement-content {
+          padding: 14px !important;
+        }
+
+        .awards-page .achievement-title {
+          font-size: 17px !important;
+        }
+      }
+
+      @media (max-width: 900px) {
+        .awards-body .profile-sidebar {
+          position: static !important;
+          top: auto !important;
+          left: auto !important;
+          width: 100% !important;
+          height: auto !important;
+          max-height: none !important;
+          overflow: visible !important;
+        }
+      }
+
+      @media (max-width: 650px) {
+        .awards-page .achievement-grid {
+          grid-template-columns: 1fr;
+          gap: 17px;
+        }
+
+        .awards-page .awards-page-title {
+          font-size: 26px !important;
+        }
+
+        .awards-page .achievement-section-heading {
+          font-size: 19px !important;
+        }
+
+        .awards-page .achievement-image-box {
+          height: 205px !important;
+        }
+      }
+
+      /* ==========================================
+   FOOTER
+========================================== */
+
+      .awards-body .site-footer {
+        width: 100%;
+        margin-top: 15px !important;
+        padding: 13px 0 !important;
+        background: transparent !important;
+        border: none !important;
+        border-top: 1px solid var(--border) !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+      }
+
+      .awards-body .footer-container {
+        width: 100%;
+        max-width: 1604px;
+        margin: 0 auto;
+        padding: 0 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .awards-body .footer-copyright {
+        margin: 0 !important;
+        font-size: 12px;
+        color: var(--text);
+      }
+
+      .awards-body .footer-social-links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .awards-body .footer-social {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 21px;
+        text-decoration: none !important;
+      }
+
+      .awards-body .footer-email {
+        color: #ea4335 !important;
+      }
+      .awards-body .footer-scholar {
+        color: #4285f4 !important;
+      }
+      .awards-body .footer-github {
+        color: #181717 !important;
+      }
+      .awards-body .footer-linkedin {
+        color: #0a66c2 !important;
+      }
+      .awards-body .footer-researchgate {
+        color: #00ccbb !important;
+      }
+
+      @media (max-width: 650px) {
+        .awards-body .footer-container {
+          flex-direction: column;
+          gap: 12px;
+          padding: 0 16px;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="awards-body">
+    <!-- NAVBAR -->
+
+    <header class="top-header">
+      <nav class="navbar">
+        <a href="index.html" class="site-name"> Shiti Chowdhury </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-controls="nav-links"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="publications.html">Publications</a>
+          <a href="experience.html">Experience</a>
+          <a href="projects.html">Projects</a>
+          <a href="services.html">Services</a>
+          <a href="awards.html" class="active" aria-current="page"
+            >Achievements</a
+          >
+          <a
+            href="https://drive.google.com/file/d/1kw05QwyxLwFirVmzz2g6GJeNXBdNhBDl/view"
+            target="_blank"
+            rel="noopener noreferrer"
+            >CV</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-container">
+      <!-- LEFT SIDEBAR -->
+
+      <aside class="profile-sidebar">
+        <div class="profile-image-wrapper">
+          <img
+            src="assets/images/photo.jpg"
+            alt="Shiti Chowdhury"
+            class="profile-image"
+          />
+        </div>
+
+        <h2 class="profile-name">Shiti Chowdhury</h2>
+        <p class="pronouns">she/her</p>
+
+        <p class="profile-role">Prospective M.Sc. / Ph.D. Applicant</p>
+
+        <p class="profile-email">shitichowdhury21@gmail.com</p>
+
+        <div class="profile-links">
+          <div class="profile-link">
+            <i class="fa-solid fa-location-dot icon-location"></i>
+            <span>Chattogram, Bangladesh</span>
+          </div>
+
+          <div class="profile-link">
+            <i class="fa-solid fa-graduation-cap icon-university"></i>
+            <span>B.Sc., CUET</span>
+          </div>
+
+          <a class="profile-link" href="mailto:shitichowdhury21@gmail.com">
+            <i class="fa-solid fa-envelope icon-email"></i>
+            <span>Email</span>
+          </a>
+
+          <a
+            class="profile-link"
+            href="https://www.researchgate.net/profile/Shiti-Chowdhury"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-researchgate icon-researchgate"></i>
+            <span>ResearchGate</span>
+          </a>
+
+          <a
+            class="profile-link"
+            href="https://scholar.google.com/citations?user=ePL4eSoAAAAJ&amp;hl=en&amp;oi=ao"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-google-scholar icon-scholar"></i>
+            <span>Google Scholar</span>
+          </a>
+
+          <a
+            class="profile-link"
+            href="https://www.linkedin.com/in/shiti-chowdhury/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-linkedin icon-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+
+      <div class="main-content awards-page">
+        <h1 class="awards-page-title">Achievements</h1>
+
+        <p class="awards-page-intro">
+          Academic awards, professional recognition, leadership development,
+          certifications, and scholarly activities.
+        </p>
+
+        <!-- ======================================
+     SECTION 1 — AWARDS & RECOGNITION
+     NEWEST TO OLDEST
+====================================== -->
+
+        <section class="achievement-section">
+          <h2 class="achievement-section-heading">Awards &amp; Recognition</h2>
+
+          <div class="achievement-grid">
+            <!-- INSTRUCTIONAL EXCELLENCE — 2026 -->
+
+            <article class="achievement-card">
+              <div class="achievement-image-box">
+                <img
+                  src="assets/images/assro_instructor.jpg"
+                  alt="Instructional Excellence Certificate"
+                  class="achievement-image"
+                  onerror="this.parentElement.classList.add('image-missing')"
+                />
+                <div class="achievement-fallback">
+                  <i class="fa-solid fa-award"></i>
+                  <span>Instructional Excellence</span>
+                </div>
+              </div>
+
+              <div class="achievement-content">
+                <span class="achievement-date">FEB 2026</span>
+
+                <h3 class="achievement-title">
+                  Instructional Excellence Award
+                </h3>
+
+                <p class="achievement-organization">
+                  Andromeda Space &amp; Robotics Research Organization (ASRRO)
+                </p>
+
+                <p class="achievement-description">
+                  Recognized for instructional contributions during
+                  <strong>Shared Task Hunt 2026</strong>, conducted from July
+                  2025 to February 2026.
+                </p>
+
+                <div class="achievement-link-wrap">
+                  <a
+                    class="achievement-link"
+                    href="assets/images/assro_instructor.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Certificate
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- GUA — 2026 -->
+
+            <article class="achievement-card">
+              <div class="achievement-image-box">
+                <img
+                  src="assets/images/gua_certificate.jpg"
+                  alt="Global Undergraduate Awards Certificate"
+                  class="achievement-image"
+                  onerror="this.parentElement.classList.add('image-missing')"
+                />
+                <div class="achievement-fallback">
+                  <i class="fa-solid fa-globe"></i>
+                  <span>Global Undergraduate Awards</span>
+                </div>
+              </div>
+
+              <div class="achievement-content">
+                <span class="achievement-date">2026 CYCLE</span>
+
+                <h3 class="achievement-title">Campus Ambassador Recognition</h3>
+
+                <p class="achievement-organization">
+                  The Global Undergraduate Awards (GUA)
+                </p>
+
+                <p class="achievement-description">
+                  Recognized for serving as a Campus Ambassador during the 2026
+                  cycle, representing Chittagong University of Engineering &amp;
+                  Technology.
+                </p>
+
+                <div class="achievement-link-wrap">
+                  <a
+                    class="achievement-link"
+                    href="assets/images/gua_certificate.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Certificate
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- OMNISTART — 2025 -->
+
+            
+
+            <!-- ML CONTEST — JUL 2025 -->
+
+            <article class="achievement-card">
+              <div class="achievement-image-box">
+                <img
+                  src="assets/images/ml_contest.jpg"
+                  alt="Intra CUET ML Contest Certificate"
+                  class="achievement-image"
+                  onerror="this.parentElement.classList.add('image-missing')"
+                />
+                <div class="achievement-fallback">
+                  <i class="fa-solid fa-trophy"></i>
+                  <span>Machine Learning Competition</span>
+                </div>
+              </div>
+
+              <div class="achievement-content">
+                <span class="achievement-date">JUL 2025</span>
+
+                <h3 class="achievement-title">Intra CUET ML Contest 2025</h3>
+
+                <p class="achievement-organization">
+                  IEEE Computer Society CUET Student Branch Chapter
+                </p>
+
+                <p class="achievement-description">
+                  Secured <strong>2nd Runner-Up</strong> position in the Intra
+                  CUET Machine Learning Competition 2025.
+                </p>
+
+                <div class="achievement-link-wrap">
+                  <a
+                    class="achievement-link"
+                    href="assets/images/ml_contest.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Certificate
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="achievement-card">
+              <div class="achievement-image-box">
+                <img
+                  src="assets/images/sust_omnistart.jpg"
+                  alt="OmniStart Campus Ambassador Certificate"
+                  class="achievement-image"
+                  onerror="this.parentElement.classList.add('image-missing')"
+                />
+                <div class="achievement-fallback">
+                  <i class="fa-solid fa-star"></i>
+                  <span>OmniStart 1.0</span>
+                </div>
+              </div>
+
+              <div class="achievement-content">
+                <span class="achievement-date"> SEP 2025</span>
+
+                <h3 class="achievement-title">
+                  Campus Ambassador — OmniStart 1.0
+                </h3>
+
+                <p class="achievement-organization">Kaizen SUST</p>
+
+                <p class="achievement-description">
+                  Received a Certificate of Appreciation for contributing as a
+                  Campus Ambassador to
+                  <strong>OmniStart 1.0 — National Startup Competition</strong>.
+                </p>
+
+                <div class="achievement-link-wrap">
+                  <a
+                    class="achievement-link"
+                    href="assets/images/sust_omnistart.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Certificate
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            
+          </div>
+        </section>
+
+        
+
+        <!-- ======================================
+     SECTION 2 — LEADERSHIP & DEVELOPMENT
+====================================== -->
+
+        <section class="achievement-section">
+          <h2 class="achievement-section-heading">
+            Leadership &amp; Professional Development
+          </h2>
+
+          <div class="achievement-grid">
+            <!-- ASPIRE — SEP 2026 -->
+
+            <article class="achievement-card">
+              <div class="achievement-image-box">
+                <img
+                  src="assets/images/aspire_certificate.jpg"
+                  alt="Aspire Leaders Program Certificate"
+                  class="achievement-image"
+                  onerror="this.parentElement.classList.add('image-missing')"
+                />
+                <div class="achievement-fallback">
+                  <i class="fa-solid fa-users"></i>
+                  <span>Aspire Leaders Program</span>
+                </div>
+              </div>
+
+              <div class="achievement-content">
+                <span class="achievement-date">SEP 2026</span>
+
+                <h3 class="achievement-title">2026 Aspire Leaders Program</h3>
+
+                <p class="achievement-organization">Aspire Institute</p>
+
+                <p class="achievement-description">
+                  Completed a <strong>40-hour leadership program</strong>
+                  focused on communication, critical thinking, leadership, and
+                  global community engagement.
+                </p>
+
+                <div class="achievement-link-wrap">
+                  <a
+                    class="achievement-link"
+                    href="https://engage.aspireleaders.org/share/certificate/did:rcw:512d82fd-e39b-47c5-9547-13d18236f39f"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Certificate
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- CV INTERNSHIP — DEC 2025 -->
+
+            <article class="achievement-card">
+              <div class="achievement-image-box">
+                <img
+                  src="assets/images/cv_internship.jpg"
+                  alt="Computer Vision Internship Certificate"
+                  class="achievement-image"
+                  onerror="this.parentElement.classList.add('image-missing')"
+                />
+                <div class="achievement-fallback">
+                  <i class="fa-solid fa-eye"></i>
+                  <span>Computer Vision Internship</span>
+                </div>
+              </div>
+
+              <div class="achievement-content">
+                <span class="achievement-date">DEC 2025</span>
+
+                <h3 class="achievement-title">
+                  Computer Vision Analysis Internship
+                </h3>
+
+                <p class="achievement-organization">Brain Machine AI</p>
+
+                <p class="achievement-description">
+                  Completed an internship involving computer vision, image and
+                  video analysis, and AI-based monitoring systems.
+                </p>
+
+                <div class="achievement-link-wrap">
+                  <a
+                    class="achievement-link"
+                    href="assets/images/cv_internship.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Certificate
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- EDGE — FEB 2025 -->
+
+            <article class="achievement-card">
+              <div class="achievement-image-box">
+                <img
+                  src="assets/images/edge_django.jpg"
+                  alt="EDGE Python Django Certificate"
+                  class="achievement-image"
+                  onerror="this.parentElement.classList.add('image-missing')"
+                />
+                <div class="achievement-fallback">
+                  <i class="fa-brands fa-python"></i>
+                  <span>Python &amp; Django Training</span>
+                </div>
+              </div>
+
+              <div class="achievement-content">
+                <span class="achievement-date">FEB 2025</span>
+
+                <h3 class="achievement-title">EDGE — Python &amp; Django</h3>
+
+                <p class="achievement-organization">
+                  ICT Division · Department of CSE, CUET
+                </p>
+
+                <p class="achievement-description">
+                  Completed <strong>80 hours</strong> of hands-on training in
+                  Python, Django, REST APIs, and web application development.
+                </p>
+
+                <div class="achievement-link-wrap">
+                  <a
+                    class="achievement-link"
+                    href="https://training.edge.gov.bd/storage/certificate/student-training/certificate_67f21a74bda698.59027501.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Certificate
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ======================================
+     SECTION 3 — COURSES & WORKSHOPS
+     NEWEST TO OLDEST
+====================================== -->
+
+        <section class="achievement-section">
+          <h2 class="achievement-section-heading">
+            Courses, Certifications &amp; Workshops
+          </h2>
+
+          <div class="achievement-grid">
+            <!-- ICAI — SEP 2025 -->
+
+            <article class="achievement-card">
+              <div class="achievement-image-box">
+                <img
+                  src="assets/images/icai.jpg"
+                  alt="ICAI 2025 Certificate"
+                  class="achievement-image"
+                  onerror="this.parentElement.classList.add('image-missing')"
+                />
+                <div class="achievement-fallback">
+                  <i class="fa-solid fa-brain"></i>
+                  <span>ICAI 2025</span>
+                </div>
+              </div>
+
+              <div class="achievement-content">
+                <span class="achievement-date">SEP 2025</span>
+
+                <h3 class="achievement-title">
+                  International Congress on Artificial Intelligence (ICAI 2025)
+                </h3>
+
+                <p class="achievement-organization">
+                  IEEE Systems Council BUBT SBC
+                </p>
+
+                <p class="achievement-description">
+                  Participated in the two-day International Congress on
+                  Artificial Intelligence, held on
+                  <strong>6–7 September 2025</strong>.
+                </p>
+
+                <div class="achievement-link-wrap">
+                  <a
+                    class="achievement-link"
+                    href="assets/images/icai.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Certificate
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+             <!-- 3MT — 2025 -->
+
+            <article class="achievement-card">
+              <div class="achievement-image-box">
+                <img
+                  src="assets/images/3mt_ieee.jpg"
+                  alt="Three Minute Thesis Certificate"
+                  class="achievement-image"
+                  onerror="this.parentElement.classList.add('image-missing')"
+                />
+                <div class="achievement-fallback">
+                  <i class="fa-solid fa-microphone"></i>
+                  <span>Three Minute Thesis</span>
+                </div>
+              </div>
+
+              <div class="achievement-content">
+                <span class="achievement-date">JULY 2025</span>
+
+                <h3 class="achievement-title">
+                  3 Minute Thesis (3MT) — SciBlitz 1.0
+                </h3>
+
+                <p class="achievement-organization">IEEE CUET Student Branch</p>
+
+                <p class="achievement-description">
+                  Participated in an academic event focused on communicating
+                  research clearly and concisely.
+                </p>
+
+                <div class="achievement-link-wrap">
+                  <a
+                    class="achievement-link"
+                    href="assets/images/3mt_ieee.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Certificate
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- HP RESUME — MAR 2025 -->
+
+            <article class="achievement-card">
+              <div class="achievement-image-box">
+                <img
+                  src="assets/images/hp_resume.jpg"
+                  alt="HP LIFE Resume Writing Certificate"
+                  class="achievement-image"
+                  onerror="this.parentElement.classList.add('image-missing')"
+                />
+                <div class="achievement-fallback">
+                  <i class="fa-solid fa-file-lines"></i>
+                  <span>HP LIFE Certificate</span>
+                </div>
+              </div>
+
+              <div class="achievement-content">
+                <span class="achievement-date">MAR 2025</span>
+
+                <h3 class="achievement-title">
+                  Resume Writing and Job Interviewing
+                </h3>
+
+                <p class="achievement-organization">HP LIFE · HP Foundation</p>
+
+                <p class="achievement-description">
+                  Completed training in resume and cover-letter writing,
+                  interview preparation, and professional self-assessment.
+                </p>
+
+                <div class="achievement-link-wrap">
+                  <a
+                    class="achievement-link"
+                    href="assets/images/hp_resume.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Certificate
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            
+
+            <!-- HP AI — DATE NOT CONFIRMED -->
+
+            <article class="achievement-card">
+              <div class="achievement-image-box">
+                <img
+                  src="assets/images/hp_ai.jpg"
+                  alt="AI for Beginners Certificate"
+                  class="achievement-image"
+                  onerror="this.parentElement.classList.add('image-missing')"
+                />
+                <div class="achievement-fallback">
+                  <i class="fa-solid fa-robot"></i>
+                  <span>AI for Beginners</span>
+                </div>
+              </div>
+
+              <div class="achievement-content">
+                <span class="achievement-date">MAR 2025</span>
+
+                <h3 class="achievement-title">AI for Beginners</h3>
+
+                <p class="achievement-organization">HP LIFE</p>
+
+                <p class="achievement-description">
+                  Completed a foundational course covering artificial
+                  intelligence concepts, responsible AI, and practical
+                  applications.
+                </p>
+
+                <div class="achievement-link-wrap">
+                  <a
+                    class="achievement-link"
+                    href="assets/images/hp_ai.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Certificate
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- GIT & GITHUB — MAR 2025 -->
+
+            <article class="achievement-card">
+              <div class="achievement-image-box">
+                <img
+                  src="assets/images/udemy_git.jpg"
+                  alt="Git and GitHub Certificate"
+                  class="achievement-image"
+                  onerror="this.parentElement.classList.add('image-missing')"
+                />
+                <div class="achievement-fallback">
+                  <i class="fa-brands fa-github"></i>
+                  <span>Git &amp; GitHub</span>
+                </div>
+              </div>
+
+              <div class="achievement-content">
+                <span class="achievement-date">MAR 2025</span>
+
+                <h3 class="achievement-title">Master Git and GitHub</h3>
+
+                <p class="achievement-organization">Udemy</p>
+
+                <p class="achievement-description">
+                  Completed training in Git version control, branching,
+                  repository management, and collaborative development.
+                </p>
+
+                <div class="achievement-link-wrap">
+                  <a
+                    class="achievement-link"
+                    href="https://www.udemy.com/certificate/UC-13f07df7-4ff5-4c21-ba13-ca5a127c3290/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Certificate
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- SOFTWARE WORKSHOP — FEB 2025 -->
+
+            <article class="achievement-card">
+              <div class="achievement-image-box">
+                <img
+                  src="assets/images/software_workshop.jpg"
+                  alt="Software Engineering Workshop Certificate"
+                  class="achievement-image"
+                  onerror="this.parentElement.classList.add('image-missing')"
+                />
+                <div class="achievement-fallback">
+                  <i class="fa-solid fa-laptop-code"></i>
+                  <span>Software Engineering Workshop</span>
+                </div>
+              </div>
+
+              <div class="achievement-content">
+                <span class="achievement-date">FEB 2025</span>
+
+                <h3 class="achievement-title">
+                  Roadmap to Successful Products: Software Engineering Best
+                  Practices
+                </h3>
+
+                <p class="achievement-organization">
+                  Department of CSE, CUET · Kolpolok Ltd
+                </p>
+
+                <p class="achievement-description">
+                  Participated in a workshop covering software engineering
+                  practices, development workflows, and product development.
+                </p>
+
+                <div class="achievement-link-wrap">
+                  <a
+                    class="achievement-link"
+                    href="assets/images/software_workshop.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Certificate
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+           
+
+            <!-- UNDP — OLDEST, LAST -->
+
+            <article class="achievement-card">
+              <div class="achievement-image-box">
+                <img
+                  src="assets/images/undp_youth.jpg"
+                  alt="Youth Campaign for Earthquake Preparedness Certificate"
+                  class="achievement-image"
+                  onerror="this.parentElement.classList.add('image-missing')"
+                />
+                <div class="achievement-fallback">
+                  <i class="fa-solid fa-earth-asia"></i>
+                  <span>Earthquake Preparedness</span>
+                </div>
+              </div>
+
+              <div class="achievement-content">
+                <span class="achievement-date">EARLIER PARTICIPATION</span>
+
+                <h3 class="achievement-title">
+                  Youth Campaign for Earthquake Preparedness
+                </h3>
+
+                <p class="achievement-organization">
+                  United Nations Development Programme (UNDP)
+                </p>
+
+                <p class="achievement-description">
+                  Received a Certificate of Appreciation for participating in a
+                  youth campaign promoting earthquake preparedness and disaster
+                  awareness.
+                </p>
+
+                <div class="achievement-link-wrap">
+                  <a
+                    class="achievement-link"
+                    href="assets/images/undp_youth.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Certificate
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p class="footer-copyright">
+          &copy; 2026 Shiti Chowdhury · All rights reserved
+        </p>
+
+        <div class="footer-social-links">
+          <a
+            href="mailto:shitichowdhury21@gmail.com"
+            class="footer-social footer-email"
+            aria-label="Email"
+          >
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+
+          <a
+            href="https://scholar.google.com/citations?user=ePL4eSoAAAAJ&amp;hl=en&amp;oi=ao"
+            class="footer-social footer-scholar"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Google Scholar"
+          >
+            <i class="fa-brands fa-google-scholar"></i>
+          </a>
+
+          <a
+            href="https://github.com/SHITICHY21"
+            class="footer-social footer-github"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/shiti-chowdhury/"
+            class="footer-social footer-linkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a
+            href="https://www.researchgate.net/profile/Shiti-Chowdhury"
+            class="footer-social footer-researchgate"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="ResearchGate"
+          >
+            <i class="fa-brands fa-researchgate"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

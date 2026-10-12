@@ -1,0 +1,890 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services & Activities | Shiti Chowdhury</title>
+
+    <meta name="description"
+          content="Professional service, peer reviewing, leadership and volunteer activities of Shiti Chowdhury.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* ==========================================
+           SHITI CHOWDHURY — ORIGINAL COLOR PALETTE
+        ========================================== */
+
+        .services-body {
+            --navy: #25354b;
+            --teal: #2c6267;
+            --burgundy: #783d59;
+            --gold: #a2804e;
+            --body-text: #465365;
+            --muted: #738092;
+            --border-color: #e1e5ec;
+
+            --soft-pink: #faedf5;
+            --soft-lavender: #f5f0f8;
+            --soft-blue: #eef4f8;
+        }
+
+        /* ==========================================
+           PAGE LAYOUT AND STICKY SIDEBAR
+        ========================================== */
+
+        .services-body .page-container {
+            overflow: visible !important;
+        }
+
+        .services-body .main-content.services-page {
+            min-width: 0;
+            width: 100%;
+        }
+
+        @media (min-width: 901px) {
+            .services-body .profile-sidebar {
+                position: sticky !important;
+                top: 88px !important;
+                align-self: flex-start !important;
+                height: fit-content !important;
+                max-height: calc(100vh - 105px) !important;
+                overflow-y: auto !important;
+                z-index: 5;
+            }
+        }
+
+        /* ==========================================
+           PAGE HEADER
+        ========================================== */
+
+        .services-page .services-page-title {
+            margin: 0 0 10px !important;
+            color: var(--navy) !important;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 29px !important;
+            font-weight: 700 !important;
+            line-height: 1.35 !important;
+        }
+
+        .services-page .services-page-intro {
+            margin: 0 0 35px !important;
+            color: var(--body-text) !important;
+            font-size: 13px !important;
+            line-height: 1.85 !important;
+        }
+
+        /* ==========================================
+           SECTION HEADINGS
+        ========================================== */
+
+        .services-page .services-section {
+            margin-bottom: 43px;
+        }
+
+        .services-page .services-section-heading {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 0 0 19px !important;
+            padding: 0 0 12px !important;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--navy) !important;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 21px !important;
+            font-weight: 700 !important;
+            line-height: 1.4 !important;
+        }
+
+        .services-page .services-section-heading::before {
+            content: "";
+            width: 4px;
+            height: 25px;
+            flex-shrink: 0;
+            border-radius: 4px;
+            background: linear-gradient(
+                180deg,
+                var(--teal) 0%,
+                var(--gold) 100%
+            );
+        }
+
+        /* ==========================================
+           COMMON SERVICE CARDS
+        ========================================== */
+
+        .services-page .services-card {
+            margin-bottom: 15px;
+            padding: 21px 23px;
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 9px;
+            box-shadow: 0 2px 9px rgba(37, 53, 75, 0.035);
+        }
+
+        .services-page .services-card-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 13px;
+            margin-bottom: 12px;
+        }
+
+        .services-page .services-card-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 37px;
+            height: 37px;
+            flex-shrink: 0;
+            border-radius: 9px;
+            background: var(--soft-lavender);
+            color: var(--teal);
+            font-size: 15px;
+        }
+
+        .services-page .services-card-title {
+            margin: 0 0 4px !important;
+            color: var(--navy) !important;
+            font-family: inherit !important;
+            font-size: 15px !important;
+            font-weight: 700 !important;
+            line-height: 1.5 !important;
+        }
+
+        .services-page .services-card-date {
+            margin: 0 !important;
+            color: var(--teal) !important;
+            font-size: 11.5px !important;
+            font-weight: 600 !important;
+        }
+
+        .services-page .services-organization {
+            margin: 0 0 10px !important;
+            color: var(--burgundy) !important;
+            font-size: 12.5px !important;
+            font-weight: 650 !important;
+            line-height: 1.7 !important;
+        }
+
+        .services-page .services-description {
+            margin: 0 !important;
+            color: var(--body-text) !important;
+            font-size: 12.5px !important;
+            line-height: 1.85 !important;
+        }
+
+        /* ==========================================
+           PROFESSIONAL SERVICE — REVIEWER LIST
+        ========================================== */
+
+        .services-page .reviewer-summary {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            margin: 16px 0 22px;
+            padding: 14px 16px;
+            border: 1px solid #e9dce8;
+            border-radius: 7px;
+            background: linear-gradient(
+                110deg,
+                #faedf5 0%,
+                #f6f1fa 55%,
+                #eef4f8 100%
+            );
+        }
+
+        .services-page .reviewer-summary-number {
+            color: var(--burgundy);
+            font-size: 26px;
+            font-weight: 750;
+            line-height: 1;
+        }
+
+        .services-page .reviewer-summary-text {
+            color: var(--body-text);
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        .services-page .reviewer-entries {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .services-page .reviewer-entry {
+            display: flex;
+            align-items: baseline;
+            flex-wrap: wrap;
+            column-gap: 14px;
+            row-gap: 3px;
+        }
+
+        .services-page .reviewer-entry strong {
+            color: var(--navy) !important;
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1.65;
+        }
+
+        .services-page .reviewer-entry span {
+            color: #5979eb !important;
+            font-size: 12.5px;
+            font-weight: 650;
+            line-height: 1.6;
+            white-space: nowrap;
+        }
+
+        /* ==========================================
+           SKILL / ACTIVITY TAGS
+        ========================================== */
+
+        .services-page .services-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            margin-top: 15px;
+        }
+
+        .services-page .services-tags span {
+            display: inline-block;
+            padding: 5px 10px;
+            border: 1px solid #e8e0ed;
+            border-radius: 5px;
+            background: var(--soft-lavender);
+            color: #625a7d;
+            font-size: 10.5px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        /* ==========================================
+           CERTIFICATE LINK
+        ========================================== */
+
+        .services-page .services-certificate-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 15px;
+            padding: 8px 12px;
+            border: 1px solid #e8d7e3;
+            border-radius: 5px;
+            background: var(--soft-pink);
+            color: var(--burgundy) !important;
+            font-size: 11.5px;
+            font-weight: 600;
+            text-decoration: none !important;
+            transition: background 0.2s ease;
+        }
+
+        .services-page .services-certificate-link:hover {
+            background: #f3e2ee;
+        }
+
+        /* ==========================================
+           MOBILE RESPONSIVE
+        ========================================== */
+
+        @media (max-width: 900px) {
+            .services-body .profile-sidebar {
+                position: static !important;
+                max-height: none !important;
+                overflow: visible !important;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .services-page .services-page-title {
+                font-size: 26px !important;
+            }
+
+            .services-page .services-section-heading {
+                font-size: 19px !important;
+            }
+
+            .services-page .services-card {
+                padding: 17px;
+            }
+
+            .services-page .reviewer-entries {
+                gap: 12px;
+            }
+
+            .services-page .reviewer-entry strong {
+                font-size: 13px;
+            }
+
+            .services-page .reviewer-entry span {
+                font-size: 9px;
+                color: #2c6267 !important;
+            }
+        }
+
+        
+/* ==========================================
+   SERVICES — FIXED LEFT SIDEBAR
+   SAME AS PUBLICATIONS PAGE
+========================================== */
+
+@media (min-width: 901px) {
+
+    .services-body .page-container {
+        overflow: visible !important;
+        align-items: start !important;
+    }
+
+    .services-body .profile-sidebar {
+        position: fixed !important;
+
+        top: 125px !important;
+        left: max(80px, calc((100vw - 1604px) / 2)) !important;
+
+        width: 250px !important;
+        height: auto !important;
+
+        max-height: calc(100vh - 140px) !important;
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+
+        margin: 0 !important;
+        z-index: 100 !important;
+    }
+
+    .services-body .main-content {
+        min-width: 0 !important;
+    }
+}
+
+/* ==========================================
+   MOBILE — NORMAL SIDEBAR
+========================================== */
+
+@media (max-width: 900px) {
+
+    .services-body .profile-sidebar {
+        position: static !important;
+
+        top: auto !important;
+        left: auto !important;
+
+        width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+
+        overflow: visible !important;
+    }
+}
+
+
+        
+    </style>
+</head>
+
+<body class="services-body">
+
+    <!-- ==========================================
+         NAVIGATION BAR
+    ========================================== -->
+
+    <header class="top-header">
+        <nav class="navbar">
+
+            <a href="index.html" class="site-name">
+                Shiti Chowdhury
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-controls="nav-links"
+                aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="publications.html">Publications</a>
+                <a href="experience.html">Experience</a>
+                <a href="projects.html">Projects</a>
+
+                <a href="services.html"
+                   class="active"
+                   aria-current="page">
+                    Services
+                </a>
+
+                <a href="awards.html">Achievements</a>
+
+                <a href="https://drive.google.com/file/d/1kw05QwyxLwFirVmzz2g6GJeNXBdNhBDl/view"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    CV
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- ==========================================
+         MAIN PAGE LAYOUT
+    ========================================== -->
+
+    <main class="page-container">
+
+        <!-- ======================================
+             LEFT PROFILE SIDEBAR
+        ====================================== -->
+
+        <aside class="profile-sidebar">
+
+            <div class="profile-image-wrapper">
+                <img
+                    src="assets/images/photo.jpg"
+                    alt="Shiti Chowdhury"
+                    class="profile-image">
+            </div>
+
+            <h2 class="profile-name">
+                Shiti Chowdhury
+            </h2>
+
+            <p class="pronouns">
+                she/her
+            </p>
+
+            <p class="profile-role">
+                Prospective M.Sc. / Ph.D. Applicant
+            </p>
+
+            <p class="profile-email">
+                shitichowdhury21@gmail.com
+            </p>
+
+            <div class="profile-links">
+
+                <div class="profile-link">
+                    <i class="fa-solid fa-location-dot icon-location"></i>
+                    <span>Chattogram, Bangladesh</span>
+                </div>
+
+                <div class="profile-link">
+                    <i class="fa-solid fa-graduation-cap icon-university"></i>
+                    <span>B.Sc., CUET</span>
+                </div>
+
+                <a href="mailto:shitichowdhury21@gmail.com"
+                   class="profile-link">
+                    <i class="fa-solid fa-envelope icon-email"></i>
+                    <span>Email</span>
+                </a>
+
+                <a href="https://www.researchgate.net/profile/Shiti-Chowdhury"
+                   class="profile-link"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="fa-brands fa-researchgate icon-researchgate"></i>
+                    <span>ResearchGate</span>
+                </a>
+
+                <a href="https://scholar.google.com/citations?user=ePL4eSoAAAAJ&amp;hl=en&amp;oi=ao"
+                   class="profile-link"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="fa-brands fa-google-scholar icon-scholar"></i>
+                    <span>Google Scholar</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/shiti-chowdhury/"
+                   class="profile-link"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin icon-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- ======================================
+             MAIN SERVICES CONTENT
+        ====================================== -->
+
+        <div class="main-content services-page">
+
+            <h1 class="services-page-title">
+                Services &amp; Activities
+            </h1>
+
+            <p class="services-pag">
+                Academic peer reviewing, research community
+                engagement, leadership, and volunteer activities.
+            </p>
+
+
+            <!-- ==================================
+                 SECTION 1 — PROFESSIONAL SERVICE
+            ================================== -->
+
+            <section class="services-section">
+
+                <h2 class="services-section-heading">
+                    Professional Service
+                </h2>
+
+                <article class="services-card">
+
+                    <div class="services-card-header">
+
+                        <div class="services-card-icon">
+                            <i class="fa-solid fa-file-circle-check"></i>
+                        </div>
+
+                        <div>
+                            <h3 class="services-card-title">
+                                Peer Reviewer
+                            </h3>
+                        </div>
+
+                    </div>
+
+                   
+
+                    <div class="reviewer-summary">
+
+                        <!-- <span class="reviewer-summary-number">
+                            6
+                        </span>
+                        <span class="reviewer-summary-text">
+                            Research papers reviewed across
+                            four academic venues
+                        </span> -->
+
+                         <p class="services-description">
+                        Reviewed research submissions for
+                        international conferences, workshops,
+                        and shared-task venues.
+                    </p>
+
+                    </div>
+
+                    <div class="reviewer-entries">
+
+                        <div class="reviewer-entry">
+                            <strong>
+                                Reviewer, WiML @ NeurIPS 2026
+                            </strong>
+                            <span>2 papers</span>
+                        </div>
+
+                        <div class="reviewer-entry">
+                            <strong>
+                                Reviewer, ACL 2026 — DravidianLangTech Workshop
+                            </strong>
+                            <span>2 papers</span>
+                        </div>
+
+                        <div class="reviewer-entry">
+                            <strong>
+                                Reviewer, AACL-IJCNLP 2026 — MMLow Workshop
+                            </strong>
+                            <span>1 paper</span>
+                        </div>
+
+                        <div class="reviewer-entry">
+                            <strong>
+                                Reviewer, ACM ICMI 2026 — CC-MMD Grand Challenge
+                            </strong>
+                            <span>1 paper</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- ==================================
+                 SECTION 2 — LEADERSHIP
+            ================================== -->
+
+            <section class="services-section">
+
+                <h2 class="services-section-heading">
+                    Leadership &amp; Campus Engagement
+                </h2>
+
+                <!-- GUA CAMPUS AMBASSADOR -->
+
+                <article class="services-card">
+
+                    <div class="services-card-header">
+
+                        <div class="services-card-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+
+                        <div>
+                            <h3 class="services-card-title">
+                                Campus Ambassador
+                            </h3>
+
+                            <p class="services-card-date">
+                                2026 Cycle
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <p class="services-organization">
+                        The Global Undergraduate Awards
+                    </p>
+
+                    <p class="services-description">
+                        Served as a Campus Ambassador for
+                        The Global Undergraduate Awards,
+                        representing Chittagong University
+                        of Engineering &amp; Technology (CUET),
+                        Bangladesh. Received a Certificate
+                        of Recognition for this role.
+                    </p>
+
+                    <div class="services-tags">
+                        <span>Leadership</span>
+                        <span>Campus Representation</span>
+                        <span>Academic Engagement</span>
+                    </div>
+
+                </article>
+
+
+                <!-- OMNISTART CAMPUS AMBASSADOR -->
+
+                <article class="services-card">
+
+                    <div class="services-card-header">
+
+                        <div class="services-card-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+
+                        <div>
+                            <h3 class="services-card-title">
+                                Campus Ambassador
+                            </h3>
+
+                            <p class="services-card-date">
+                                September 2025 – December 2025
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <p class="services-organization">
+                        OmniStart 1.0 — National Startup Competition
+                        | Kaizen SUST
+                    </p>
+
+                    <p class="services-description">
+                        Selected as a Campus Ambassador representing
+                        CUET in a national startup competition.
+                        Coordinated campus-level promotional
+                        activities and communication between
+                        CUET students and the organizing team.
+                    </p>
+
+                    <div class="services-tags">
+                        <span>Leadership</span>
+                        <span>Communication</span>
+                        <span>Event Coordination</span>
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- ==================================
+                 SECTION 3 — VOLUNTEER EXPERIENCE
+            ================================== -->
+
+            <section class="services-section">
+
+                <h2 class="services-section-heading">
+                    Volunteer Experience
+                </h2>
+
+                <!-- BANGLADESH PHYSICS OLYMPIAD -->
+
+                <article class="services-card">
+
+                    <div class="services-card-header">
+
+                        <div class="services-card-icon">
+                            <i class="fa-solid fa-atom"></i>
+                        </div>
+
+                        <div>
+                            <h3 class="services-card-title">
+                                Volunteer — Bangladesh Physics Olympiad
+                            </h3>
+
+                            <p class="services-card-date">
+                                2023–2024
+                            </p>
+                        </div>
+
+                    </div>
+
+                    
+<p class="services-description">
+    Contributed as a volunteer team member in examination
+    evaluation and mentoring activities during the Bangladesh
+    Physics Olympiad. Assisted with competition coordination
+    and supported the smooth execution of event activities.
+</p>
+
+
+                    <div class="services-tags">
+                        <span>Volunteering</span>
+                        <span>Exam Evaluation</span>
+                        <span>Mentoring</span>
+                    </div>
+
+                </article>
+
+
+                <!-- CUET CSE FEST -->
+
+                <article class="services-card">
+
+                    <div class="services-card-header">
+
+                        <div class="services-card-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <div>
+                            <h3 class="services-card-title">
+                                Volunteer — CUET CSE Fest 2022
+                            </h3>
+
+                            <p class="services-card-date">
+                                December 2022
+                            </p>
+                        </div>
+
+                    </div>
+
+
+<p class="services-description">
+    Assisted in organizing festival events and supported
+    technical workshops during CUET CSE Fest 2022 in
+    Chattogram, Bangladesh. Helped coordinate event activities
+    and provided logistical support to ensure the smooth
+    execution of the festival.
+</p>
+
+
+                    <div class="services-tags">
+                        <span>Event Organization</span>
+                        <span>Technical Workshops</span>
+                        <span>Volunteering</span>
+                    </div>
+
+                </article>
+
+            </section>
+
+            
+
+        </div>
+
+
+
+    </main>
+
+    <!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <p class="footer-copyright">
+            &copy; 2026 Shiti Chowdhury · All rights reserved
+        </p>
+
+        <div class="footer-social-links">
+
+            <!-- Email -->
+            <a href="mailto:shitichowdhury21@gmail.com"
+               class="footer-social footer-email"
+               aria-label="Email"
+               title="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <!-- Google Scholar -->
+            <a href="https://scholar.google.com/citations?user=ePL4eSoAAAAJ&amp;hl=en&amp;oi=ao"
+               class="footer-social footer-scholar"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Google Scholar"
+               title="Google Scholar">
+                <i class="fa-brands fa-google-scholar"></i>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/SHITICHY21"
+               class="footer-social footer-github"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="GitHub"
+               title="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/shiti-chowdhury/"
+               class="footer-social footer-linkedin"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="LinkedIn"
+               title="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <!-- ResearchGate -->
+            <a href="https://www.researchgate.net/profile/Shiti-Chowdhury"
+               class="footer-social footer-researchgate"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="ResearchGate"
+               title="ResearchGate">
+                <i class="fa-brands fa-researchgate"></i>
+            </a>
+
+        </div>
+
+    </div>
+</footer>
+
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,2119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Publications | Shiti Chowdhury</title>
+
+    <meta name="description"
+        content="Research publications and research instructor contributions of Shiti Chowdhury.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* =========================================
+           PUBLICATIONS — PORTFOLIO COLOR PALETTE
+        ========================================= */
+
+        .publications-body {
+            --pub-navy: #25354b;
+            --pub-burgundy: #783d59;
+            --pub-teal: #2c6267;
+            --pub-blue: #5266a5;
+            --pub-text: #465365;
+            --pub-muted: #738092;
+            --pub-border: #e1e5ec;
+            --pub-lavender: #f5f0f8;
+        }
+
+        .publications-body .page-container {
+            overflow: visible !important;
+        }
+
+        .publications-body .main-content.publications-page {
+            min-width: 0;
+            width: 100%;
+        }
+
+        /* =========================================
+           PAGE INTRODUCTION
+        ========================================= */
+
+        .publications-page .publications-intro {
+            margin: 0 0 34px !important;
+            padding: 0 !important;
+        }
+
+        .publications-page .publications-intro h1 {
+            margin: 0 0 12px !important;
+            color: var(--pub-navy) !important;
+            font-size: 29px !important;
+            font-weight: 700 !important;
+            line-height: 1.3 !important;
+        }
+
+        .publications-page .publications-intro p {
+            margin: 0 0 8px !important;
+            color: var(--pub-text) !important;
+            font-size: 13.5px !important;
+            line-height: 1.8 !important;
+        }
+
+        .publications-page .last-updated {
+            margin-top: 11px !important;
+            color: var(--pub-muted) !important;
+            font-size: 11.5px !important;
+        }
+
+        /* =========================================
+           PUBLICATION SECTIONS
+        ========================================= */
+
+        .publications-page .publications-section {
+            display: block !important;
+            margin: 0 0 55px !important;
+            padding: 0 !important;
+        }
+
+        .publications-page .publication-section-title {
+            display: flex !important;
+            align-items: center !important;
+            gap: 13px !important;
+            margin: 0 0 24px !important;
+            padding: 0 0 15px !important;
+            border-bottom: 2px solid var(--pub-border) !important;
+        }
+
+        .publications-page .publication-section-title::before {
+            content: "";
+            width: 4px;
+            height: 29px;
+            flex: 0 0 4px;
+            border-radius: 3px;
+            background: var(--pub-burgundy);
+        }
+
+        .publications-page .publication-section-title h2 {
+            margin: 0 !important;
+            padding: 0 !important;
+            border: none !important;
+            background: transparent !important;
+            color: var(--pub-navy) !important;
+            font-family: inherit !important;
+            font-size: 22px !important;
+            font-weight: 750 !important;
+            line-height: 1.35 !important;
+        }
+
+        .publications-page .instructor-section {
+            margin-top: 60px !important;
+        }
+
+        .publications-page .instructor-section
+        .publication-section-title::before {
+            background: var(--pub-teal);
+        }
+
+        .publications-page .publication-section-description {
+            margin: -9px 0 24px !important;
+            color: var(--pub-muted) !important;
+            font-size: 12.5px !important;
+            line-height: 1.75 !important;
+        }
+
+        /* =========================================
+           YEAR GROUPS
+        ========================================= */
+
+        .publications-page .publication-year-group {
+            display: block !important;
+            margin: 0 0 34px !important;
+            padding: 0 !important;
+        }
+
+        .publications-page .publication-year-heading {
+            display: block !important;
+            margin: 0 !important;
+            padding: 0 0 12px !important;
+            color: var(--pub-navy) !important;
+            font-family: Georgia, "Times New Roman", serif !important;
+            font-size: 25px !important;
+            font-weight: 700 !important;
+            line-height: 1.3 !important;
+            border: 0 !important;
+            border-bottom: 1px solid var(--pub-border) !important;
+            background: transparent !important;
+        }
+
+        .publications-page .publication-list {
+            display: block !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        /* =========================================
+           PUBLICATION ITEMS
+        ========================================= */
+
+        .publications-page .publication-item {
+            display: grid !important;
+            grid-template-columns: 28px minmax(0, 1fr) !important;
+            align-items: start !important;
+            gap: 18px !important;
+            width: 100% !important;
+            height: auto !important;
+            min-height: 0 !important;
+            margin: 0 !important;
+            padding: 23px 0 !important;
+            background: transparent !important;
+            border: 0 !important;
+            border-bottom: 1px solid var(--pub-border) !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            transform: none !important;
+        }
+
+        .publications-page .publication-item:hover {
+            background: transparent !important;
+            box-shadow: none !important;
+            transform: none !important;
+        }
+
+        .publications-page .publication-number {
+            display: block !important;
+            padding-top: 5px !important;
+            margin: 0 !important;
+            color: var(--pub-muted) !important;
+            font-size: 13px !important;
+            font-weight: 700 !important;
+        }
+
+        .publications-page .publication-content {
+            display: block !important;
+            min-width: 0 !important;
+            width: 100% !important;
+            height: auto !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        /* =========================================
+           CONFERENCE BADGE
+        ========================================= */
+
+        .publications-page .publication-badge {
+            display: inline-flex !important;
+            align-items: center !important;
+            width: auto !important;
+            margin: 0 0 11px !important;
+            padding: 6px 11px !important;
+            color: var(--pub-teal) !important;
+            background: #e5f1f1 !important;
+            border: none !important;
+            border-radius: 4px !important;
+            font-size: 10.5px !important;
+            font-weight: 750 !important;
+            line-height: 1.4 !important;
+            letter-spacing: 0.35px !important;
+        }
+
+        .publications-page
+        .publication-item[data-section="instructor"]
+        .publication-badge {
+            color: var(--pub-burgundy) !important;
+            background: #f6eaf1 !important;
+        }
+
+        /* =========================================
+           TITLE AND VENUE
+        ========================================= */
+
+        .publications-page .publication-content h3 {
+            display: block !important;
+            margin: 0 0 8px !important;
+            padding: 0 !important;
+            color: var(--pub-navy) !important;
+            font-family: inherit !important;
+            font-size: 15.5px !important;
+            font-weight: 700 !important;
+            line-height: 1.55 !important;
+            letter-spacing: 0 !important;
+        }
+
+        .publications-page .publication-venue {
+            display: block !important;
+            margin: 0 0 11px !important;
+            padding: 0 !important;
+            color: var(--pub-muted) !important;
+            font-size: 12px !important;
+            font-weight: 400 !important;
+            font-style: italic !important;
+            line-height: 1.7 !important;
+        }
+
+        /* =========================================
+           RESEARCH AREA TAGS
+        ========================================= */
+
+        .publications-page .publication-areas {
+            display: flex !important;
+            align-items: center !important;
+            flex-wrap: wrap !important;
+            gap: 6px !important;
+            margin: 0 0 13px !important;
+            padding: 0 !important;
+        }
+
+        .publications-page .research-tag {
+            display: inline-flex !important;
+            align-items: center !important;
+            margin: 0 !important;
+            padding: 4px 9px !important;
+            color: #626188 !important;
+            background: var(--pub-lavender) !important;
+            border: 1px solid #e8e1f0 !important;
+            border-radius: 4px !important;
+            font-size: 10px !important;
+            font-weight: 550 !important;
+            line-height: 1.4 !important;
+        }
+
+        /* =========================================
+           PUBLICATION BUTTONS
+        ========================================= */
+
+        .publications-page .publication-links {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            justify-content: flex-start !important;
+            flex-wrap: wrap !important;
+            gap: 7px !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        .publications-page .publication-links .pub-btn {
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            gap: 6px !important;
+            width: auto !important;
+            min-height: 30px !important;
+            height: auto !important;
+            margin: 0 !important;
+            padding: 6px 11px !important;
+            color: var(--pub-text) !important;
+            background: #f8fafc !important;
+            border: 1px solid #dce3eb !important;
+            border-radius: 4px !important;
+            font-family: inherit !important;
+            font-size: 11px !important;
+            font-weight: 600 !important;
+            line-height: 1.4 !important;
+            text-decoration: none !important;
+            white-space: nowrap !important;
+            cursor: pointer;
+            box-shadow: none !important;
+        }
+
+        .publications-page .publication-links .pub-btn:hover {
+            color: var(--pub-burgundy) !important;
+            background: #f8eff4 !important;
+            border-color: #e4cbd8 !important;
+        }
+
+        .publications-page .publication-links .scholar-btn {
+            color: #ffffff !important;
+            background: var(--pub-blue) !important;
+            border-color: var(--pub-blue) !important;
+        }
+
+        .publications-page .publication-links .scholar-btn:hover {
+            color: #ffffff !important;
+            background: #40538d !important;
+            border-color: #40538d !important;
+        }
+
+        .publications-page .publication-links .pub-btn i {
+            font-size: 11px !important;
+        }
+
+        /* =========================================
+           ABSTRACT / BIBTEX MODAL
+        ========================================= */
+
+        .publication-modal {
+            position: fixed;
+            inset: 0;
+            z-index: 99999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 18px;
+            background: rgba(24, 32, 51, 0.58);
+            backdrop-filter: blur(3px);
+        }
+
+        .publication-modal[hidden] {
+            display: none !important;
+        }
+
+        .publication-modal-dialog {
+            width: 100%;
+            max-width: 700px;
+            max-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            background: #ffffff;
+            border: 1px solid #e1e5ec;
+            border-radius: 9px;
+            box-shadow: 0 18px 60px rgba(0, 0, 0, 0.22);
+        }
+
+        .publication-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            padding: 20px 23px;
+            border-bottom: 1px solid #e1e5ec;
+        }
+
+        .publication-modal-header h2 {
+            margin: 0 !important;
+            color: #25354b !important;
+            font-size: 19px !important;
+            font-weight: 700 !important;
+        }
+
+        .publication-modal-close {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            color: #738092;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 19px;
+        }
+
+        .publication-modal-close:hover {
+            color: #783d59;
+        }
+
+        .publication-modal-body {
+            min-height: 0;
+            padding: 22px 23px;
+            overflow: auto;
+        }
+
+        .publication-modal-body .abstract-paper-title {
+            margin: 0 0 15px;
+            color: #25354b;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 1.65;
+        }
+
+        .publication-modal-body .abstract-text {
+            margin: 0;
+            color: #465365;
+            font-size: 13.5px;
+            line-height: 1.9;
+            text-align: justify;
+        }
+
+        .publication-modal-body .modal-note {
+            margin: 13px 0 0;
+            color: #738092;
+            font-size: 11.5px;
+            line-height: 1.6;
+        }
+
+        .publication-modal-body pre {
+            margin: 0;
+            padding: 17px;
+            background: #f5f6f9;
+            border-radius: 5px;
+            color: #263346;
+            font-family: Consolas, "Courier New", monospace;
+            font-size: 12px;
+            line-height: 1.8;
+            white-space: pre;
+            overflow-x: auto;
+        }
+
+        .publication-modal-footer {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 9px;
+            padding: 15px 23px 20px;
+            border-top: 1px solid #e1e5ec;
+        }
+
+        .publication-modal-action {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            min-height: 35px;
+            padding: 8px 13px;
+            color: #783d59;
+            background: #ffffff;
+            border: 1px solid #d9b9cb;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .publication-modal-action.primary {
+            color: #ffffff;
+            background: #783d59;
+            border-color: #783d59;
+        }
+
+        .publication-modal-action:hover {
+            opacity: 0.88;
+        }
+
+        /* =========================================
+           FIXED SIDEBAR — DESKTOP
+        ========================================= */
+
+        @media (min-width: 901px) {
+
+            .publications-body .page-container {
+                overflow: visible !important;
+                align-items: start !important;
+            }
+
+            .publications-body .profile-sidebar {
+                position: fixed !important;
+                top: 125px !important;
+                left: max(80px, calc((100vw - 1604px) / 2)) !important;
+                width: 252px !important;
+                height: auto !important;
+                max-height: calc(100vh - 140px) !important;
+                overflow-x: hidden !important;
+                overflow-y: auto !important;
+                margin: 0 !important;
+                z-index: 100 !important;
+            }
+
+            .publications-body .main-content {
+                min-width: 0 !important;
+            }
+        }
+
+        /* =========================================
+           RESPONSIVE
+        ========================================= */
+
+        @media (max-width: 900px) {
+
+            .publications-body .profile-sidebar {
+                position: static !important;
+                top: auto !important;
+                left: auto !important;
+                width: 100% !important;
+                height: auto !important;
+                max-height: none !important;
+                overflow: visible !important;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .publications-page .publication-section-title h2 {
+                font-size: 19px !important;
+            }
+
+            .publications-page .publication-year-heading {
+                font-size: 23px !important;
+            }
+
+            .publications-page .publication-item {
+                grid-template-columns: 23px minmax(0, 1fr) !important;
+                gap: 10px !important;
+                padding: 19px 0 !important;
+            }
+
+            .publications-page .publication-content h3 {
+                font-size: 14px !important;
+            }
+
+            .publications-page .publication-venue {
+                font-size: 11.5px !important;
+            }
+
+            .publications-page .publication-links .pub-btn {
+                font-size: 10px !important;
+                padding: 5px 8px !important;
+            }
+
+            .publication-modal-header,
+            .publication-modal-body,
+            .publication-modal-footer {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body class="publications-body">
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================= -->
+
+    <header class="top-header">
+        <nav class="navbar">
+
+            <a href="index.html" class="site-name">
+                Shiti Chowdhury
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-controls="nav-links"
+                aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="publications.html"
+                    class="active"
+                    aria-current="page">
+                    Publications
+                </a>
+
+                <a href="experience.html">Experience</a>
+                <a href="projects.html">Projects</a>
+                <a href="services.html">Services</a>
+                <a href="awards.html">Achievements</a>
+
+                <a
+                    href="https://drive.google.com/file/d/1kw05QwyxLwFirVmzz2g6GJeNXBdNhBDl/view"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    CV
+                </a>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- =========================================
+         MAIN PAGE
+    ========================================= -->
+
+    <main class="page-container">
+
+        <!-- PROFILE SIDEBAR -->
+
+        <aside class="profile-sidebar">
+
+            <div class="profile-image-wrapper">
+                <img
+                    src="assets/images/photo.jpg"
+                    alt="Shiti Chowdhury"
+                    class="profile-image">
+            </div>
+
+            <h2 class="profile-name">Shiti Chowdhury</h2>
+
+            <p class="pronouns">she/her</p>
+
+            <p class="profile-role">
+                Prospective M.Sc. / Ph.D. Applicant
+            </p>
+
+            <p class="profile-email">
+                shitichowdhury21@gmail.com
+            </p>
+
+            <div class="profile-links">
+
+                <div class="profile-link">
+                    <i class="fa-solid fa-location-dot icon-location"></i>
+                    <span>Chattogram, Bangladesh</span>
+                </div>
+
+                <div class="profile-link">
+                    <i class="fa-solid fa-graduation-cap icon-university"></i>
+                    <span>B.Sc., CUET</span>
+                </div>
+
+                <a class="profile-link"
+                    href="mailto:shitichowdhury21@gmail.com">
+                    <i class="fa-solid fa-envelope icon-email"></i>
+                    <span>Email</span>
+                </a>
+
+                <a class="profile-link"
+                    href="https://www.researchgate.net/profile/Shiti-Chowdhury"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-researchgate icon-researchgate"></i>
+                    <span>ResearchGate</span>
+                </a>
+
+                <a class="profile-link"
+                    href="https://scholar.google.com/citations?user=ePL4eSoAAAAJ&amp;hl=en&amp;oi=ao"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-google-scholar icon-scholar"></i>
+                    <span>Google Scholar</span>
+                </a>
+
+                <a class="profile-link"
+                    href="https://www.linkedin.com/in/shiti-chowdhury/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin icon-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+
+            </div>
+
+        </aside>
+
+        <!-- RIGHT CONTENT -->
+
+        <div class="main-content publications-page">
+
+            <section class="publications-intro">
+
+                <h1>Publications</h1>
+
+                <p>
+                    My research contributions span machine learning,
+                    deep learning, natural language processing,
+                    computer vision, multimodal learning,
+                    and trustworthy artificial intelligence.
+                </p>
+
+                <p class="last-updated">
+                    Last updated October 2026
+                </p>
+
+            </section>
+
+            <!-- RESEARCH PUBLICATIONS -->
+
+            <section class="publications-section">
+
+                <div class="publication-section-title">
+                    <h2>Research Publications</h2>
+                </div>
+
+                <div id="research-publications"></div>
+
+            </section>
+
+            <!-- RESEARCH INSTRUCTOR PUBLICATIONS -->
+
+            <section class="publications-section instructor-section">
+
+                <div class="publication-section-title">
+                    <h2>Research Instructor Publications</h2>
+                </div>
+
+                <p class="publication-section-description">
+                    Published research contributions undertaken
+                    in a research instructor capacity.
+                </p>
+
+                <div id="instructor-publications"></div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- =========================================
+         FOOTER
+    ========================================= -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <p class="footer-copyright">
+                &copy; 2026 Shiti Chowdhury · All rights reserved
+            </p>
+
+            <div class="footer-social-links">
+
+                <a href="mailto:shitichowdhury21@gmail.com"
+                    class="footer-social footer-email"
+                    aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+                <a
+                    href="https://scholar.google.com/citations?user=ePL4eSoAAAAJ&amp;hl=en&amp;oi=ao"
+                    class="footer-social footer-scholar"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Google Scholar">
+                    <i class="fa-brands fa-google-scholar"></i>
+                </a>
+
+                <a
+                    href="https://github.com/SHITICHY21"
+                    class="footer-social footer-github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/shiti-chowdhury/"
+                    class="footer-social footer-linkedin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a
+                    href="https://www.researchgate.net/profile/Shiti-Chowdhury"
+                    class="footer-social footer-researchgate"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="ResearchGate">
+                    <i class="fa-brands fa-researchgate"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- =========================================
+         ABSTRACT / BIBTEX MODAL
+    ========================================= -->
+
+    <div class="publication-modal" id="publication-modal" hidden>
+
+        <div
+            class="publication-modal-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="publication-modal-title">
+
+            <div class="publication-modal-header">
+
+                <h2 id="publication-modal-title">Abstract</h2>
+
+                <button
+                    type="button"
+                    class="publication-modal-close"
+                    id="publication-modal-close"
+                    aria-label="Close dialog">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+            </div>
+
+            <div
+                class="publication-modal-body"
+                id="publication-modal-body">
+            </div>
+
+            <div
+                class="publication-modal-footer"
+                id="publication-modal-footer">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- EXISTING PORTFOLIO SCRIPT -->
+
+    <script src="js/script.js"></script>
+
+    <!-- =========================================
+         PUBLICATIONS DATA AND FUNCTIONALITY
+    ========================================= -->
+
+    <script>
+
+        /*
+         * Display titles are shortened for the portfolio.
+         * BibTeX titles preserve the official paper titles
+         * when the complete title is available.
+         */
+
+        const researchPapers = [
+
+            /* =====================================
+               2026 — PAPER 1
+            ===================================== */
+
+            {
+                id: "semeval-code-2026",
+                year: 2026,
+                badge: "SEMEVAL '26",
+
+                title:
+                    "Invariance-Oriented Representation Learning for Robust AI-Generated Code Detection",
+
+                citationTitle:
+                    "CUETLuminaries0227 at SemEval-2026 Task 13: Invariance-Oriented Representation Learning for Robust AI-Generated Code Detection",
+
+                authors: [
+                    "Shiti Chowdhury",
+                    "Adnan Faisal"
+                ],
+
+                venue:
+                    "Proceedings of the 20th International Workshop on Semantic Evaluation, ACL, July 2026",
+
+                booktitle:
+                    "Proceedings of the 20th International Workshop on Semantic Evaluation (SemEval-2026)",
+
+                month: "July",
+
+                areas: [
+                    "Machine Learning",
+                    "Deep Learning",
+                    "AI-Generated Code Detection",
+                    "Trustworthy AI"
+                ],
+
+                paper:
+                    "https://aclanthology.org/2026.semeval-1.81/",
+
+                code:
+                    "https://github.com/SHITICHY21/OOD-AI-Code-Detection-SemEval2026",
+
+                publisher:
+                    "Association for Computational Linguistics",
+
+                pages: "567--572",
+
+                doi: "10.18653/v1/2026.semeval-1.81",
+
+                bibkey: "chowdhury-faisal-2026-invariance",
+
+                abstract:
+                    "Large language models increasingly generate high-quality source code, making reliable detection of machine-generated code essential for maintaining authorship integrity and software accountability. However, detection systems often degrade under distribution shift, particularly across programming languages and application domains. SemEval-2026 Task 13 Subtask A addresses this challenge through a structured OOD evaluation framework that assesses binary machine-generated code detection across unseen languages and application domains. To mitigate this limitation,we propose a robustness-oriented framework that enhances feature-fused UniXcoder representations with supervised contrastive learning, adversarial language-invariant training and uncertainty-aware filtering to promote stable and shift-resilient representations. Our proposed system achieves a macro-F1 of 0.5411 on the official test set and maintains stable performance under severe language–domain shift. Our results demonstrate that domain-level semantic variation is the primary source of degradation under distribution shift, reinforcing the importance of invariance-oriented representations for stable OOD performance"
+            },
+
+            /* =====================================
+               2026 — PAPER 2
+            ===================================== */
+
+            {
+                id: "semeval-reasoning-2026",
+                year: 2026,
+                badge: "SEMEVAL '26",
+
+                title:
+                    "Disentangling Logical Validity from Semantic Plausibility through Canonical Abstraction",
+
+                citationTitle:
+                    "CUETLuminaries at SemEval-2026 Task 11: Disentangling Logical Validity from Semantic Plausibility through Canonical Abstraction",
+
+                authors: [
+                    "Adnan Faisal",
+                    "Shiti Chowdhury"
+                ],
+
+                venue:
+                    "Proceedings of the 20th International Workshop on Semantic Evaluation, ACL, July 2026",
+
+                booktitle:
+                    "Proceedings of the 20th International Workshop on Semantic Evaluation (SemEval-2026)",
+
+                month: "July",
+
+                areas: [
+                    "Natural Language Processing",
+                    "Large Language Models",
+                    "Logical Reasoning",
+                    "Trustworthy AI"
+                ],
+
+                paper:
+                    "https://aclanthology.org/2026.semeval-1.70/",
+
+                code:
+                    "https://github.com/AJFaisal002/Structure-Aware-Syllogistic-Reasoning",
+
+                publisher:
+                    "Association for Computational Linguistics",
+
+                pages: "490--496",
+
+                doi: "10.18653/v1/2026.semeval-1.70",
+
+                bibkey: "faisal-chowdhury-2026-disentangling",
+
+                abstract:
+                    "Determining whether large language models (LLMs) perform genuine formal reasoning or rely on semantic heuristics is a key challenge in NLP. Syllogistic reasoning constitutes a theoretically principled evaluation paradigm where validity is fully determined by quantifier structure, allowing systematic analysis of structural inference disentangled from semantic plausibility.SemEval-2026 Task-11, Subtask-1: Disentangling Content and Formal Reasoning in Language Models, establishes a multilingual benchmark designed to rigorously isolate formal logical validity from semantic plausibility effects. The subtask evaluates English syllogistic reasoning under a binary classification setting using Overall Accuracy (ACC) and Total Content Effect (TCE), where lower TCE indicates stronger resistance to content-induced bias.Our proposed approach combines cross-validation, structured aggregation and bias-aware evaluation to optimize the robustness–performance trade-off. It achieves 93.19% accuracy with a TCE of 3.13, yielding a strong combined score of 38.56 under the official evaluation metric. Condition-wise and multi-run analysis confirms that robustness-focused optimization curbs content-driven errors, reinforcing the necessity of bias-aware training for formal inference"
+            },
+
+            /* =====================================
+               2026 — PAPER 3: TREC DRAGUN
+            ===================================== */
+
+            {
+                id: "trec-2026",
+                year: 2026,
+                badge: "TREC '25",
+
+                title:
+                    "A LangChain-Based Framework for Investigative Question Generation Using Large Language Models",
+
+                citationTitle:
+                    "A LangChain-Based Framework for Investigative Question Generation Using Large Language Models",
+
+                // Complete author list was not supplied.
+                authors: [],
+
+                venue:
+                    "The 34th Text REtrieval Conference (TREC 2025), DRAGUN Track, NIST, March 2026",
+
+                booktitle:
+                    "Proceedings of the Thirty-Fourth Text REtrieval Conference (TREC 2025)",
+
+                month: "March",
+
+                areas: [
+                    "Natural Language Processing",
+                    "Large Language Models",
+                    "Question Generation",
+                    "Information Retrieval"
+                ],
+
+                paper:
+                    "https://trec.nist.gov/pubs/trec34/papers/CUET.dragun.pdf",
+
+                code:
+                    "https://github.com/AJFaisal002/Investigative-Question-Generation-IQG",
+
+                publisher:
+                    "National Institute of Standards and Technology",
+
+                bibkey: "cuet-2025-dragun",
+
+                abstract:
+                    "The increasing prevalence of online misinformation has amplified the demand for automated approaches that assist readers in assessing the credibility of news articles. The TREC 2025 DRAGUN (Detection, Retrieval and Augmented Generation for Understanding News) Track addresses this need through its Question Generation task, which requires systems to formulate ranked investigative questions that support reader-oriented credibility assessment. This study presents a LangChain-based pipeline for generating focused and investigative questions from news articles in the MS MARCO V2.1 segmented corpus. The proposed framework combines structured prompt design, controlled decoding and semantic reranking to improve question relevance, coherence and interpretability. We have evaluated several experimental configurations covering Qwen-based, Mistral-based and reasoning-oriented large language models using the rectified DRAGUN evaluation protocol, where compound questions are removed prior to scoring. Our experimental results indicate that reasoning-aligned models exhibit stronger and more consistent performance under strict evaluation constraints, with the CUET-QwQ-32B configuration achieving the highest average score among our submissions. At the same time, Qwen-14B variants demonstrate stable and competitive performance across diverse topics, showing substantial agreement with assessor-defined evaluation rubrics. Overall, our findings demonstrate that a structured and modular question-generation pipeline can effectively translate large language model reasoning into practical support for reader-centric news trustworthiness assessment, while also providing insights for extending such systems toward multi-source report generation."
+            },
+
+            /* =====================================
+               2025 — PAPER 4
+            ===================================== */
+
+            {
+                id: "ltedi-2025",
+                year: 2025,
+                badge: "LT-EDI '25",
+
+                title:
+                    "A Transformer-Based Fusion Approach to Misogyny Detection in Chinese Memes",
+
+                citationTitle:
+                    "Team_Luminaries_0227@LT-EDI-2025: A Transformer-Based Fusion Approach to Misogyny Detection in Chinese Memes",
+
+                authors: [
+                    "Adnan Faisal",
+                    "Shiti Chowdhury",
+                    "Momtazul Arefin Labib",
+                    "Hasan Murad"
+                ],
+
+                venue:
+                    "Fifth Workshop on Language Technology for Equality, Diversity and Inclusion, September 2025",
+
+                booktitle:
+                    "Proceedings of the 5th Conference on Language, Data and Knowledge: Fifth Workshop on Language Technology for Equality, Diversity, Inclusion",
+
+                month: "September",
+
+                areas: [
+                    "Computer Vision",
+                    "Natural Language Processing",
+                    "Multimodal AI",
+                    "Deep Learning"
+                ],
+
+                paper:
+                    "https://aclanthology.org/2025.ltedi-1.20/",
+
+                code:
+                    "https://github.com/AJFaisal002/Mysogyny-Meme-Detection",
+
+                publisher: "Unior Press",
+
+                pages: "116--120",
+
+                bibkey: "faisal-etal-2025-transformer",
+
+                abstract:
+                    "Memes, originally crafted for humor or cultural commentary, have evolved into powerful tools for spreading harmful content, particularly misogynistic ideologies. These memes sustain damaging gender stereotypes, further entrenching social inequality and encouraging toxic behavior across online platforms. While progress has been made in detecting harmful memes in English, identifying misogynistic content in Chinese remains challenging due to the language’s complexities and cultural subtleties. The multimodal nature of memes, combining text and images, adds to the detection difficulty. In the LT-EDI@LDK 2025 Shared Task on Misogyny Meme Detection, we have focused on analyzing both text and image elements to identify misogynistic content in Chinese memes. For text-based models, we have experimented with Chinese BERT, XLM-RoBERTa and DistilBERT, with Chinese BERT yielding the highest performance, achieving an F1 score of 0.86. In terms of image models, VGG16 outperformed ResNet and ViT, also achieving an F1 score of 0.85. Among all model combinations, the integration of Chinese BERT with VGG16 emerged as the most impactful, delivering superior performance, highlighting the benefit of a multimodal approach. By exploiting these two modalities, our model has effectively captured the subtle details present in memes, improving its ability to accurately detect misogynistic content. This approach has resulted in a macro F1 score of 0.90355, securing 3rd rank in the task."
+            },
+
+            /* =====================================
+               2025 — PAPER 5
+            ===================================== */
+
+            {
+                id: "otcon-2025",
+                year: 2025,
+                badge: "OTCON '25",
+
+                title:
+                    "Think Tank: A Home Appliance and Vehicle Repair Assistance Smartphone Application with Technician Hiring and Repair Schedule Booking Features",
+
+                citationTitle:
+                    "Think Tank: A Home Appliance and Vehicle Repair Assistance Smartphone Application With Technician Hiring and Repair Schedule Booking Features",
+
+                authors: [
+                    "Mahfuzulhoq Chowdhury",
+                    "Adnan Faisal",
+                    "Shiti Chowdhury"
+                ],
+
+                venue:
+                    "4th OPJU International Technology Conference (OTCON 2025), IEEE, July 2025",
+
+                booktitle:
+                    "2025 4th OPJU International Technology Conference (OTCON)",
+
+                month: "July",
+
+                areas: [
+                    "Software Engineering",
+                    "Mobile Applications",
+                    "Information Systems"
+                ],
+
+                paper:
+                    "https://doi.org/10.1109/OTCON65728.2025.11070814",
+
+                code: null,
+
+                publisher: "IEEE",
+
+                doi:
+                    "10.1109/OTCON65728.2025.11070814",
+
+                bibkey: "chowdhury2025thinktank",
+
+                abstract:
+                    "Repairing and maintaining cars and home appliances is crucial since they extend their lives, improve their efficiency, and offer commercial opportunities. In earlier literature works, no automated online assistance system was available to consumers that offered repair shop search, repair schedule booking, and repair company fraud prediction features. There was no online repair assistance application with features for hiring repair technicians, job research, pickup delivery, work order checking, crime reporting, and repair work reminders in previous works. To overcome these restrictions, this article offers a smartphone application for home appliance and car owners that includes features like search for repair shops, scheduling of repairs, hiring technicians, detecting fraud in repair companies, reporting crimes, purchasing repair items, and work remainder. The app’s niftiness and relevancy evaluation results showed that, more than 60% of consumers dispatched highly commendable remarks on the suggested mobile application."
+            },
+
+            /* =====================================
+               2025 — PAPER 6
+            ===================================== */
+
+            {
+                id: "naacl-2025",
+                year: 2025,
+                badge: "NAACL '25",
+
+                title:
+                    "Multimodal Hate Speech Detection in Dravidian Languages",
+
+                citationTitle:
+                    "Team ML_Forge@DravidianLangTech 2025: Multimodal Hate Speech Detection in Dravidian Languages",
+
+                authors: [
+                    "Adnan Faisal",
+                    "Shiti Chowdhury",
+                    "Sajib Bhattacharjee",
+                    "Udoy Das",
+                    "Samia Rahman",
+                    "Momtazul Arefin Labib",
+                    "Hasan Murad"
+                ],
+
+                venue:
+                    "Fifth Workshop on Speech, Vision, and Language Technologies for Dravidian Languages, NAACL 2025, May 2025",
+
+                booktitle:
+                    "Proceedings of the Fifth Workshop on Speech, Vision, and Language Technologies for Dravidian Languages",
+
+                month: "May",
+
+                areas: [
+                    "Multimodal AI",
+                    "Natural Language Processing",
+                    "Deep Learning",
+                    "Hate Speech Detection"
+                ],
+
+                paper:
+                    "https://aclanthology.org/2025.dravidianlangtech-1.68/",
+
+                code:
+                    "https://github.com/SHITICHY21/Multimodal-Hate-Speech-Detection",
+
+                publisher:
+                    "Association for Computational Linguistics",
+
+                pages: "381--386",
+
+                doi:
+                    "10.18653/v1/2025.dravidianlangtech-1.68",
+
+                bibkey: "faisal-etal-2025-multimodal",
+
+                abstract:
+                    "Ensuring a safe and inclusive online environment requires effective hate speech detection on social media. While detection systems have significantly advanced for English, many regional languages, including Malayalam, Tamil and Telugu, remain underrepresented, creating challenges in identifying harmful content accurately. These languages present unique challenges due to their complex grammar, diverse dialects, and frequent code-mixing with English. The rise of multimodal content, including text and audio, adds further complexity to detection tasks. The shared task “Multimodal Hate Speech Detection in Dravidian Languages: DravidianLangTech@NAACL 2025” has aimed to address these challenges. A Youtube-sourced dataset has been provided, labeled into five categories: Gender (G), Political (P), Religious (R), Personal Defamation (C) and Non-Hate (NH). In our approach, we have used mBERT, T5 for text and Wav2Vec2 and Whisper for audio. T5 has performed poorly compared to mBERT, which has achieved the highest F1 scores on the test dataset. For audio, Wav2Vec2 has been chosen over Whisper because it processes raw audio effectively using self-supervised learning. In the hate speech detection task, we have achieved a macro F1 score of 0.2005 for Malayalam, ranking 15th in this task, 0.1356 for Tamil and 0.1465 for Telugu, with both ranking 16th in this task."
+            }
+
+        ];
+
+        /* =========================================
+           RESEARCH INSTRUCTOR — FOUR PAPERS
+           OFFICIAL ACL ANTHOLOGY METADATA
+        ========================================= */
+
+        const instructorPapers = [
+
+            /* =====================================
+               INSTRUCTOR PAPER 1 — TULU
+            ===================================== */
+
+            {
+                id: "tulu-2026",
+                year: 2026,
+                badge: "DRAVIDIANLANGTECH '26",
+
+                title:
+                    "Multilingual Transformer-Based Hope Speech Detection for Coarse and Fine-Grained Classification in Tulu",
+
+                citationTitle:
+                    "CUET_SYNTHETICA@DravidianLangTech 2026: Multilingual Transformer Based Hope Speech Detection for Coarse and Fine-Grained Classification in Tulu",
+
+                authors: [
+                    "Sumaiya Zaman",
+                    "Miftahul Jannat Rishta",
+                    "Shiti Chowdhury",
+                    "Hasan Murad"
+                ],
+
+                venue:
+                    "Sixth Workshop on Speech, Vision, and Language Technologies for Dravidian Languages, ACL 2026, July 2026",
+
+                booktitle:
+                    "Proceedings of the Sixth Workshop on Speech, Vision, and Language Technologies for Dravidian Languages",
+
+                month: "July",
+
+                areas: [
+                    "Natural Language Processing",
+                    "Deep Learning",
+                    "Multilingual NLP",
+                    "Text Classification"
+                ],
+
+                paper:
+                    "https://aclanthology.org/2026.dravidianlangtech-1.30/",
+
+                code: null,
+
+                publisher:
+                    "Association for Computational Linguistics",
+
+                address:
+                    "Underline (Virtual)",
+
+                pages: "217--221",
+
+                doi:
+                    "10.18653/v1/2026.dravidianlangtech-1.30",
+
+                bibkey:
+                    "zaman-etal-2026-multilingual",
+
+                abstract:
+                    "Hope speech has played a vital role in online communities, yet most NLP work has focused on English and a few high-resource languages, leaving code-mixed varieties like Tulu largely unexplored. In the Shared Task on Hope Speech Detection in Code-Mixed Tulu at DravidianLangTech@ACL 2026, we have tackled two subtasks: (i) coarse-grained classification into Encouraging, Discouraging, Uninvolved and Blended categories (Task 1) and (ii) fine-grained classification into Optimistic, Realistic, Inspiring, Fading and Hopelessness (Task 2). We have fine-tuned three multilingual transformer encoders XLM-RoBERTa-base, MuRIL and mBERT on the official training splits. In Task 1, a three-way soft-voting ensemble of all three models has yielded the best performance with a macro F1 of 0.58, securing 1st place. In Task 2, XLM-RoBERTa-base alone has outperformed both MuRIL and mBERT, achieving a macro F1 of 0.42 and also securing 1st place."
+            },
+
+            /* =====================================
+               INSTRUCTOR PAPER 2 — TAMIL
+            ===================================== */
+
+            {
+                id: "tamil-2026",
+                year: 2026,
+                badge: "DRAVIDIANLANGTECH '26",
+
+                title:
+                    "Multi-Architecture Transformer Ensemble for Detecting Abusive Tamil Text Targeting Women",
+
+                citationTitle:
+                    "CUET_SYNTHETICA@DravidianLangTech 2026: Multi Architecture Transformer Ensemble for Detecting Abusive Tamil Text Targeting Women",
+
+                authors: [
+                    "Miftahul Jannat Rishta",
+                    "Sumaiya Zaman",
+                    "Shiti Chowdhury",
+                    "Hasan Murad"
+                ],
+
+                venue:
+                    "Sixth Workshop on Speech, Vision, and Language Technologies for Dravidian Languages, ACL 2026, July 2026",
+
+                booktitle:
+                    "Proceedings of the Sixth Workshop on Speech, Vision, and Language Technologies for Dravidian Languages",
+
+                month: "July",
+
+                areas: [
+                    "Natural Language Processing",
+                    "Deep Learning",
+                    "Transformer Models",
+                    "Abusive Language Detection"
+                ],
+
+                paper:
+                    "https://aclanthology.org/2026.dravidianlangtech-1.29/",
+
+                code: null,
+
+                publisher:
+                    "Association for Computational Linguistics",
+
+                address:
+                    "Underline (Virtual)",
+
+                pages: "212--216",
+
+                doi:
+                    "10.18653/v1/2026.dravidianlangtech-1.29",
+
+                bibkey:
+                    "rishta-etal-2026-multi",
+
+                abstract:
+                    "Abusive language targeting women has been a serious problem on Tamil social media and building systems to detect it automatically is harder than it looks. Tamil is morphologically complex, people have written it mixed with English in ways no dictionary has accounted for and a lot of the hostility has been indirect enough that has slipped past models trained on surface patterns. In the Shared Task on Abusive Tamil Text Targeting Women on Social Media DravidianLangTech@ACL 2026, we have worked on classifying Tamil YouTube comments as Abusive or Non-Abusive. We have trained three transformer models four times each with different learning rates, giving us 12 models total. Their predicted probabilities have been averaged to make the final decision. The 12-model ensemble has achieved a macro F1 of 0.8086, outperforming all individual models and securing 4th place in the shared task. Combining Tamil-specialized and multilingual transformer models has outperformed any single-architecture approach."
+            },
+
+            /* =====================================
+               INSTRUCTOR PAPER 3 — TELUGU
+            ===================================== */
+
+            {
+                id: "telugu-2026",
+                year: 2026,
+                badge: "DRAVIDIANLANGTECH '26",
+
+                title:
+                    "Automatic Prompt Style Classification in Telugu Using Transformer-Based Language Models",
+
+                citationTitle:
+                    "ERROR_500@DravidianLangTech2026: Automatic Prompt Style Classification in Telugu Using Transformer-Based Language Models",
+
+                authors: [
+                    "Mahashweta Manjari Barua",
+                    "Tasnia Khanam",
+                    "Nuzha Saifa Rahmat",
+                    "Shiti Chowdhury",
+                    "Hasan Murad"
+                ],
+
+                venue:
+                    "Sixth Workshop on Speech, Vision, and Language Technologies for Dravidian Languages, ACL 2026, July 2026",
+
+                booktitle:
+                    "Proceedings of the Sixth Workshop on Speech, Vision, and Language Technologies for Dravidian Languages",
+
+                month: "July",
+
+                areas: [
+                    "Natural Language Processing",
+                    "Machine Learning",
+                    "Transformer Models",
+                    "Text Classification"
+                ],
+
+                paper:
+                    "https://aclanthology.org/2026.dravidianlangtech-1.37/",
+
+                code: null,
+
+                publisher:
+                    "Association for Computational Linguistics",
+
+                address:
+                    "Underline (Virtual)",
+
+                pages: "253--257",
+
+                doi:
+                    "10.18653/v1/2026.dravidianlangtech-1.37",
+
+                bibkey:
+                    "barua-etal-2026-automatic",
+
+                abstract:
+                    "Recovering writing style prompts in low resource languages has been daunting due to diverse morphology, culturally cognizant language patterns and deficient annotated resources. As previous works have predominantly focused on binary sentiment or single attribute transfer, extensive multi-class style classification in under-resourced languages like Telegu has been vastly underexplored. In this study, we have addressed this chasm through the Telugu Prompt-Style Recovery Shared Task at DravidianLangTech@ACL 2026 (Premjith et al., 2026), framing prompt reconstruction as a nine-class classification problem with Formal, Informal, Optimistic, Pessimistic, Humorous, Serious, Inspiring, Authoritative and Persuasive as prompt styles. We have evaluated three input configurations—Change Style, Original Transcripts and Merged input style—while training three transformer based models-MuRIL, XLM-RoBERTa and IndicBERT v2 under identical conditions. Our most promising model, IndicBERT v2 with partial layer freezing and weighted cross-entropy loss, has obtained a macro-F1 of 0.2987 and accuracy of 0.299. The Change Style configuration has significantly outperformed Original and Merged inputs, indicating that explicit style changes have made tonal and meaning cues more distinctive. These results have showcased the importance of language-specific pretraining and careful input design for style-sensitive NLP in low-resource settings, ultimately securing 1st rank on the shared task."
+            },
+
+            /* =====================================
+               INSTRUCTOR PAPER 4 — EEUCA
+            ===================================== */
+
+            {
+                id: "eeuca-2026",
+                year: 2026,
+                badge: "EEUCA '26",
+
+                title:
+                    "Gated Cross-Modal Attention with Domain-Adapted Text Encoding for Vaccine-Critical Meme Detection",
+
+                citationTitle:
+                    "CUET_SYNTHETICA@EEUCA 2026: Gated Cross-Modal Attention with Domain-Adapted Text Encoding for Vaccine-Critical Meme Detection",
+
+                authors: [
+                    "Sumaiya Zaman",
+                    "Miftahul Jannat Rishta",
+                    "Shiti Chowdhury"
+                ],
+
+                venue:
+                    "9th Workshop on Event Extraction and Understanding: Challenges and Applications, ACL 2026, July 2026",
+
+                booktitle:
+                    "Proceedings of the 9th Workshop on Event Extraction and Understanding: Challenges and Applications (EEUCA 2026)",
+
+                month: "July",
+
+                areas: [
+                    "Multimodal AI",
+                    "Computer Vision",
+                    "Deep Learning",
+                    "Cross-Modal Attention"
+                ],
+
+                paper:
+                    "https://aclanthology.org/2026.eeuca-1.14/",
+
+                code: null,
+
+                publisher:
+                    "Association for Computational Linguistics",
+
+                address:
+                    "San Diego, California, USA",
+
+                pages: "133--140",
+
+                doi:
+                    "10.18653/v1/2026.eeuca-1.14",
+
+                bibkey:
+                    "zaman-etal-2026-gated",
+
+                abstract:
+                    "Vaccine-critical memes have emerged as a growing challenge for public health communication, combining images and text to spread misinformation in ways that are difficult to detect automatically. In this paper, we have described our system for the EEUCA 2026 Shared Task on Multimodal Vaccine-Critical Meme Detection, classifying memes from the VaxMeme dataset into Vaccine-Critical, Neutral and Pro-Vaccine categories. We have experimented with multiple text encoders and visual backbones, finding that Twitter-RoBERTa fused with CLIP ViT-L/14 through gated cross-modal attention has achieved a test macro F1 of 0.8357. We have further shown that domain-specific pretraining has outperformed larger general-purpose models, highlighting the importance of domain adaptation over raw model scale. Finally, our system has secured the 3rd position on the shared task leaderboard."
+            }
+
+        ];
+
+        /* =========================================
+           SAFE HTML HELPER
+        ========================================= */
+
+        function escapeHTML(value) {
+            return String(value ?? "")
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#39;");
+        }
+
+        function scholarLink(title) {
+            return "https://scholar.google.com/scholar?q="
+                + encodeURIComponent(title);
+        }
+
+        /* =========================================
+           RENDER PUBLICATION
+        ========================================= */
+
+        function renderPublication(paper, number, section) {
+
+            const areasHTML = paper.areas.map(area => `
+                <span class="research-tag">
+                    ${escapeHTML(area)}
+                </span>
+            `).join("");
+
+            const codeHTML = paper.code ? `
+                <a
+                    class="pub-btn code-btn"
+                    href="${escapeHTML(paper.code)}"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                    Code
+                </a>
+            ` : "";
+
+            return `
+                <article
+                    class="publication-item"
+                    data-section="${escapeHTML(section)}">
+
+                    <span class="publication-number">
+                        ${number}.
+                    </span>
+
+                    <div class="publication-content">
+
+                        <span class="publication-badge">
+                            ${escapeHTML(paper.badge)}
+                        </span>
+
+                        <h3>
+                            ${escapeHTML(paper.title)}
+                        </h3>
+
+                        <p class="publication-venue">
+                            ${escapeHTML(paper.venue)}
+                        </p>
+
+                        <div class="publication-areas">
+                            ${areasHTML}
+                        </div>
+
+                        <div class="publication-links">
+
+                            <button
+                                type="button"
+                                class="pub-btn abstract-btn"
+                                data-action="abstract"
+                                data-id="${escapeHTML(paper.id)}">
+                                Abstract
+                            </button>
+
+                            <button
+                                type="button"
+                                class="pub-btn bib-btn"
+                                data-action="bib"
+                                data-id="${escapeHTML(paper.id)}">
+                                BibTeX
+                            </button>
+
+                            <a
+                                class="pub-btn paper-btn"
+                                href="${escapeHTML(paper.paper)}"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                <i class="fa-solid fa-file-lines"></i>
+                                Paper
+                            </a>
+
+                            ${codeHTML}
+
+                            <a
+                                class="pub-btn scholar-btn"
+                                href="${escapeHTML(scholarLink(paper.citationTitle))}"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                Google Scholar
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+            `;
+        }
+
+        /* =========================================
+           RENDER RESEARCH PUBLICATIONS
+        ========================================= */
+
+        function renderResearchPublications() {
+
+            const container = document.getElementById(
+                "research-publications"
+            );
+
+            let html = "";
+            let serial = 1;
+
+            [2026, 2025].forEach(year => {
+
+                const papers = researchPapers.filter(
+                    paper => paper.year === year
+                );
+
+                if (!papers.length) return;
+
+                html += `
+                    <div class="publication-year-group">
+
+                        <h2 class="publication-year-heading">
+                            ${year}
+                        </h2>
+
+                        <div class="publication-list">
+                `;
+
+                papers.forEach(paper => {
+
+                    html += renderPublication(
+                        paper,
+                        serial,
+                        "research"
+                    );
+
+                    serial++;
+                });
+
+                html += `
+                        </div>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+        }
+
+        /* =========================================
+           RENDER INSTRUCTOR PUBLICATIONS
+        ========================================= */
+
+        function renderInstructorPublications() {
+
+            const container = document.getElementById(
+                "instructor-publications"
+            );
+
+            let html = `
+                <div class="publication-year-group">
+
+                    <h2 class="publication-year-heading">
+                        2026
+                    </h2>
+
+                    <div class="publication-list">
+            `;
+
+            instructorPapers.forEach((paper, index) => {
+
+                html += renderPublication(
+                    paper,
+                    index + 1,
+                    "instructor"
+                );
+            });
+
+            html += `
+                    </div>
+                </div>
+            `;
+
+            container.innerHTML = html;
+        }
+
+        /* =========================================
+           GENERATE BIBTEX
+        ========================================= */
+
+        function bibValue(value) {
+            return String(value ?? "")
+                .replace(/\\/g, "\\\\")
+                .replace(/(?<!\\)[{}]/g, "");
+        }
+
+        function createBibTeX(paper) {
+
+            const fields = [];
+
+            const addField = (key, value) => {
+
+                if (
+                    value === undefined ||
+                    value === null ||
+                    value === ""
+                ) {
+                    return;
+                }
+
+                fields.push(
+                    `  ${key} = {${bibValue(value)}}`
+                );
+            };
+
+            addField(
+                "title",
+                paper.citationTitle
+            );
+
+            if (
+                Array.isArray(paper.authors) &&
+                paper.authors.length > 0
+            ) {
+                addField(
+                    "author",
+                    paper.authors.join(" and ")
+                );
+            }
+
+            addField(
+                "booktitle",
+                paper.booktitle || paper.venue
+            );
+
+            addField(
+                "year",
+                paper.id === "trec-2026" ? 2025 : paper.year
+            );
+
+            addField(
+                "month",
+                paper.month
+            );
+
+            addField(
+                "pages",
+                paper.pages
+            );
+
+            addField(
+                "publisher",
+                paper.publisher
+            );
+
+            addField(
+                "address",
+                paper.address
+            );
+
+            addField(
+                "doi",
+                paper.doi
+            );
+
+            addField(
+                "url",
+                paper.paper
+            );
+
+            const key = paper.bibkey || paper.id;
+
+            return (
+                `@inproceedings{${key},\n` +
+                fields.join(",\n") +
+                "\n}"
+            );
+        }
+
+        /* =========================================
+           MODAL ELEMENTS
+        ========================================= */
+
+        const modal = document.getElementById(
+            "publication-modal"
+        );
+
+        const modalTitle = document.getElementById(
+            "publication-modal-title"
+        );
+
+        const modalBody = document.getElementById(
+            "publication-modal-body"
+        );
+
+        const modalFooter = document.getElementById(
+            "publication-modal-footer"
+        );
+
+        const modalClose = document.getElementById(
+            "publication-modal-close"
+        );
+
+        let currentPaper = null;
+        let currentBibTeX = "";
+        let previousFocus = null;
+
+        /* =========================================
+           OPEN ABSTRACT OR BIBTEX
+        ========================================= */
+
+        function openModal(paper, action) {
+
+            currentPaper = paper;
+            previousFocus = document.activeElement;
+
+            modalBody.innerHTML = "";
+            modalFooter.innerHTML = "";
+
+            if (action === "abstract") {
+
+                modalTitle.textContent = "Abstract";
+
+                const heading = document.createElement("h3");
+                heading.className = "abstract-paper-title";
+                heading.textContent = paper.title;
+
+                const paragraph = document.createElement("p");
+                paragraph.className = "abstract-text";
+                paragraph.textContent =
+                    paper.abstract || "Abstract unavailable.";
+
+                modalBody.appendChild(heading);
+                modalBody.appendChild(paragraph);
+
+                const paperLink = document.createElement("a");
+
+                paperLink.className =
+                    "publication-modal-action primary";
+
+                paperLink.href = paper.paper;
+                paperLink.target = "_blank";
+                paperLink.rel = "noopener noreferrer";
+
+                paperLink.innerHTML =
+                    '<i class="fa-solid fa-arrow-up-right-from-square"></i> View Paper';
+
+                modalFooter.appendChild(paperLink);
+
+            } else if (action === "bib") {
+
+                modalTitle.textContent = "BibTeX Citation";
+
+                currentBibTeX = createBibTeX(paper);
+
+                const pre = document.createElement("pre");
+                const code = document.createElement("code");
+
+                code.textContent = currentBibTeX;
+
+                pre.appendChild(code);
+                modalBody.appendChild(pre);
+
+                if (
+                    !paper.authors ||
+                    paper.authors.length === 0
+                ) {
+
+                    const note = document.createElement("p");
+                    note.className = "modal-note";
+
+                    note.textContent =
+                        "The author field is omitted because the complete author list has not been provided.";
+
+                    modalBody.appendChild(note);
+                }
+
+                const copyButton = document.createElement("button");
+
+                copyButton.type = "button";
+                copyButton.className = "publication-modal-action";
+
+                copyButton.innerHTML =
+                    '<i class="fa-regular fa-copy"></i> Copy BibTeX';
+
+                copyButton.addEventListener(
+                    "click",
+                    copyBibTeX
+                );
+
+                const downloadButton =
+                    document.createElement("button");
+
+                downloadButton.type = "button";
+
+                downloadButton.className =
+                    "publication-modal-action primary";
+
+                downloadButton.innerHTML =
+                    '<i class="fa-solid fa-download"></i> Download .bib';
+
+                downloadButton.addEventListener(
+                    "click",
+                    downloadBibTeX
+                );
+
+                modalFooter.appendChild(copyButton);
+                modalFooter.appendChild(downloadButton);
+            }
+
+            modal.hidden = false;
+
+            document.body.style.overflow = "hidden";
+
+            modalClose.focus();
+        }
+
+        /* =========================================
+           CLOSE MODAL
+        ========================================= */
+
+        function closeModal() {
+
+            modal.hidden = true;
+
+            document.body.style.overflow = "";
+
+            currentPaper = null;
+
+            if (
+                previousFocus &&
+                typeof previousFocus.focus === "function"
+            ) {
+                previousFocus.focus();
+            }
+        }
+
+        /* =========================================
+           COPY BIBTEX
+        ========================================= */
+
+        async function copyBibTeX() {
+
+            if (!currentBibTeX) return;
+
+            const button = modalFooter.querySelector(
+                ".publication-modal-action"
+            );
+
+            try {
+
+                if (
+                    navigator.clipboard &&
+                    window.isSecureContext
+                ) {
+
+                    await navigator.clipboard.writeText(
+                        currentBibTeX
+                    );
+
+                } else {
+
+                    const textarea =
+                        document.createElement("textarea");
+
+                    textarea.value = currentBibTeX;
+
+                    textarea.style.position = "fixed";
+                    textarea.style.opacity = "0";
+
+                    document.body.appendChild(textarea);
+
+                    textarea.focus();
+                    textarea.select();
+
+                    const copied = document.execCommand("copy");
+
+                    textarea.remove();
+
+                    if (!copied) {
+                        throw new Error("Copy failed");
+                    }
+                }
+
+                if (button) {
+                    button.innerHTML =
+                        '<i class="fa-solid fa-check"></i> Copied!';
+                }
+
+            } catch (error) {
+
+                if (button) {
+                    button.textContent = "Select text to copy";
+                }
+
+                const code = modalBody.querySelector("code");
+
+                if (code) {
+
+                    const range = document.createRange();
+
+                    range.selectNodeContents(code);
+
+                    const selection = window.getSelection();
+
+                    selection.removeAllRanges();
+                    selection.addRange(range);
+                }
+            }
+        }
+
+        /* =========================================
+           DOWNLOAD BIBTEX
+        ========================================= */
+
+        function downloadBibTeX() {
+
+            if (!currentPaper || !currentBibTeX) return;
+
+            const blob = new Blob(
+                [currentBibTeX],
+                {
+                    type: "application/x-bibtex;charset=utf-8"
+                }
+            );
+
+            const url = URL.createObjectURL(blob);
+
+            const link = document.createElement("a");
+
+            link.href = url;
+            link.download = currentPaper.id + ".bib";
+
+            document.body.appendChild(link);
+
+            link.click();
+            link.remove();
+
+            setTimeout(() => {
+                URL.revokeObjectURL(url);
+            }, 1000);
+        }
+
+        /* =========================================
+           PUBLICATION BUTTON EVENTS
+        ========================================= */
+
+        const allPapers = [
+            ...researchPapers,
+            ...instructorPapers
+        ];
+
+        document.addEventListener(
+            "click",
+            function (event) {
+
+                const button = event.target.closest(
+                    "[data-action][data-id]"
+                );
+
+                if (!button) return;
+
+                const paper = allPapers.find(
+                    item => item.id === button.dataset.id
+                );
+
+                if (!paper) return;
+
+                openModal(
+                    paper,
+                    button.dataset.action
+                );
+            }
+        );
+
+        /* =========================================
+           CLOSE BUTTON AND OVERLAY
+        ========================================= */
+
+        modalClose.addEventListener(
+            "click",
+            closeModal
+        );
+
+        modal.addEventListener(
+            "click",
+            function (event) {
+
+                if (event.target === modal) {
+                    closeModal();
+                }
+            }
+        );
+
+        /* =========================================
+           KEYBOARD ACCESSIBILITY
+        ========================================= */
+
+        document.addEventListener(
+            "keydown",
+            function (event) {
+
+                if (modal.hidden) return;
+
+                if (event.key === "Escape") {
+                    closeModal();
+                    return;
+                }
+
+                if (event.key !== "Tab") return;
+
+                const focusable = Array.from(
+                    modal.querySelectorAll(
+                        'button:not([disabled]), a[href]'
+                    )
+                ).filter(
+                    element =>
+                        element.getClientRects().length > 0
+                );
+
+                if (!focusable.length) return;
+
+                const first = focusable[0];
+                const last = focusable[focusable.length - 1];
+
+                if (
+                    event.shiftKey &&
+                    document.activeElement === first
+                ) {
+
+                    event.preventDefault();
+                    last.focus();
+
+                } else if (
+                    !event.shiftKey &&
+                    document.activeElement === last
+                ) {
+
+                    event.preventDefault();
+                    first.focus();
+                }
+            }
+        );
+
+        /* =========================================
+           INITIALIZE PUBLICATIONS
+        ========================================= */
+
+        renderResearchPublications();
+        renderInstructorPublications();
+
+    </script>
+
+</body>
+</html>

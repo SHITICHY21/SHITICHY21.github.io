@@ -1,0 +1,4323 @@
+/* =========================================================
+   SHITI CHOWDHURY - ACADEMIC PORTFOLIO
+   Main Stylesheet
+========================================================= */
+
+
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+    color: #3d3d3d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+a {
+    color: #0066ff;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #004bbd;
+}
+
+
+/* =========================
+   TOP NAVIGATION
+========================= */
+
+.top-header {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.navbar {
+    max-width: 1320px;
+    min-height: 76px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-name {
+    color: #6b6b6b;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.site-name:hover {
+    color: #333333;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.nav-links a {
+    color: #6d6d6d;
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #222222;
+}
+
+
+/* =========================
+   MAIN PAGE LAYOUT
+========================= */
+
+.page-container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 38px 30px 70px;
+
+    display: grid;
+    grid-template-columns: 270px minmax(0, 1fr);
+    column-gap: 60px;
+    align-items: start;
+}
+
+
+/* =========================
+   PROFILE SIDEBAR
+========================= */
+
+.profile-sidebar {
+    width: 100%;
+}
+
+.profile-image-wrapper {
+    width: 220px;
+    padding: 6px;
+    border: 1px solid #cfcfcf;
+    background: #ffffff;
+    margin-bottom: 8px;
+}
+
+.profile-image {
+    width: 100%;
+    height: 210px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile-name {
+    color: #363636;
+    font-size: 18px;
+    line-height: 1.3;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.pronouns {
+    font-size: 14px;
+    color: #444444;
+    margin-bottom: 15px;
+}
+
+.profile-role {
+    max-width: 225px;
+    font-size: 14px;
+    line-height: 1.45;
+    color: #404040;
+    margin-bottom: 2px;
+}
+
+.profile-email {
+    max-width: 240px;
+    font-size: 13px;
+    line-height: 1.45;
+    color: #404040;
+    overflow-wrap: anywhere;
+    margin-bottom: 24px;
+}
+
+
+/* =========================
+   SIDEBAR LINKS
+========================= */
+
+.profile-links {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.profile-link {
+    width: fit-content;
+    max-width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    color: #444444;
+    font-size: 14px;
+    line-height: 1.35;
+    text-decoration: none;
+}
+
+.profile-link i {
+    width: 15px;
+    min-width: 15px;
+    text-align: center;
+    color: #3e3e3e;
+    font-size: 14px;
+}
+
+.profile-link .fa-linkedin {
+    color: #0a66c2;
+}
+
+.profile-link .fa-researchgate {
+    color: #00a98f;
+}
+
+.profile-link .fa-kaggle {
+    color: #20beff;
+}
+
+.profile-link:hover {
+    color: #0066ff;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-content {
+    min-width: 0;
+    max-width: 970px;
+}
+
+.main-content h1 {
+    color: #333333;
+    font-size: 30px;
+    line-height: 1.25;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.main-content h2 {
+    color: #363636;
+    font-size: 21px;
+    line-height: 1.3;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.main-content p {
+    color: #414141;
+    font-size: 17px;
+    line-height: 1.65;
+    margin-bottom: 23px;
+}
+
+.main-content strong {
+    color: #353535;
+    font-weight: 700;
+}
+
+.main-content a {
+    color: #0066ff;
+    font-weight: 500;
+}
+
+.main-content a:hover {
+    color: #004bbd;
+}
+
+
+/* =========================
+   RESEARCH INTERESTS
+========================= */
+
+.section-intro {
+    margin-bottom: 12px !important;
+}
+
+.research-list {
+    margin: 5px 0 22px 50px;
+}
+
+.research-list li {
+    color: #414141;
+    font-size: 17px;
+    line-height: 1.6;
+    padding-left: 2px;
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.main-content hr {
+    height: 1px;
+    border: 0;
+    background: #cccccc;
+    margin: 25px 0 20px;
+}
+
+
+/* =========================
+   NEWS
+========================= */
+
+.news-section {
+    width: 100%;
+}
+
+.news-section h2 {
+    margin-bottom: 12px;
+}
+
+.news-list {
+    margin-left: 28px;
+    padding-left: 15px;
+}
+
+.news-list > li {
+    color: #414141;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 11px;
+    padding-left: 5px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    padding-bottom: 15px;
+}
+
+.contact-section h2 {
+    margin-bottom: 12px;
+}
+
+.contact-section p {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   RESPONSIVE - TABLET
+========================= */
+
+@media (max-width: 1050px) {
+
+    .navbar {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .nav-links {
+        gap: 22px;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+    }
+
+    .page-container {
+        grid-template-columns: 220px minmax(0, 1fr);
+        column-gap: 38px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .profile-image-wrapper {
+        width: 200px;
+    }
+
+    .profile-image {
+        height: 195px;
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE - MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        min-height: auto;
+        padding: 18px 20px;
+
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .nav-links {
+        width: 100%;
+        gap: 12px 22px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .page-container {
+        display: block;
+        padding: 28px 20px 50px;
+    }
+
+    .profile-sidebar {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #d5d5d5;
+    }
+
+    .profile-image-wrapper {
+        width: 200px;
+    }
+
+    .profile-image {
+        height: 190px;
+    }
+
+    .profile-role,
+    .profile-email {
+        max-width: 100%;
+    }
+
+    .main-content {
+        max-width: 100%;
+    }
+
+    .main-content h1 {
+        font-size: 27px;
+    }
+
+    .main-content h2 {
+        font-size: 20px;
+    }
+
+    .main-content p,
+    .research-list li {
+        font-size: 16px;
+    }
+
+    .research-list {
+        margin-left: 28px;
+    }
+
+}
+
+
+/* =========================
+   VERY SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .site-name {
+        font-size: 17px;
+    }
+
+    .nav-links {
+        gap: 10px 17px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .page-container {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    /* .profile-image-wrapper {
+        width: 170px;
+    } */
+
+    .profile-image {
+        height: 170px;
+    }
+
+    .main-content h1 {
+        font-size: 25px;
+    }
+
+}
+
+/* =========================================================
+   PUBLICATIONS PAGE
+========================================================= */
+
+.publications-page h1 {
+    margin-bottom: 8px;
+}
+
+.publications-page > p {
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.publications-page .last-updated {
+    margin-top: 15px;
+    margin-bottom: 32px;
+    color: #555555;
+}
+
+
+/* Publication Section Heading */
+
+.publication-section-title {
+    font-size: 20px !important;
+    padding-bottom: 13px;
+    margin-bottom: 0 !important;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+
+/* Individual Publication */
+
+.publication-item {
+    padding: 25px 0 23px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.publication-item h3 {
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.45;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.publication-authors {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+    margin-bottom: 10px !important;
+}
+
+.publication-venue {
+    color: #555555 !important;
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+    font-style: italic;
+    margin-bottom: 10px !important;
+}
+
+.publication-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    font-size: 14px;
+}
+
+.publication-links a {
+    font-weight: 500;
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .publication-item {
+        padding: 21px 0;
+    }
+
+    .publication-item h3 {
+        font-size: 15px;
+    }
+
+    .publication-authors {
+        font-size: 14px !important;
+    }
+
+    .publication-venue {
+        font-size: 13px !important;
+    }
+
+}
+
+/* =========================================================
+   EXPERIENCE PAGE
+========================================================= */
+
+.experience-page h1 {
+    margin-bottom: 20px;
+}
+
+
+/* Main Experience Item */
+
+.experience-item {
+    margin-bottom: 30px;
+}
+
+.experience-item h3 {
+    color: #363636;
+    font-size: 16px;
+    line-height: 1.45;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+
+/* Company / Date / Location */
+
+.experience-meta {
+    margin: 0 0 10px 28px;
+}
+
+.experience-meta p {
+    color: #484848;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 3px;
+}
+
+
+/* Experience Details */
+
+.experience-item > ul {
+    margin: 8px 0 0 65px;
+    padding-left: 18px;
+}
+
+.experience-item > ul > li {
+    color: #444444;
+    font-size: 15px;
+    line-height: 1.55;
+    margin-bottom: 7px;
+    padding-left: 3px;
+}
+
+
+/* Research Experience */
+
+.research-experience {
+    margin-top: 35px;
+}
+
+.research-experience > h2 {
+    font-size: 21px;
+    padding-bottom: 12px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.thesis-experience {
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   EXPERIENCE MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .experience-page h1 {
+        margin-bottom: 18px;
+    }
+
+    .experience-item {
+        margin-bottom: 27px;
+    }
+
+    .experience-meta {
+        margin-left: 15px;
+    }
+
+    .experience-item > ul {
+        margin-left: 25px;
+    }
+
+    .experience-item h3 {
+        font-size: 15px;
+    }
+
+    .experience-meta p,
+    .experience-item > ul > li {
+        font-size: 14px;
+    }
+
+}
+
+/* =========================================================
+   PROJECTS PAGE
+========================================================= */
+
+.projects-page h1 {
+    margin-bottom: 8px;
+}
+
+.projects-intro {
+    max-width: 800px;
+    font-size: 15px !important;
+    margin-bottom: 28px !important;
+}
+
+
+/* =========================
+   PROJECT GRID
+========================= */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.project-card {
+    background: #ffffff;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   PROJECT IMAGE
+========================= */
+
+.project-image {
+    width: 100%;
+    height: 205px;
+    overflow: hidden;
+    background: #f3f3f3;
+    border-bottom: 1px solid #dddddd;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.025);
+}
+
+
+/* =========================
+   PROJECT CONTENT
+========================= */
+
+.project-content {
+    padding: 20px 21px 22px;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project-date {
+    color: #777777 !important;
+    font-size: 12px !important;
+    margin-bottom: 7px !important;
+}
+
+.project-content h2 {
+    color: #333333;
+    font-size: 18px;
+    line-height: 1.35;
+    margin-bottom: 12px;
+}
+
+.project-content > p:not(.project-date) {
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+
+/* =========================
+   TECHNOLOGY TAGS
+========================= */
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+
+    margin-top: auto;
+    margin-bottom: 18px;
+}
+
+.project-tech span {
+    display: inline-block;
+
+    background: #f3f5f7;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+
+    padding: 4px 8px;
+
+    color: #555555;
+    font-size: 11px;
+    line-height: 1.3;
+}
+
+
+/* =========================
+   PROJECT BUTTON
+========================= */
+
+.project-button {
+    width: fit-content;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #0066cc !important;
+    font-size: 13px;
+    font-weight: 500 !important;
+    text-decoration: none;
+
+    border-bottom: 1px solid transparent;
+
+    transition: border-color 0.2s ease;
+}
+
+.project-button:hover {
+    border-bottom-color: #0066cc;
+}
+
+.project-button i {
+    font-size: 11px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1050px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        height: 250px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .project-image {
+        height: 220px;
+    }
+
+    .project-content {
+        padding: 18px;
+    }
+
+    .project-content h2 {
+        font-size: 17px;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .project-image {
+        height: 180px;
+    }
+
+}
+
+/* =========================================================
+   SERVICES PAGE
+========================================================= */
+
+.services-page h1 {
+    margin-bottom: 8px;
+}
+
+.services-intro {
+    color: #555555 !important;
+    font-size: 15px !important;
+    margin-bottom: 30px !important;
+}
+
+
+/* =========================
+   SERVICE SECTION
+========================= */
+
+.service-section {
+    margin-bottom: 42px;
+}
+
+.service-section > h2 {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 700;
+
+    padding-bottom: 12px;
+    margin-bottom: 22px;
+
+    border-bottom: 1px solid #c9c9c9;
+}
+
+
+/* =========================
+   REVIEWER BLOCK
+========================= */
+
+.reviewer-block {
+    padding-left: 3px;
+}
+
+.reviewer-block h3 {
+    color: #333333;
+    font-size: 16px;
+    margin-bottom: 9px;
+}
+
+.reviewer-block h3 i {
+    margin-right: 7px;
+    color: #555555;
+}
+
+.reviewer-block > p {
+    color: #555555;
+    font-size: 15px;
+    margin-bottom: 14px;
+}
+
+
+/* Reviewer List */
+
+.service-list {
+    margin-left: 35px;
+}
+
+.service-list li {
+    color: #444444;
+    font-size: 15px;
+    line-height: 1.55;
+    margin-bottom: 12px;
+}
+
+.service-list li strong {
+    display: block;
+}
+
+.service-list li span {
+    display: block;
+    color: #666666;
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+
+/* =========================
+   RESEARCH INSTRUCTOR
+========================= */
+
+.instructor-section {
+    margin-top: 35px;
+}
+
+.instructor-item {
+    padding: 0 0 24px;
+    margin-bottom: 24px;
+
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.instructor-item:last-child {
+    margin-bottom: 0;
+}
+
+.instructor-item h3 {
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 9px;
+}
+
+.instructor-role {
+    color: #444444 !important;
+    font-size: 14px !important;
+    margin-bottom: 5px !important;
+}
+
+.instructor-venue {
+    color: #666666 !important;
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+    font-style: italic;
+
+    max-width: 850px;
+    margin-bottom: 9px !important;
+}
+
+.instructor-item > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    color: #0066cc;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.instructor-item > a:hover {
+    text-decoration: underline;
+}
+
+.instructor-item > a i {
+    font-size: 10px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .service-section {
+        margin-bottom: 35px;
+    }
+
+    .service-section > h2 {
+        font-size: 19px;
+    }
+
+    .service-list {
+        margin-left: 25px;
+    }
+
+    .reviewer-block h3,
+    .instructor-item h3 {
+        font-size: 15px;
+    }
+
+    .reviewer-block > p,
+    .service-list li {
+        font-size: 14px;
+    }
+
+    .instructor-role,
+    .instructor-venue {
+        font-size: 13px !important;
+    }
+
+}
+
+/* =========================================================
+   AWARDS & HONORS PAGE
+========================================================= */
+
+.awards-page h1 {
+    margin-bottom: 8px;
+}
+
+.awards-intro {
+    color: #555555 !important;
+    font-size: 15px !important;
+    margin-bottom: 30px !important;
+}
+
+
+/* =========================
+   AWARDS GRID
+========================= */
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    align-items: stretch;
+}
+
+
+/* =========================
+   AWARD CARD
+========================= */
+
+.award-card {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+    border: 1px solid #d7d7d7;
+    border-radius: 3px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.award-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================
+   AWARD IMAGE
+========================= */
+
+.award-image {
+    width: 100%;
+    height: 160px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f8f8f8;
+    border-bottom: 1px solid #dddddd;
+
+    overflow: hidden;
+}
+
+.award-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.3s ease;
+}
+
+.award-card:hover .award-image img {
+    transform: scale(1.02);
+}
+
+
+/* =========================
+   AWARD CONTENT
+========================= */
+
+.award-content {
+    padding: 17px 17px 19px;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.award-content h2 {
+    color: #333333;
+
+    font-size: 16px;
+    line-height: 1.4;
+
+    margin-bottom: 7px;
+}
+
+.award-organization {
+    color: #555555 !important;
+
+    font-size: 13px !important;
+    line-height: 1.45 !important;
+
+    font-weight: 700;
+
+    margin-bottom: 10px !important;
+}
+
+.award-content > p:not(.award-organization):not(.award-date) {
+    color: #5a5a5a;
+
+    font-size: 13px;
+    line-height: 1.55;
+
+    margin-bottom: 11px;
+}
+
+.award-date {
+    color: #777777 !important;
+
+    font-size: 12px !important;
+
+    margin-top: auto;
+    margin-bottom: 12px !important;
+}
+
+
+/* =========================
+   CERTIFICATE LINK
+========================= */
+
+.award-link {
+    width: fit-content;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    color: #0066cc !important;
+
+    font-size: 12px;
+    font-weight: 500 !important;
+
+    text-decoration: none;
+
+    margin-top: auto;
+}
+
+.award-link:hover {
+    text-decoration: underline;
+}
+
+.award-link i {
+    font-size: 11px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1150px) {
+
+    .awards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .awards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .award-image {
+        height: 150px;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 550px) {
+
+    .awards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .award-image {
+        height: 190px;
+    }
+
+}
+
+/* =========================================================
+   SHITI CHOWDHURY — ACADEMIC PORTFOLIO
+   COMPLETE STYLE.CSS
+========================================================= */
+
+
+/* =========================================================
+   1. RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 16px;
+    line-height: 1.65;
+
+    color: #3f4145;
+
+    background:
+        radial-gradient(
+            circle at 10% 5%,
+            rgba(255, 190, 232, 0.23) 0%,
+            rgba(255, 190, 232, 0.08) 24%,
+            transparent 47%
+        ),
+
+        radial-gradient(
+            circle at 88% 10%,
+            rgba(229, 190, 255, 0.20) 0%,
+            rgba(229, 190, 255, 0.06) 27%,
+            transparent 49%
+        ),
+
+        radial-gradient(
+            circle at 15% 78%,
+            rgba(186, 225, 255, 0.20) 0%,
+            rgba(186, 225, 255, 0.06) 29%,
+            transparent 50%
+        ),
+
+        radial-gradient(
+            circle at 90% 88%,
+            rgba(204, 224, 255, 0.17) 0%,
+            transparent 45%
+        ),
+
+        #ffffff;
+
+    background-attachment: fixed;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+
+a {
+    color: #315f9f;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: #173f78;
+    text-decoration: underline;
+}
+
+
+
+/* =========================================================
+   2. TOP NAVIGATION
+========================================================= */
+
+.top-header {
+    width: 100%;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(255, 255, 255, 0.91);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(200, 200, 205, 0.65);
+
+    box-shadow:
+        0 2px 12px rgba(50, 50, 70, 0.025);
+}
+
+
+.navbar {
+    width: 100%;
+    max-width: 1380px;
+
+    min-height: 76px;
+
+    margin: 0 auto;
+    padding: 0 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+.site-name {
+    flex-shrink: 0;
+
+    color: #55585d;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    letter-spacing: 0.1px;
+
+    text-decoration: none;
+}
+
+
+.site-name:hover {
+    color: #222222;
+    text-decoration: none;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 32px;
+}
+
+
+.nav-links a {
+    position: relative;
+
+    padding: 27px 0 25px;
+
+    color: #686b70;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease;
+}
+
+
+.nav-links a:hover {
+    color: #1d1f22;
+    text-decoration: none;
+}
+
+
+.nav-links a.active {
+    color: #222222;
+    font-weight: 600;
+}
+
+
+.nav-links a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 2px;
+
+    background: #4c6fa8;
+}
+
+
+
+/* =========================================================
+   3. MOBILE MENU BUTTON
+========================================================= */
+
+.menu-toggle {
+    display: none;
+
+    width: 38px;
+    height: 36px;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid #a7a7a7;
+    border-radius: 3px;
+
+    background: rgba(255, 255, 255, 0.85);
+
+    color: #303236;
+
+    font-size: 19px;
+
+    cursor: pointer;
+}
+
+
+.menu-toggle:hover {
+    background: #f7f7f7;
+}
+
+
+
+/* =========================================================
+   4. MAIN PAGE LAYOUT
+========================================================= */
+
+.page-container {
+    width: 100%;
+    max-width: 1380px;
+
+    margin: 0 auto;
+
+    padding: 48px 32px 90px;
+
+    display: grid;
+
+    grid-template-columns:
+        250px
+        minmax(0, 1fr);
+
+    gap: 70px;
+}
+
+
+.main-content {
+    width: 100%;
+    min-width: 0;
+
+    max-width: 1000px;
+}
+
+
+
+/* ==========================================================
+   SHITI CHOWDHURY — ACADEMIC PORTFOLIO
+   COMPLETE STYLESHEET
+========================================================== */
+
+
+/* =========================
+   VARIABLES
+========================= */
+
+:root {
+    --text: #50545b;
+    --heading: #34373d;
+    --muted: #777b83;
+
+    --teal: #00858c;
+    --blue: #416b9d;
+
+    --border: #dfe0e6;
+
+    --pink-soft: rgba(255, 233, 245, 0.68);
+    --blue-soft: rgba(231, 243, 255, 0.74);
+}
+
+
+/* =========================
+   GLOBAL RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+
+    background:
+        radial-gradient(
+            ellipse at 8% 8%,
+            rgba(255, 205, 232, 0.18),
+            transparent 38%
+        ),
+        radial-gradient(
+            ellipse at 92% 16%,
+            rgba(226, 208, 255, 0.18),
+            transparent 38%
+        ),
+        radial-gradient(
+            ellipse at 15% 85%,
+            rgba(200, 232, 255, 0.20),
+            transparent 42%
+        ),
+        #ffffff;
+
+    background-attachment: fixed;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: #315f9a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    font: inherit;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.top-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+
+    background: rgba(255, 255, 255, 0.94);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border-bottom: 1px solid #dedee3;
+}
+
+.navbar {
+    max-width: 1280px;
+    min-height: 70px;
+
+    margin: 0 auto;
+    padding: 0 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.site-name {
+    color: #42454a;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.site-name:hover {
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+.nav-links a {
+    position: relative;
+
+    padding: 24px 0 22px;
+
+    color: #666970;
+    font-size: 14px;
+
+    white-space: nowrap;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #24272c;
+    text-decoration: none;
+}
+
+.nav-links a.active::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: 2px;
+
+    background: #5676a7;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.page-container {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+    padding: 38px 28px 75px;
+
+    display: grid;
+    grid-template-columns: 210px minmax(0, 1fr);
+    gap: 58px;
+
+    align-items: start;
+}
+
+.main-content {
+    width: 100%;
+    min-width: 0;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.profile-sidebar {
+    width: 210px;
+
+    position: sticky;
+    top: 105px;
+}
+
+.profile-image-wrapper {
+    width: 202px;
+    height: 202px;
+
+    padding: 2px;
+    margin-bottom: 2px;
+
+    background: #ffffff;
+
+    border: 2px solid #d1d2d6;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile-name {
+    margin-bottom: 1px;
+
+    color: #3d3f43;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.pronouns {
+    margin-bottom: 9px;
+
+    color: #777980;
+
+    font-size: 12px;
+    font-style: italic;
+}
+
+.profile-role {
+    max-width: 200px;
+
+    margin-bottom: 3px;
+
+    color: #55585d;
+
+    font-size: 12.5px;
+    line-height: 1.45;
+}
+
+.profile-email {
+    max-width: 200px;
+
+    margin-bottom: 18px;
+
+    color: #777980;
+
+    font-size: 11.5px;
+
+    overflow-wrap: anywhere;
+}
+
+.profile-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.profile-link {
+    min-height: 28px;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: #55585d;
+
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+a.profile-link:hover {
+    color: #315f99;
+    text-decoration: none;
+}
+
+.profile-link i {
+    width: 15px;
+    flex: 0 0 15px;
+
+    text-align: center;
+    font-size: 13px;
+}
+
+.icon-location {
+    color: #ef5145;
+}
+
+.icon-university {
+    color: #2874c7;
+}
+
+.icon-email {
+    color: #db4437;
+}
+
+.icon-researchgate {
+    color: #00bfae;
+}
+
+.icon-scholar {
+    color: #4285f4;
+}
+
+.icon-linkedin {
+    color: #0a66c2;
+}
+
+
+/* =========================
+   INTRODUCTION
+========================= */
+
+.intro-section {
+    margin-bottom: 42px;
+}
+
+.intro-section h1 {
+    margin-bottom: 18px;
+
+    color: #2e3034;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.intro-section p {
+    margin-bottom: 15px;
+
+    color: #4f5258;
+
+    font-size: 15px;
+    line-height: 1.72;
+}
+
+.intro-section strong {
+    color: #303237;
+}
+
+
+/* =========================
+   GRADUATE GOAL
+========================= */
+
+.graduate-goal {
+    margin: 21px 0 0;
+    padding: 16px 18px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+
+    background: linear-gradient(
+        110deg,
+        rgba(255, 225, 241, 0.72),
+        rgba(242, 230, 255, 0.68) 50%,
+        rgba(222, 241, 255, 0.76)
+    );
+
+    border: 1px solid rgba(205, 194, 222, 0.65);
+    border-left: 3px solid #7b72b6;
+
+    border-radius: 4px;
+}
+
+.graduate-goal-icon {
+    width: 31px;
+    height: 31px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.75);
+
+    color: #6678ad;
+    font-size: 14px;
+}
+
+.graduate-goal p {
+    margin: 0;
+
+    color: #41444a;
+
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.section-heading {
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.section-heading span {
+    flex-shrink: 0;
+
+    color: var(--teal);
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3.2px;
+}
+
+.section-heading::after {
+    content: "";
+
+    width: 100%;
+    height: 1px;
+
+    background: #d7d7da;
+}
+
+
+/* =========================
+   RESEARCH INTERESTS
+========================= */
+
+.research-section {
+    margin-bottom: 40px;
+}
+
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.research-card {
+    min-height: 0;
+
+    padding: 13px 15px;
+
+    display: grid;
+    grid-template-columns: 30px minmax(0, 1fr);
+    gap: 11px;
+
+    align-items: start;
+
+    background: linear-gradient(
+        120deg,
+        rgba(255, 244, 251, 0.68),
+        rgba(242, 246, 255, 0.70)
+    );
+
+    border: 1px solid rgba(218, 216, 229, 0.75);
+    border-radius: 5px;
+}
+
+.research-card:nth-child(even) {
+    background: linear-gradient(
+        120deg,
+        rgba(242, 247, 255, 0.75),
+        rgba(250, 242, 255, 0.64)
+    );
+}
+
+.research-icon {
+    width: 29px;
+    height: 29px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #f2dff3,
+        #dbeafa
+    );
+
+    border-radius: 50%;
+
+    color: #6477a8;
+    font-size: 12px;
+}
+
+.research-content {
+    min-width: 0;
+}
+
+.research-card h3 {
+    margin: 1px 0 4px;
+
+    color: #35363d;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.research-card p {
+    margin: 0;
+
+    color: #686b74;
+
+    font-size: 11.5px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   THESIS
+========================= */
+
+.thesis-section {
+    margin-bottom: 42px;
+}
+
+.thesis-card {
+    display: grid;
+    grid-template-columns: minmax(0, 40%) minmax(0, 60%);
+
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.78);
+
+    border: 1px solid #dadadd;
+    border-radius: 4px;
+}
+
+.thesis-left {
+    min-width: auto;
+    min-height: auto ;
+
+    padding:2%;
+    margin: 2px 0 2px 2px;
+
+    display: flex;
+    align-items: stretch;
+
+    background: #ffffff;
+
+    border-right: 2px solid #e0e0e0;
+}
+
+.thesis-framework-image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    min-height: 0;
+
+    object-fit: contain;
+    object-position: center;
+
+    background: #ffffff;
+}
+
+.thesis-right {
+    min-width: 0;
+    padding: 22px 24px;
+}
+
+.thesis-date {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #757980;
+
+    font-size: 9px;
+    letter-spacing: 1.8px;
+}
+
+.thesis-right h2 {
+    margin-bottom: 10px;
+
+    color: #242629;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.27;
+}
+
+.thesis-lead {
+    margin-bottom: 11px;
+
+    color: #08787e;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.thesis-right > p {
+    margin-bottom: 10px;
+
+    color: #505359;
+
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+.thesis-right strong {
+    color: #34363b;
+}
+
+.thesis-meta {
+    margin-top: 12px;
+}
+
+.meta-row {
+    padding: 7px 0;
+
+    display: grid;
+    grid-template-columns: 90px minmax(0, 1fr);
+    gap: 12px;
+
+    border-top: 1px solid #d8d8d8;
+}
+
+.meta-row:last-child {
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.meta-row > span {
+    color: #7b7e84;
+
+    font-size: 8px;
+    letter-spacing: 1.3px;
+}
+
+.meta-row p {
+    margin: 0;
+
+    color: #414348;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 11.5px;
+    line-height: 1.45;
+}
+
+.thesis-tags {
+    margin-top: 12px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.thesis-tags span {
+    padding: 4px 7px;
+
+    color: #65686d;
+
+    background: rgba(255, 255, 255, 0.70);
+
+    border: 1px solid #d5d5d7;
+
+    font-size: 8.5px;
+}
+
+
+/* =========================
+   EDUCATION — COMPACT
+========================= */
+
+.education-section {
+    margin-bottom: 38px;
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.education-card {
+    display: grid;
+    grid-template-columns: 57px minmax(0, 1fr);
+    align-items: start;
+    gap: 15px;
+
+    min-height: 0;
+    padding: 16px 18px;
+
+    background: rgba(255, 255, 255, 0.76);
+
+    border: 1px solid #e0e1e7;
+    border-radius: 7px;
+
+    box-shadow: none;
+}
+
+.education-primary {
+    padding: 16px 18px;
+}
+
+.education-logo {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-logo img {
+    width: 100%;
+    height: 100%;
+
+    max-width: 54px;
+    max-height: 54px;
+
+    object-fit: contain;
+}
+
+.education-info {
+    min-width: 0;
+}
+
+.education-info h3 {
+    margin: 0 0 3px;
+
+    color: #363941;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.education-info h4 {
+    margin: 0 0 3px;
+
+    color: #50545b;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.education-year {
+    margin: 0 0 4px;
+
+    color: #777b83;
+
+    font-size: 11.5px;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.education-location {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    margin: 5px 0 10px;
+
+    color: #696d75;
+
+    font-size: 11.5px;
+    line-height: 1.4;
+}
+
+.education-location i {
+    color: #008d93;
+    font-size: 11px;
+}
+
+.education-cgpa {
+    margin: 8px 0 6px;
+
+    color: #43474f;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.education-cgpa strong {
+    color: #00868e;
+}
+
+.education-achievement {
+    margin: 4px 0 0;
+
+    color: #565a62;
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.education-achievement i {
+    display: inline-block;
+
+    width: 17px;
+    margin-right: 3px;
+
+    color: #008d93;
+    font-size: 11px;
+}
+
+.education-achievement strong,
+.education-achievement b {
+    color: #00848b;
+}
+
+.education-result {
+    margin: 7px 0 0;
+
+    color: #53575f;
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.education-result strong {
+    color: #00868e;
+}
+
+
+/* =========================
+   NEWS
+========================= */
+
+.news-section {
+    margin-bottom: 38px;
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-item {
+    display: grid;
+    grid-template-columns: 76px minmax(0, 1fr);
+    gap: 13px;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid rgba(218, 218, 220, 0.72);
+}
+
+.news-item:first-child {
+    border-top: 1px solid rgba(218, 218, 220, 0.72);
+}
+
+.news-date {
+    padding-top: 2px;
+
+    color: #8a6684;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+.news-item:nth-child(even) .news-date {
+    color: #52799a;
+}
+
+.news-item p {
+    margin: 0;
+
+    color: #53575f;
+
+    font-size: 12.5px;
+    line-height: 1.65;
+}
+
+.news-item em {
+    color: #3d4655;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    margin-bottom: 20px;
+}
+
+.contact-box {
+    padding: 15px 18px;
+
+    background: linear-gradient(
+        115deg,
+        rgba(255, 237, 247, 0.72),
+        rgba(233, 244, 255, 0.76)
+    );
+
+    border: 1px solid #dedce7;
+    border-radius: 5px;
+}
+
+.contact-box p {
+    margin: 0 0 9px;
+
+    color: #50545c;
+
+    font-size: 12.5px;
+    line-height: 1.6;
+}
+
+.contact-email {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #2869a5;
+    font-size: 12.5px;
+}
+
+.contact-email i {
+    color: #455ad4;
+    font-size: 13px;
+}
+
+.contact-email strong {
+    font-weight: 600;
+}
+
+.contact-email:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   SHARED STYLES FOR OTHER PAGES
+========================= */
+
+.publications-page > h1,
+.experience-page > h1,
+.projects-page > h1,
+.services-page > h1,
+.awards-page > h1 {
+    margin-bottom: 16px;
+
+    color: var(--heading);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.last-updated {
+    margin-bottom: 30px;
+
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.publication-section-title,
+.service-section-heading {
+    margin: 30px 0 18px;
+    padding-bottom: 9px;
+
+    color: var(--teal);
+
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.publication-item,
+.experience-item,
+.instructor-item {
+    margin-bottom: 23px;
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.publication-item h3,
+.experience-item h3,
+.instructor-item h3 {
+    margin-bottom: 7px;
+
+    color: var(--heading);
+
+    font-size: 17px;
+    line-height: 1.45;
+}
+
+.publication-authors,
+.publication-venue,
+.experience-meta {
+    margin-bottom: 6px;
+
+    color: #666970;
+    font-size: 13px;
+}
+
+.publication-venue,
+.experience-meta {
+    font-style: italic;
+}
+
+.publication-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.publication-links a {
+    font-size: 12px;
+}
+
+.experience-item ul,
+.reviewer-block ul {
+    padding-left: 20px;
+}
+
+.experience-item li,
+.reviewer-block li {
+    margin-bottom: 6px;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.project-card,
+.award-card {
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.72);
+
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.project-image {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.project-content,
+.award-content {
+    padding: 17px;
+}
+
+.project-content h3,
+.award-content h3 {
+    margin-bottom: 8px;
+
+    color: var(--heading);
+    font-size: 16px;
+}
+
+.project-content p,
+.award-content p {
+    margin-bottom: 10px;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    margin-bottom: 12px;
+}
+
+.project-tags span {
+    padding: 4px 7px;
+
+    border: 1px solid var(--border);
+    font-size: 10px;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.award-image {
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+}
+
+
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 12.5px;
+    }
+
+    .page-container {
+        grid-template-columns: 195px minmax(0, 1fr);
+        gap: 38px;
+    }
+
+    .profile-sidebar {
+        width: 195px;
+    }
+
+    .profile-image-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .thesis-card {
+        grid-template-columns: 1fr;
+    }
+
+    .thesis-left {
+        border-right: 0;
+        border-bottom: 2px solid #e0e0e0;
+    }
+
+    .thesis-framework-image {
+        width: 100%;
+        height: auto;
+        max-height: 420px;
+        object-fit: contain;
+    }
+
+    .awards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 780px) {
+
+    body {
+        background-attachment: scroll;
+    }
+
+    .navbar {
+        min-height: 64px;
+
+        padding: 14px 18px;
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        width: 34px;
+        height: 32px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: #ffffff;
+
+        border: 1px solid #aaa;
+        border-radius: 3px;
+
+        color: #333;
+
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+
+        width: 100%;
+
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        width: 100%;
+
+        padding: 10px 0;
+
+        font-size: 14px;
+
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav-links a.active::after {
+        display: none;
+    }
+
+    .page-container {
+        display: block;
+
+        padding: 30px 20px 55px;
+    }
+
+    .profile-sidebar {
+        position: static;
+
+        width: 210px;
+        margin-bottom: 42px;
+    }
+
+    /* .profile-image-wrapper {
+        width: 195px;
+        height: 195px;
+    } */
+
+    .intro-section h1 {
+        font-size: 29px;
+    }
+
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .thesis-card {
+        grid-template-columns: 1fr;
+    }
+
+    .education-card {
+        grid-template-columns: 52px minmax(0, 1fr);
+        gap: 13px;
+
+        padding: 15px;
+    }
+
+    .education-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .education-logo img {
+        max-width: 48px;
+        max-height: 48px;
+    }
+
+    .projects-grid,
+    .awards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+    .page-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .intro-section h1 {
+        font-size: 26px;
+    }
+
+    .intro-section p {
+        font-size: 14px;
+    }
+
+    .graduate-goal {
+        padding: 15px;
+    }
+
+    .section-heading {
+        gap: 11px;
+    }
+
+    .section-heading span {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .research-card {
+        padding: 12px;
+    }
+
+    .research-card h3 {
+        font-size: 14px;
+    }
+
+    .research-card p {
+        font-size: 11.5px;
+    }
+
+    .thesis-right {
+        padding: 19px 17px;
+    }
+
+    .thesis-right h2 {
+        font-size: 19px;
+    }
+
+    .meta-row {
+        grid-template-columns: 75px minmax(0, 1fr);
+        gap: 8px;
+    }
+
+    .education-card {
+        grid-template-columns: 43px minmax(0, 1fr);
+        gap: 11px;
+
+        padding: 13px;
+    }
+
+    .education-logo {
+        width: 42px;
+        height: 42px;
+    }
+
+    .education-logo img {
+        max-width: 42px;
+        max-height: 42px;
+    }
+
+    .education-info h3 {
+        font-size: 14px;
+    }
+
+    .education-info h4 {
+        font-size: 12px;
+    }
+
+    .education-achievement {
+        font-size: 11.5px;
+    }
+
+    .news-item {
+        grid-template-columns: 70px minmax(0, 1fr);
+        gap: 9px;
+    }
+
+    .news-item p {
+        font-size: 15px;
+    }
+
+}
+
+
+/* Introduction — Rich Burgundy */
+.intro-section > p strong,
+.intro-section .intro-accent {
+    color: #843b62;
+    font-weight: 700;
+}
+
+/* Graduate Goal — Rich Indigo */
+.intro-section .graduate-goal strong {
+    color: #4e5299;
+    font-weight: 700;
+}
+
+
+
+/* ==========================================
+   EDUCATION — REFINED ACADEMIC STYLE
+   Minimal | Professional | PhD Portfolio
+========================================== */
+
+.education-section {
+    --edu-heading: #24364b;
+    --edu-body: #475569;
+    --edu-muted: #788596;
+    --edu-accent: #287b83;
+    --edu-border: #e2e7ed;
+    --edu-background: #ffffff;
+}
+
+/* Card layout */
+
+.education-section .education-list {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+}
+
+.education-section .education-card {
+    display: grid !important;
+    grid-template-columns: 58px minmax(0, 1fr) !important;
+    align-items: start !important;
+    gap: 17px !important;
+
+    padding: 19px 22px !important;
+    margin: 0 !important;
+    min-height: 0 !important;
+    height: auto !important;
+
+    background: var(--edu-background) !important;
+    border: 1px solid var(--edu-border) !important;
+    border-radius: 7px !important;
+    box-shadow: none !important;
+}
+
+/* Subtle hover */
+
+.education-section .education-card:hover {
+    border-color: #cbd5df !important;
+    box-shadow: 0 3px 12px rgba(36, 54, 75, 0.035) !important;
+}
+
+/* No colored side borders */
+
+.education-section .education-primary {
+    border-left: 1px solid var(--edu-border) !important;
+}
+
+/* Institution logo */
+
+.education-section .education-logo {
+    width: 58px !important;
+    height: 58px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+}
+
+.education-section .education-logo img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+}
+
+/* Content reset */
+
+.education-section .education-info {
+    display: block !important;
+    min-height: 0 !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
+    color: var(--edu-body) !important;
+}
+
+.education-section .education-info h3,
+.education-section .education-info h4,
+.education-section .education-info p {
+    padding: 0 !important;
+    margin-top: 0 !important;
+    min-height: 0 !important;
+    height: auto !important;
+    line-height: 1.5 !important;
+}
+
+/* Institution name */
+
+.education-section .education-info h3 {
+    color: var(--edu-heading) !important;
+    font-size: 15px !important;
+    font-weight: 650 !important;
+    letter-spacing: -0.1px;
+    margin-bottom: 3px !important;
+}
+
+/* Degree */
+
+.education-section .education-info h4 {
+    color: var(--edu-body) !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    margin-bottom: 4px !important;
+}
+
+/* Paragraphs */
+
+.education-section .education-info p {
+    display: block !important;
+    color: var(--edu-body) !important;
+    font-size: 12.5px !important;
+    font-weight: 400 !important;
+    margin: 0 0 5px !important;
+}
+
+/* Graduation year */
+
+.education-section .education-info .education-year {
+    color: var(--edu-muted) !important;
+    font-size: 12px !important;
+    font-style: normal !important;
+    margin-bottom: 5px !important;
+}
+
+/* Location */
+
+.education-section .education-info .education-location {
+    color: var(--edu-muted) !important;
+    font-size: 12px !important;
+    margin-bottom: 7px !important;
+}
+
+.education-section .education-location i {
+    color: var(--edu-muted) !important;
+    font-size: 11px !important;
+    margin-right: 5px !important;
+}
+
+/* CGPA */
+
+.education-section .education-info .education-cgpa {
+    color: var(--edu-body) !important;
+    font-size: 12.5px !important;
+    font-weight: 400 !important;
+    margin-bottom: 8px !important;
+}
+
+.education-section .education-cgpa strong {
+    color: var(--edu-heading) !important;
+    font-weight: 700 !important;
+}
+
+/* Academic achievements */
+
+.education-section .education-info .education-achievement {
+    display: block !important;
+    color: var(--edu-body) !important;
+    font-size: 12.5px !important;
+    line-height: 1.55 !important;
+    margin: 0 0 5px !important;
+}
+
+.education-section .education-achievement i {
+    color: var(--edu-accent) !important;
+    font-size: 11px !important;
+    margin-right: 7px !important;
+}
+
+.education-section .education-achievement strong {
+    color: var(--edu-heading) !important;
+    font-weight: 600 !important;
+}
+
+.education-section .education-achievement b {
+    color: var(--edu-heading) !important;
+    font-weight: 650 !important;
+}
+
+/* HSC / SSC GPA */
+
+.education-section .education-info .education-result {
+    color: var(--edu-body) !important;
+    font-size: 12.5px !important;
+    margin-bottom: 0 !important;
+}
+
+.education-section .education-result strong {
+    color: var(--edu-heading) !important;
+    font-weight: 650 !important;
+}
+
+/* Remove last element spacing */
+
+.education-section .education-info > :last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .education-section .education-card {
+        grid-template-columns: 44px minmax(0, 1fr) !important;
+        gap: 12px !important;
+        padding: 15px !important;
+    }
+
+    .education-section .education-logo {
+        width: 44px !important;
+        height: 44px !important;
+    }
+
+    .education-section .education-info h3 {
+        font-size: 14px !important;
+    }
+
+    .education-section .education-info h4,
+    .education-section .education-info p,
+    .education-section .education-info .education-achievement {
+        font-size: 12px !important;
+    }
+}
+
+
+
+/* UNDERGRADUATE THESIS — BALANCED FONT SIZE */
+
+/* .thesis-right h2 {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+} */
+.thesis-section p,
+.thesis-card p {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+}
+
+.thesis-subtitle {
+    font-size: 12px !important;
+    line-height: 1.6 !important;
+}
+
+.thesis-section .thesis-meta,
+.thesis-card .thesis-meta,
+.thesis-section .thesis-details,
+.thesis-card .thesis-details {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+}
+
+.thesis-section .thesis-label,
+.thesis-card .thesis-label {
+    font-size: 12px !important;
+}
+
+.thesis-section .thesis-tags span,
+.thesis-card .thesis-tags span {
+    font-size: 9px !important;
+    padding: 6px 9px !important;
+}
+
+@media (max-width: 600px) {
+    .thesis-section p,
+    .thesis-card p {
+        font-size: 15px !important;
+    }
+}
+
+
+/* ==============================================
+   PUBLICATIONS PAGE — FINAL ACADEMIC DESIGN
+   Existing HTML Class Names Preserved
+============================================== */
+
+.publications-page {
+    --pub-navy: #25354b;
+    --pub-teal: #2c6267;
+    --pub-text: #465365;
+    --pub-muted: #738092;
+    --pub-border: #e1e5ec;
+}
+
+/* ==============================================
+   PUBLICATIONS PAGE INTRODUCTION
+============================================== */
+
+.publications-page .publications-intro {
+    margin: 0 0 30px !important;
+    padding: 0 !important;
+}
+
+.publications-page .publications-intro h1 {
+    color: var(--pub-navy) !important;
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    line-height: 1.3 !important;
+    margin: 0 0 12px !important;
+}
+
+.publications-page .publications-intro > p {
+    color: var(--pub-text) !important;
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+    margin: 0 0 8px !important;
+}
+
+.publications-page .last-updated {
+    color: var(--pub-muted) !important;
+    font-size: 12px !important;
+    margin-top: 12px !important;
+}
+
+/* ==============================================
+   PUBLICATIONS SECTION
+============================================== */
+
+.publications-page .publications-section {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.publications-page .publications-section .section-heading {
+    margin-bottom: 22px !important;
+}
+
+/* ==============================================
+   YEAR GROUP
+============================================== */
+
+.publications-page .publication-year-group {
+    display: block !important;
+    margin: 0 0 30px !important;
+    padding: 0 !important;
+}
+
+.publications-page .publication-year-heading {
+    display: block !important;
+
+    color: var(--pub-navy) !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 27px !important;
+    font-weight: 700 !important;
+    line-height: 1.3 !important;
+
+    margin: 0 !important;
+    padding: 0 0 14px !important;
+
+    border: none !important;
+    border-bottom: 2px solid var(--pub-border) !important;
+
+    background: transparent !important;
+}
+
+/* ==============================================
+   PUBLICATION LIST
+============================================== */
+
+.publications-page .publication-year-group .publication-list {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
+}
+
+/* ==============================================
+   INDIVIDUAL PUBLICATION ROW
+============================================== */
+
+.publications-page .publication-year-group .publication-item {
+    display: grid !important;
+
+    grid-template-columns: 38px minmax(0, 1fr) !important;
+    align-items: start !important;
+    gap: 16px !important;
+
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 23px 0 !important;
+
+    background: transparent !important;
+
+    border: none !important;
+    border-bottom: 1px solid var(--pub-border) !important;
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+    transform: none !important;
+}
+
+.publications-page .publication-year-group
+.publication-item:last-child {
+    border-bottom: none !important;
+}
+
+/* ==============================================
+   PUBLICATION NUMBER
+============================================== */
+
+.publications-page .publication-number {
+    display: block !important;
+
+    color: var(--pub-muted) !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 1.5 !important;
+
+    margin: 0 !important;
+    padding: 4px 0 0 !important;
+}
+
+/* ==============================================
+   PUBLICATION CONTENT
+============================================== */
+
+.publications-page .publication-content {
+    display: block !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    text-align: left !important;
+}
+
+/* ==============================================
+   CONFERENCE BADGE
+============================================== */
+
+.publications-page .publication-badge {
+    display: inline-block !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    color: #236578 !important;
+    background: #d8f2f2 !important;
+
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    line-height: 1.3 !important;
+
+    letter-spacing: 0.2px !important;
+
+    margin: 0 0 10px !important;
+    padding: 7px 11px !important;
+
+    border: none !important;
+    border-radius: 5px !important;
+
+    box-shadow: none !important;
+}
+
+/* ==============================================
+   PAPER TITLE
+============================================== */
+
+.publications-page .publication-content h3 {
+    display: block !important;
+
+    color: var(--pub-navy) !important;
+
+    font-family: inherit !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 1.45 !important;
+
+    letter-spacing: 0 !important;
+
+    margin: 0 0 7px !important;
+    padding: 0 !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+}
+
+/* ==============================================
+   AUTHORS
+============================================== */
+
+.publications-page .publication-content
+.publication-authors {
+    display: block !important;
+
+    color: var(--pub-muted) !important;
+
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+
+    margin: 0 0 4px !important;
+    padding: 0 !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+}
+
+.publications-page .publication-authors strong {
+    color: var(--pub-teal) !important;
+    font-weight: 700 !important;
+}
+
+/* ==============================================
+   CONFERENCE / JOURNAL NAME
+============================================== */
+
+.publications-page .publication-content
+.publication-venue {
+    display: block !important;
+
+    color: var(--pub-muted) !important;
+
+    font-size: 12.5px !important;
+    font-weight: 400 !important;
+    font-style: italic !important;
+    line-height: 1.55 !important;
+
+    margin: 0 0 10px !important;
+    padding: 0 !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+}
+
+/* ==============================================
+   PUBLICATION BUTTONS
+============================================== */
+
+.publications-page .publication-content
+.publication-links {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex-wrap: wrap !important;
+
+    gap: 6px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+}
+
+/* All buttons */
+
+.publications-page .publication-links .pub-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: auto !important;
+    min-width: 0 !important;
+    height: 30px !important;
+    min-height: 30px !important;
+
+    margin: 0 !important;
+    padding: 5px 10px !important;
+
+    color: #34455c !important;
+    background: #f8fafc !important;
+
+    border: 1px solid #dce3eb !important;
+    border-radius: 5px !important;
+
+    font-family: inherit !important;
+    font-size: 11.5px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+
+    text-decoration: none !important;
+    white-space: nowrap !important;
+
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+.publications-page .publication-links
+.pub-btn:hover:not(:disabled) {
+    background: #edf3f5 !important;
+    border-color: #b9ccd0 !important;
+}
+
+/* Google Scholar */
+
+.publications-page .publication-links .scholar-btn {
+    color: #ffffff !important;
+    background: #3679e8 !important;
+    border-color: #3679e8 !important;
+}
+
+.publications-page .publication-links
+.scholar-btn:hover {
+    color: #ffffff !important;
+    background: #2868cf !important;
+    border-color: #2868cf !important;
+}
+
+/* Disabled Bib */
+
+.publications-page .publication-links
+.pub-btn:disabled {
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
+}
+
+/* ==============================================
+   ABSTRACT PANEL
+============================================== */
+
+.publications-page .publication-abstract {
+    display: block;
+
+    margin: 12px 0 0 !important;
+    padding: 12px 14px !important;
+
+    background: #f7fafb !important;
+    border-left: 3px solid var(--pub-teal) !important;
+    border-radius: 3px !important;
+}
+
+.publications-page .publication-abstract[hidden] {
+    display: none !important;
+}
+
+.publications-page .publication-abstract p {
+    color: var(--pub-text) !important;
+
+    font-size: 12.5px !important;
+    line-height: 1.65 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* ==============================================
+   DESKTOP — STICKY SIDEBAR
+============================================== */
+
+@media (min-width: 901px) {
+
+    .publications-body .profile-sidebar {
+        position: sticky !important;
+        top: 100px !important;
+
+        align-self: start !important;
+
+        height: fit-content !important;
+        max-height: calc(100vh - 115px) !important;
+
+        overflow-y: auto !important;
+
+        z-index: 5;
+    }
+
+    .publications-body .page-container {
+        overflow: visible !important;
+    }
+
+}
+
+/* ==============================================
+   MOBILE
+============================================== */
+
+@media (max-width: 900px) {
+
+    .publications-body .profile-sidebar {
+        position: static !important;
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .publications-page .publication-year-heading {
+        font-size: 24px !important;
+    }
+
+    .publications-page .publication-year-group
+    .publication-item {
+        grid-template-columns: 26px minmax(0, 1fr) !important;
+        gap: 10px !important;
+        padding: 18px 0 !important;
+    }
+
+    .publications-page .publication-number {
+        font-size: 12px !important;
+    }
+
+    .publications-page .publication-content h3 {
+        font-size: 14px !important;
+    }
+
+    .publications-page .publication-authors {
+        font-size: 12px !important;
+    }
+
+    .publications-page .publication-venue {
+        font-size: 12px !important;
+    }
+
+    .publications-page .publication-badge {
+        font-size: 10px !important;
+        padding: 6px 9px !important;
+    }
+
+    .publications-page .publication-links .pub-btn {
+        font-size: 11px !important;
+        padding: 5px 8px !important;
+    }
+
+}
+
+
+/* ==========================================
+   PUBLICATIONS — FINAL COLOR FIX
+========================================== */
+
+/* Google Scholar — soft lavender, readable text */
+
+.publications-body .publications-page
+.publication-links a.pub-btn.scholar-btn,
+.publications-body .publications-page
+.publication-links a.pub-btn.scholar-btn:visited {
+
+    background: #eeeafa !important;
+    color: #505c93 !important;
+
+    border: 1px solid #dcd7ef !important;
+
+    opacity: 1 !important;
+    box-shadow: none !important;
+}
+
+.publications-body .publications-page
+.publication-links a.pub-btn.scholar-btn:hover {
+
+    background: #d5c7ff !important;
+    color: #0033ff !important;
+
+    border-color: #cfc5eb !important;
+}
+
+.publications-body .publications-page
+.publication-links a.pub-btn.scholar-btn i {
+
+    color: #1737c5 !important;
+    opacity: 1 !important;
+}
+
+
+/* Research Instructor badges — pinkish */
+
+.publications-body .publications-page
+.publication-item[data-section="instructor"]
+.publication-badge {
+
+    background: #f7eaf4 !important;
+    color: #575f9d !important;
+
+    border: 1px solid #f0dfeb !important;
+
+    font-weight: 650 !important;
+    opacity: 1 !important;
+}
+
+
+/* All badges — consistent appearance */
+
+.publications-body .publications-page
+.publication-badge {
+
+    box-shadow: none !important;
+    text-shadow: none !important;
+    opacity: 1 !important;
+}
+
+.experience-page .experience-icon {
+    color: #2c6267;
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+
+/* ==========================================
+   FOOTER — MINIMAL ACADEMIC DESIGN
+   SHITI CHOWDHURY
+========================================== */
+
+.site-footer {
+    width: 100%;
+    margin-top: 45px;
+    padding: 30px 0;
+
+    /* Same background as the website */
+    background: transparent !important;
+
+    border: none !important;
+    border-top: 1px solid #e1e5ec !important;
+
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+/* CENTERED CONTENT */
+
+.footer-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    box-sizing: border-box;
+}
+
+/* COPYRIGHT — LEFT */
+
+.footer-copyright {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    color: #465365;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.6;
+    white-space: nowrap;
+}
+
+/* SOCIAL ICONS — RIGHT */
+
+.footer-social-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 18px;
+    flex-shrink: 0;
+}
+
+.footer-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 24px;
+    height: 26px;
+
+    font-size: 22px;
+    line-height: 0.8;
+
+    text-decoration: none !important;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+/* ==========================================
+   ORIGINAL SOCIAL BRAND COLORS
+========================================== */
+
+.footer-email,
+.footer-email:visited {
+    color: #ea4335 !important;
+}
+
+.footer-scholar,
+.footer-scholar:visited {
+    color: #4285f4 !important;
+}
+
+.footer-github,
+.footer-github:visited {
+    color: #181717 !important;
+}
+
+.footer-linkedin,
+.footer-linkedin:visited {
+    color: #0a66c2 !important;
+}
+
+.footer-researchgate,
+.footer-researchgate:visited {
+    color: #00ccbb !important;
+}
+
+/* HOVER */
+
+.footer-social:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 900px) {
+
+    .footer-container {
+        max-width: 100%;
+        padding: 0 25px;
+    }
+
+    .footer-social-links {
+        gap: 18px;
+    }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 650px) {
+
+    .site-footer {
+        margin-top: 30px;
+        padding: 25px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .footer-copyright {
+        font-size: 12px;
+        white-space: normal;
+    }
+
+    .footer-social-links {
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .footer-social {
+        font-size: 12px;
+    }
+}
+
+/* ==========================================
+   SIDEBAR & FOOTER LAYOUT CORRECTION
+========================================== */
+
+/* Keep the footer outside the content layout */
+.page-container {
+    overflow: visible !important;
+}
+
+/* Desktop sidebar */
+@media (min-width: 901px) {
+
+    .page-container {
+        align-items: flex-start !important;
+    }
+
+    .profile-sidebar {
+        position: sticky !important;
+        top: 90px !important;
+        align-self: flex-start !important;
+
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+
+        z-index: 5;
+    }
+
+    .main-content {
+        min-width: 0;
+    }
+}
+
+/* Mobile sidebar */
+@media (max-width: 900px) {
+
+    .profile-sidebar {
+        position: static !important;
+        top: auto !important;
+
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+    }
+}
+
+/* Footer: only top border */
+.site-footer {
+    clear: both;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    border-top: 1px solid #e1e5ec !important;
+
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+
+/* ==========================================
+   COMPACT FOOTER HEIGHT
+========================================== */
+
+.site-footer {
+    padding: 12px 0 !important;
+    margin-top: 2px !important;
+    min-height: 0 !important;
+    height: auto !important;
+}
+
+.footer-container {
+    min-height: 0 !important;
+}
+
+.footer-social {
+    width: 23px;
+    height: 23px;
+    font-size: 18px;
+    line-height: 0.8;
+}
+
+.footer-copyright {
+    font-size: 11px;
+    line-height: 1.2;
+}
+
+/* MOBILE */
+@media (max-width: 650px) {
+    .site-footer {
+        padding: 12px 0 !important;
+    }
+}
+
+
+/* ==========================================
+   FOOTER — SHITI CHOWDHURY
+   COMPACT & CENTERED
+========================================== */
+
+.site-footer {
+    position: relative;
+    display: block;
+
+    width: 100%;
+    height: auto;
+    min-height: 0;
+
+    margin: 20px 0 0 !important;
+    padding: 12px 0 !important;
+
+    background: transparent !important;
+
+    border: none !important;
+    border-top: 1px solid #e1e5ec !important;
+
+    border-radius: 0 !important;
+    box-shadow: none !important;
+
+    box-sizing: border-box;
+    clear: both;
+}
+
+/* CENTERED FOOTER CONTAINER */
+
+.site-footer .footer-container {
+    width: calc(100% - 40px);
+    max-width: 1100px;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+/* COPYRIGHT */
+
+.site-footer .footer-copyright {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    color: #465365 !important;
+
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.4;
+
+    white-space: nowrap;
+}
+
+/* SOCIAL LINKS */
+
+.site-footer .footer-social-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 18px;
+    flex-shrink: 0;
+}
+
+/* ICONS */
+
+.site-footer .footer-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 23px;
+    height: 23px;
+
+    font-size: 18px;
+    line-height: 1;
+
+    text-decoration: none !important;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+/* ORIGINAL BRAND COLORS */
+
+.site-footer .footer-email,
+.site-footer .footer-email:visited {
+    color: #ea4335 !important;
+}
+
+.site-footer .footer-scholar,
+.site-footer .footer-scholar:visited {
+    color: #4285f4 !important;
+}
+
+.site-footer .footer-github,
+.site-footer .footer-github:visited {
+    color: #181717 !important;
+}
+
+.site-footer .footer-linkedin,
+.site-footer .footer-linkedin:visited {
+    color: #0a66c2 !important;
+}
+
+.site-footer .footer-researchgate,
+.site-footer .footer-researchgate:visited {
+    color: #00ccbb !important;
+}
+
+/* HOVER */
+
+.site-footer .footer-social:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 650px) {
+
+    .site-footer {
+        padding: 14px 0 !important;
+    }
+
+    .site-footer .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 12px;
+        text-align: center;
+    }
+
+    .site-footer .footer-copyright {
+        font-size: 11px;
+        white-space: normal;
+    }
+
+    .site-footer .footer-social-links {
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .site-footer .footer-social {
+        font-size: 18px;
+    }
+}
+
+/* 
+/* ==========================================
+   DESKTOP ALIGNMENT — CORRECTED
+========================================== */
+
+@media (min-width: 901px) {
+
+    /* MAIN CONTAINER */
+
+    .page-container {
+        --side-margin: 80px;
+        --sidebar-width: 252px;
+        --content-gap: 65px;
+
+        display: grid !important;
+
+        grid-template-columns:
+            var(--sidebar-width)
+            minmax(0, 1fr) !important;
+
+        column-gap: var(--content-gap) !important;
+
+        width: calc(100% - 160px) !important;
+        max-width: 1600px !important;
+
+        margin: 27px auto 0 !important;
+        padding: 27px 0 0 !important;
+
+        align-items: start !important;
+        overflow: visible !important;
+    }
+
+    /* FIXED LEFT SIDEBAR */
+
+    .profile-sidebar {
+        position: fixed !important;
+
+        top: 124px !important;
+
+        left: max(
+            80px,
+            calc((100vw - 1604px) / 2)
+        ) !important;
+
+        width: 252px !important;
+
+        margin: 0 !important;
+
+        max-height: calc(100vh - 140px) !important;
+        overflow-y: auto !important;
+
+        z-index: 100 !important;
+    }
+
+    /* RIGHT CONTENT */
+
+    .page-container > .main-content {
+        grid-column: 2 !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        min-width: 0 !important;
+    }
+} 
+
+
+/* COMPACT RESEARCH PROJECT BUTTON */
+
+.thesis-actions {
+    margin-top: 12px;
+}
+
+.thesis-project-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 13px !important;
+    gap: 8px !important;
+
+    font-size: 11px !important;
+    font-weight: 600;
+
+    color: #783d59 !important;
+
+    background: linear-gradient(
+        105deg,
+        #fce8f4 0%,
+        #f3eafa 48%,
+        #e9edff 100%
+    ) !important;
+
+    border: 2px solid #cdbbdc !important;
+    border-radius: 0.5px !important;
+
+    min-height: 0 !important;
+    width: fit-content !important;
+
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+}
+
+.thesis-project-link i {
+    font-size: 12px !important;
+    color: #2c6267;
+}
+
+.thesis-project-link:hover {
+    border-color: #783d59 !important;
+    color: #25354b !important;
+    transform: translateY(-1px);
+}

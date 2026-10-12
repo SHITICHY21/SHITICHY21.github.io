@@ -1,0 +1,1573 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Shiti Chowdhury</title>
+
+    <meta name="description"
+        content="Research and technical projects by Shiti Chowdhury in AI, machine learning, NLP, computer vision, multimodal AI, and software development.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        /* ========================================
+           COLOR PALETTE
+        ======================================== */
+
+        .projects-body {
+            --p-navy: #25354b;
+            --p-teal: #2c6267;
+            --p-burgundy: #783d59;
+            --p-gold: #a2804e;
+            --p-text: #465365;
+            --p-muted: #738092;
+            --p-border: #e1e5ec;
+            --p-pink: #f8edf4;
+            --p-lavender: #f4f0f8;
+        }
+
+        /* ========================================
+           KEEP EXISTING LAYOUT & STICKY SIDEBAR
+        ======================================== */
+
+        .projects-body .page-container {
+            overflow: visible !important;
+        }
+
+        .projects-body .main-content.projects-page {
+            width: 100%;
+            min-width: 0;
+        }
+
+        
+        
+
+        /* ========================================
+           PAGE HEADING
+        ======================================== */
+
+        .projects-page .projects-page-title {
+            margin: 0 0 10px !important;
+            color: var(--p-navy) !important;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 29px !important;
+            font-weight: 700 !important;
+            line-height: 1.3 !important;
+        }
+
+        .projects-page .projects-page-intro {
+            margin: 0 0 35px !important;
+            color: var(--p-text) !important;
+            font-size: 13px !important;
+            line-height: 1.85 !important;
+        }
+
+        /* ========================================
+           SECTION HEADINGS
+        ======================================== */
+
+        .projects-page .project-section {
+            margin: 0 0 43px;
+        }
+
+        .projects-page .project-section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            margin: 0 0 22px !important;
+            padding: 0 0 13px !important;
+
+            color: var(--p-navy) !important;
+            border-bottom: 1px solid var(--p-border) !important;
+
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 21px !important;
+            font-weight: 700 !important;
+            line-height: 1.45 !important;
+        }
+
+        .projects-page .project-section-title::before {
+            content: "";
+            width: 4px;
+            height: 25px;
+            flex-shrink: 0;
+            border-radius: 3px;
+            background: linear-gradient(
+                to bottom,
+                var(--p-teal),
+                var(--p-gold)
+            );
+        }
+
+        /* ========================================
+           PROJECT GRID
+        ======================================== */
+
+        .projects-page .projects-grid {
+            display: grid !important;
+            grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+            gap: 20px !important;
+            align-items: stretch;
+        }
+
+        /* ========================================
+           PROJECT CARD
+        ======================================== */
+
+        .projects-page .project-card {
+            display: flex !important;
+            flex-direction: column !important;
+
+            min-width: 0;
+            margin: 0 !important;
+            padding: 0 !important;
+
+            overflow: hidden;
+
+            background: #fff !important;
+            border: 1px solid var(--p-border) !important;
+            border-radius: 7px !important;
+
+            box-shadow: 0 2px 9px rgba(37, 53, 75, 0.035) !important;
+
+            transition:
+                border-color 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .projects-page .project-card:hover {
+            border-color: #d7cbd9 !important;
+            box-shadow: 0 7px 20px rgba(37, 53, 75, 0.075) !important;
+        }
+
+        /* ========================================
+           FIGURE / IMAGE AREA
+        ======================================== */
+
+        .projects-page .project-figure {
+            position: relative;
+            width: 100%;
+            height: 190px;
+
+            overflow: hidden;
+
+            background: linear-gradient(
+                135deg,
+                #f7edf5 0%,
+                #f0edf8 52%,
+                #e9f1f2 100%
+            );
+
+            border-bottom: 1px solid var(--p-border);
+        }
+
+        .projects-page .project-figure img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .projects-page .project-placeholder {
+            display: none;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .projects-page .project-placeholder i {
+            font-size: 42px;
+            color: var(--p-teal);
+            opacity: 0.76;
+        }
+
+        .projects-page .project-placeholder span {
+            color: #776d8d;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        /* ========================================
+           CARD BODY
+        ======================================== */
+
+        .projects-page .project-content {
+            display: flex !important;
+            flex-direction: column !important;
+            flex: 1;
+
+            min-width: 0;
+            padding: 19px 20px 20px !important;
+        }
+
+        .projects-page .project-date {
+            display: block;
+            margin: 0 0 10px !important;
+
+            color: var(--p-muted) !important;
+            font-size: 11.5px !important;
+            line-height: 1.5 !important;
+        }
+
+        .projects-page .project-content h3 {
+            margin: 0 0 12px !important;
+            padding: 0 !important;
+
+            color: var(--p-navy) !important;
+            font-family: inherit !important;
+            font-size: 16px !important;
+            font-weight: 750 !important;
+            line-height: 1.5 !important;
+
+            border: none !important;
+        }
+
+        .projects-page .project-description {
+            margin: 0 0 17px !important;
+            color: var(--p-text) !important;
+
+            font-size: 12.5px !important;
+            line-height: 1.85 !important;
+        }
+
+        /* ========================================
+           TECHNOLOGY TAGS
+        ======================================== */
+
+        .projects-page .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+
+            margin: auto 0 18px !important;
+            padding: 0 !important;
+        }
+
+        .projects-page .project-tech span {
+            display: inline-flex;
+            align-items: center;
+
+            padding: 5px 9px !important;
+
+            color: #625a7d !important;
+            background: var(--p-lavender) !important;
+            border: 1px solid #e7e1ef !important;
+            border-radius: 4px !important;
+
+            font-size: 10.5px !important;
+            font-weight: 500 !important;
+            line-height: 1.4 !important;
+        }
+
+        /* ========================================
+           PROJECT LINKS
+        ======================================== */
+
+        .projects-page .project-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+
+            padding-top: 13px;
+            border-top: 1px solid var(--p-border);
+        }
+
+        .projects-page .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+
+            color: var(--p-teal) !important;
+            background: transparent !important;
+
+            font-size: 12px !important;
+            font-weight: 650 !important;
+            line-height: 1.5 !important;
+            text-decoration: none !important;
+        }
+
+        .projects-page .project-link:hover {
+            color: var(--p-burgundy) !important;
+            text-decoration: underline !important;
+        }
+
+        .projects-page .project-link i {
+            font-size: 12px;
+        }
+
+        .projects-page .project-private {
+            color: #746d84;
+            font-size: 11px;
+        }
+
+        /* ========================================
+           RESPONSIVE
+        ======================================== */
+
+        @media (max-width: 900px) {
+            .projects-body .profile-sidebar {
+                position: static !important;
+                max-height: none !important;
+                overflow: visible !important;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .projects-page .projects-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            .projects-page .project-figure {
+                height: 205px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .projects-page .projects-page-title {
+                font-size: 26px !important;
+            }
+
+            .projects-page .project-section-title {
+                font-size: 19px !important;
+            }
+
+            .projects-page .project-content {
+                padding: 17px !important;
+            }
+
+            .projects-page .project-content h3 {
+                font-size: 15px !important;
+            }
+        }
+
+        
+/* ==========================================
+   PROJECTS PAGE — FIXED LEFT SIDEBAR
+   SAME POSITION AS PUBLICATIONS
+========================================== */
+
+@media (min-width: 901px) {
+
+    .projects-body .page-container {
+        overflow: visible !important;
+        align-items: start !important;
+    }
+
+    .projects-body .profile-sidebar {
+        position: fixed !important;
+
+        top: 125px !important;
+        left: max(80px, calc((100vw - 1604px) / 2)) !important;
+
+        width: 250px !important;
+        height: auto !important;
+
+        max-height: calc(100vh - 140px) !important;
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+
+        margin: 0 !important;
+        z-index: 100 !important;
+    }
+
+    .projects-body .main-content {
+        min-width: 0 !important;
+    }
+}
+
+/* ==========================================
+   MOBILE — NORMAL SIDEBAR
+========================================== */
+
+@media (max-width: 900px) {
+
+    .projects-body .profile-sidebar {
+        position: static !important;
+
+        top: auto !important;
+        left: auto !important;
+
+        width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+
+        overflow: visible !important;
+    }
+}
+
+
+    </style>
+</head>
+
+<body class="projects-body">
+
+    <!-- ========================================
+         NAVBAR
+    ======================================== -->
+
+    <header class="top-header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="site-name">
+                Shiti Chowdhury
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-controls="nav-links"
+                aria-expanded="false">
+
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="publications.html">Publications</a>
+
+                <a href="experience.html">Experience</a>
+
+                <a href="projects.html"
+                    class="active"
+                    aria-current="page">
+                    Projects
+                </a>
+
+                <a href="services.html">Services</a>
+
+                <a href="awards.html">Achievements</a>
+
+                <a href="https://drive.google.com/file/d/1kw05QwyxLwFirVmzz2g6GJeNXBdNhBDl/view"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    CV
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ========================================
+         MAIN LAYOUT
+    ======================================== -->
+
+    <main class="page-container">
+
+        <!-- ====================================
+             LEFT PROFILE SIDEBAR
+        ===================================== -->
+
+        <aside class="profile-sidebar">
+
+            <div class="profile-image-wrapper">
+
+                <img
+                    src="assets/images/photo.jpg"
+                    alt="Shiti Chowdhury"
+                    class="profile-image">
+
+            </div>
+
+            <h2 class="profile-name">
+                Shiti Chowdhury
+            </h2>
+
+            <p class="pronouns">
+                she/her
+            </p>
+
+            <p class="profile-role">
+                Prospective M.Sc. / Ph.D. Applicant
+            </p>
+
+            <p class="profile-email">
+                shitichowdhury21@gmail.com
+            </p>
+
+            <div class="profile-links">
+
+                <div class="profile-link">
+                    <i class="fa-solid fa-location-dot icon-location"></i>
+                    <span>Chattogram, Bangladesh</span>
+                </div>
+
+                <div class="profile-link">
+                    <i class="fa-solid fa-graduation-cap icon-university"></i>
+                    <span>B.Sc., CUET</span>
+                </div>
+
+                <a class="profile-link"
+                    href="mailto:shitichowdhury21@gmail.com">
+
+                    <i class="fa-solid fa-envelope icon-email"></i>
+                    <span>Email</span>
+                </a>
+
+                <a class="profile-link"
+                    href="https://www.researchgate.net/profile/Shiti-Chowdhury"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <i class="fa-brands fa-researchgate icon-researchgate"></i>
+                    <span>ResearchGate</span>
+                </a>
+
+                <a class="profile-link"
+                    href="https://scholar.google.com/citations?user=ePL4eSoAAAAJ&amp;hl=en&amp;oi=ao"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <i class="fa-brands fa-google-scholar icon-scholar"></i>
+                    <span>Google Scholar</span>
+                </a>
+
+                <a class="profile-link"
+                    href="https://www.linkedin.com/in/shiti-chowdhury/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <i class="fa-brands fa-linkedin icon-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- ====================================
+             PROJECT CONTENT
+        ===================================== -->
+
+        <div class="main-content projects-page">
+
+            <h1 class="projects-page-title">Projects</h1>
+
+            <p class="projects-page-intro">
+                Selected research and technical projects spanning
+                artificial intelligence, natural language processing,
+                computer vision, multimodal learning, speech processing,
+                and software development.
+            </p>
+
+
+            <!-- ==================================
+                 SECTION 1
+            =================================== -->
+
+            <section class="project-section">
+
+                <h2 class="project-section-title">
+                    AI, Machine Learning &amp; NLP Projects
+                </h2>
+
+                <div class="projects-grid">
+
+
+                    <!-- PROJECT 1 -->
+
+                    <article class="project-card">
+
+                        <div class="project-figure">
+
+                            <img
+                                src="assets/images/OOD AI-Generated Code Detection – SemEval 2026.jpg"
+                                alt="OOD AI-Generated Code Detection"
+                                style="width: 100%; height: 100%; object-fit: cover;"
+                                onerror="showProjectFallback(this)">
+
+                            <div class="project-placeholder">
+                                <i class="fa-solid fa-code"></i>
+                                <span>AI-GENERATED CODE DETECTION</span>
+                            </div>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-date">MARCH 2026</span>
+
+                            <h3>
+                                OOD AI-Generated Code Detection – SemEval 2026
+                            </h3>
+
+                            <p class="project-description">
+                                Developed a robustness-oriented framework
+                                for detecting AI-generated code under
+                                out-of-distribution language and domain
+                                shifts, using invariant representation
+                                learning and supervised contrastive training.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>Machine Learning</span>
+                                <span>UniXcoder</span>
+                                <span>Contrastive Learning</span>
+                                <span>OOD Detection</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a class="project-link"
+                                    href="https://github.com/SHITICHY21/OOD-AI-Code-Detection-SemEval2026"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Project Link
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 2 -->
+
+                    <article class="project-card">
+
+                        <div class="project-figure">
+
+                            <img
+                                src="assets/images/Structure-Aware Syllogistic Reasoning.jpg"
+                                alt="Structure-Aware Syllogistic Reasoning"
+                                style="width: 100%; height: 100%; object-position: center; object-fit: cover;"
+                                onerror="showProjectFallback(this)">
+
+                            <div class="project-placeholder">
+                                <i class="fa-solid fa-brain"></i>
+                                <span>LOGICAL REASONING</span>
+                            </div>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-date">MARCH 2026</span>
+
+                            <h3>
+                                Structure-Aware Syllogistic Reasoning
+                            </h3>
+
+                            <p class="project-description">
+                                Developed a structure-aware framework
+                                for evaluating logical validity while
+                                reducing semantic plausibility bias
+                                in language model reasoning.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>NLP</span>
+                                <span>Logical Reasoning</span>
+                                <span>LLMs</span>
+                                <span>Bias Mitigation</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a class="project-link"
+                                    href="https://github.com/AJFaisal002/Structure-Aware-Syllogistic-Reasoning"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Project Link
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 3 -->
+
+                    <article class="project-card">
+
+                        <div class="project-figure">
+
+                            <img
+                                src="assets/images/Agentic AI Chatbot Methodology Flowchart.png"
+                                alt="Agentic AI Chatbot"
+                                onerror="showProjectFallback(this)">
+
+                            <div class="project-placeholder">
+                                <i class="fa-solid fa-robot"></i>
+                                <span>AGENTIC AI CHATBOT</span>
+                            </div>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-date">JANUARY 2026</span>
+
+                            <h3>Agentic AI Chatbot</h3>
+
+                            <p class="project-description">
+                                Created an agentic AI chatbot using
+                                FastAPI and Streamlit with OpenAI and
+                                Groq models, supporting multi-agent
+                                reasoning workflows and optional web
+                                search integration for real-time knowledge.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>LangChain</span>
+                                <span>FastAPI</span>
+                                <span>Streamlit</span>
+                                <span>OpenAI</span>
+                                <span>Groq</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a class="project-link"
+                                    href="https://github.com/SHITICHY21/Agentic-AI-Chatbot"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Project Link
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 4 -->
+
+                    <article class="project-card">
+
+                        <div class="project-figure">
+
+                            <img
+                                src="assets/images/Five-Step Speech Processing Pipeline.png"
+                                onerror="showProjectFallback(this)">
+
+                            <div class="project-placeholder">
+                                <i class="fa-solid fa-language"></i>
+                                <span>BANGLA DIALECT NORMALIZATION</span>
+                            </div>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-date">NOVEMBER 2025</span>
+
+                            <h3>Bangla Dialect Normalizer</h3>
+
+                            <p class="project-description">
+                                Explored automatic transcription and
+                                normalization of regional Bengali
+                                dialects into standard Bangla to
+                                improve language accessibility.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>NLP</span>
+                                <span>Bangla</span>
+                                <span>Dialect Normalization</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a class="project-link"
+                                    href="https://github.com/SHITICHY21/BanglaDialectNormalizer"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Project Link
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 5 -->
+
+                    <article class="project-card">
+
+                        <div class="project-figure">
+
+                            <img
+                                src="assets/images/Telegram Manipulation Span Identification Flowchart.png"
+                                alt="Span Identification"
+                                style="width: 100%; height: auto; object-fit: cover; object-position: center;"
+                                onerror="showProjectFallback(this)">
+
+                            <div class="project-placeholder">
+                                <i class="fa-solid fa-highlighter"></i>
+                                <span>TEXT SPAN IDENTIFICATION</span>
+                            </div>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-date">APRIL 2025</span>
+
+                            <h3>Span Identification</h3>
+
+                            <p class="project-description">
+                                Developed a transformer-based system
+                                for identifying manipulative text spans
+                                in Telegram posts for the UNLP-2025
+                                Shared Task.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>NLP</span>
+                                <span>Transformers</span>
+                                <span>Text Classification</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a class="project-link"
+                                    href="https://github.com/SHITICHY21/Span-Identification"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Project Link
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 6 -->
+
+                    <article class="project-card">
+
+                        <div class="project-figure">
+
+                            <img
+                                src="assets/images/trec_nist.jpg"
+                                alt="Investigative Question Generation"
+                                style="width: auto;height: auto; object-fit: cover;"
+                                onerror="showProjectFallback(this)">
+
+                            <div class="project-placeholder">
+                                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                                <span>INVESTIGATIVE QUESTION GENERATION</span>
+                            </div>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-date">SEPTEMBER 2025</span>
+
+                            <h3>
+                                Investigative Question Generation (IQG)
+                            </h3>
+
+                            <p class="project-description">
+                                Developed a LangChain-based multi-stage
+                                prompting framework to generate and rank
+                                investigative questions for assessing
+                                the trustworthiness of news content.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>LangChain</span>
+                                <span>LLMs</span>
+                                <span>Prompt Engineering</span>
+                                <span>NLP</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a class="project-link"
+                                    href="https://github.com/AJFaisal002/Investigative-Question-Generation-IQG"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Project Link
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 7 -->
+
+                    <article class="project-card">
+
+                        <div class="project-figure">
+
+                            <img
+                                src="assets/images/Speech Diarization Pipeline Infographic.png"
+                                style="width: 100%; height: auto;object-fit: cover;"
+                                alt="Bengali Speaker Diarization"
+                                onerror="showProjectFallback(this)">
+
+                            <div class="project-placeholder">
+                                <i class="fa-solid fa-microphone-lines"></i>
+                                <span>BENGALI SPEAKER DIARIZATION</span>
+                            </div>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-date">FEBRUARY 2026</span>
+
+                            <h3>Bengali Speaker Diarization</h3>
+
+                            <p class="project-description">
+                                Developed a Bengali speaker diarization
+                                framework integrating Silero VAD,
+                                ECAPA-TDNN embeddings, and AHC,
+                                with performance evaluated using
+                                Diarization Error Rate (DER).
+                            </p>
+
+                            <div class="project-tech">
+                                <span>ECAPA-TDNN</span>
+                                <span>Silero VAD</span>
+                                <span>AHC</span>
+                                <span>Speech Processing</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a class="project-link"
+                                    href="https://github.com/AJFaisal002/Bengali-Speaker-Diarization-for-Bengali-speech/tree/main"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Project Link
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================
+                 SECTION 2
+            =================================== -->
+
+            <section class="project-section">
+
+                <h2 class="project-section-title">
+                    Computer Vision &amp; Multimodal AI Projects
+                </h2>
+
+                <div class="projects-grid">
+
+
+                    <!-- PROJECT 8 -->
+
+                    <article class="project-card">
+
+                        <div class="project-figure">
+
+                            <img
+                                src="assets/images/Attribute-to-Dataset Generation Pipeline.png"
+                                alt="Synthetic Face Dataset Generation"
+                                onerror="showProjectFallback(this)">
+
+                            <div class="project-placeholder">
+                                <i class="fa-solid fa-images"></i>
+                                <span>SYNTHETIC FACE GENERATION</span>
+                            </div>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-date">NOVEMBER 2025</span>
+
+                            <h3>Synthetic Face Dataset Generation</h3>
+
+                            <p class="project-description">
+                                Generated synthetic facial images
+                                using Stable Diffusion models with
+                                diverse emotions, demographics,
+                                and visual attributes for computer
+                                vision and emotion recognition research.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>Stable Diffusion</span>
+                                <span>Generative AI</span>
+                                <span>Computer Vision</span>
+                                <span>Python</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a class="project-link"
+                                    href="https://github.com/SHITICHY21/Image-Generation-with-Stable-Diffusion-model"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Project Link
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 9 -->
+
+                    <article class="project-card">
+
+                        <div class="project-figure">
+
+                            <img
+                                src="assets/images/Bird Captioning Pipeline Diagram.png"
+                                alt="Image Caption Generator"
+                                onerror="showProjectFallback(this)">
+
+                            <div class="project-placeholder">
+                                <i class="fa-solid fa-image"></i>
+                                <span>IMAGE CAPTION GENERATION</span>
+                            </div>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-date">OCTOBER 2025</span>
+
+                            <h3>Image Caption Generator</h3>
+
+                            <p class="project-description">
+                                Built an AI-powered image captioning
+                                web application using Streamlit and
+                                a pretrained BLIP model to generate
+                                natural-language descriptions from
+                                uploaded images.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>BLIP</span>
+                                <span>Streamlit</span>
+                                <span>Computer Vision</span>
+                                <span>Python</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a class="project-link"
+                                    href="https://github.com/SHITICHY21/Image-Captioning"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Project Link
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 10 -->
+
+                    <article class="project-card">
+
+                        <div class="project-figure">
+
+                            <img
+                                src="assets/images/misogyny meme.jpg"
+                                alt="Misogyny Meme Detection"
+                                onerror="showProjectFallback(this)">
+
+                            <div class="project-placeholder">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>MISOGYNY MEME DETECTION</span>
+                            </div>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-date">JULY 2025</span>
+
+                            <h3>Misogyny Meme Detection</h3>
+
+                            <p class="project-description">
+                                Developed a multimodal model combining
+                                Chinese BERT and VGG16 to detect
+                                misogynistic content in Chinese memes
+                                as part of the LT-EDI@LDK 2025
+                                shared task.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>Chinese BERT</span>
+                                <span>VGG16</span>
+                                <span>Multimodal AI</span>
+                                <span>Python</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a class="project-link"
+                                    href="https://github.com/AJFaisal002/Mysogyny-Meme-Detection"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Project Link
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 11 -->
+
+                    <article class="project-card">
+
+                        <div class="project-figure">
+
+                            <img
+                                src="assets/images/hate speech.jpg"
+                                alt="Multimodal Hate Speech Detection"
+                                onerror="showProjectFallback(this)">
+
+                            <div class="project-placeholder">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>MULTIMODAL HATE SPEECH DETECTION</span>
+                            </div>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-date">MARCH 2025</span>
+
+                            <h3>Multimodal Hate Speech Detection</h3>
+
+                            <p class="project-description">
+                                Built a multimodal classification
+                                framework using mBERT and Wav2Vec2
+                                to identify and categorize hate speech
+                                in Dravidian language datasets.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>mBERT</span>
+                                <span>Wav2Vec2</span>
+                                <span>NLP</span>
+                                <span>Multimodal Learning</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a class="project-link"
+                                    href="https://github.com/SHITICHY21/Multimodal-Hate-Speech-Detection"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Project Link
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 12 -->
+
+                    <article class="project-card">
+
+                        <div class="project-figure">
+
+                            <img
+                                src="assets/images/physics_mcq.jpg"
+                                alt="Bangla Physics MCQ Challenge"
+                                onerror="showProjectFallback(this)">
+
+                            <div class="project-placeholder">
+                                <i class="fa-solid fa-flask"></i>
+                                <span>BANGLA PHYSICS MCQ CHALLENGE</span>
+                            </div>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-date">JUNE 2025</span>
+
+                            <h3>Bangla Physics MCQ Challenge</h3>
+
+                            <p class="project-description">
+                                Developed a language-model-based
+                                system for answering Bangla-medium
+                                physics multiple-choice questions,
+                                using Qwen3-14B, Unsloth, and
+                                LoRA-based model optimization.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>Qwen3-14B</span>
+                                <span>Unsloth</span>
+                                <span>LoRA</span>
+                                <span>LLMs</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a class="project-link"
+                                    href="https://github.com/SHITICHY21/Bangla-Physics-MCQ-Challenge"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Project Link
+                                </a>
+
+                            </div>
+
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 13 -->
+
+                    <article class="project-card">
+
+                        <div class="project-figure">
+
+                            <img
+                                src="assets/images/Bangla Multimodal Emotion Analysis Pipeline.png"
+                                alt="Sentiment Analysis in Bangla Language"
+                                onerror="showProjectFallback(this)">
+
+                            <div class="project-placeholder">
+                                <i class="fa-solid fa-face-smile"></i>
+                                <span>BANGLA SENTIMENT ANALYSIS</span>
+                            </div>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-date">MARCH 2025</span>
+
+                            <h3>
+                                Sentiment Analysis in Bangla Language
+                            </h3>
+
+                            <p class="project-description">
+                                Developed a machine learning system
+                                for classifying Bangla text and images
+                                into seven emotion categories,
+                                including happiness, sadness,
+                                anger, surprise, disgust, and fear.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>Machine Learning</span>
+                                <span>Bangla NLP</span>
+                                <span>Emotion Recognition</span>
+                                <span>Multimodal AI</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a class="project-link"
+                                    href="https://github.com/SHITICHY21/Sentiment-Analysis-in-Bangla-Language"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Project Link
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================
+                 SECTION 3
+            =================================== -->
+
+            <section class="project-section">
+
+                <h2 class="project-section-title">
+                    Software Development Projects
+                </h2>
+
+                <div class="projects-grid">
+
+
+                    <!-- PROJECT 14 -->
+
+                    <article class="project-card">
+
+                        <div class="project-figure">
+
+                            <img
+                                src="assets/images/Django Blog Architecture Flowchart.png"
+                                alt="Django Blog Project"
+                                onerror="showProjectFallback(this)">
+
+                            <div class="project-placeholder">
+                                <i class="fa-solid fa-laptop-code"></i>
+                                <span>DJANGO BLOG PLATFORM</span>
+                            </div>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-date">DECEMBER 2024</span>
+
+                            <h3>Django Blog Project</h3>
+
+                            <p class="project-description">
+                                Developed a full-stack Django blog
+                                platform featuring user authentication,
+                                blog content management, interactive
+                                commenting, search functionality,
+                                and API integration.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>Django</span>
+                                <span>Python</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a class="project-link"
+                                    href="https://github.com/SHITICHY21/Python-Django-Projects"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Project Link
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 15 -->
+
+                    <article class="project-card">
+
+                        <div class="project-figure">
+
+                            <img
+                                src="assets/images/CUET Store Architecture Diagram.png"
+                                alt="CUET Store System"
+                                onerror="showProjectFallback(this)">
+
+                            <div class="project-placeholder">
+                                <i class="fa-solid fa-store"></i>
+                                <span>CUET STORE MANAGEMENT SYSTEM</span>
+                            </div>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-date">MAY 2024</span>
+
+                            <h3>CUET Store System</h3>
+
+                            <p class="project-description">
+                                Designed and implemented a university
+                                store management system using Java
+                                and MySQL as part of the Software
+                                Engineering course project.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>Java</span>
+                                <span>MySQL</span>
+                                <span>Software Engineering</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a class="project-link"
+                                    href="https://github.com/horair-a/uni_project1"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Project Link
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <p class="footer-copyright">
+                &copy; 2026 Shiti Chowdhury · All rights reserved
+            </p>
+
+            <div class="footer-social-links">
+
+                <a href="mailto:shitichowdhury21@gmail.com"
+                   class="footer-social footer-email"
+                   aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+                <a href="https://scholar.google.com/citations?user=ePL4eSoAAAAJ&amp;hl=en&amp;oi=ao"
+                   class="footer-social footer-scholar"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Google Scholar">
+                    <i class="fa-brands fa-google-scholar"></i>
+                </a>
+
+                <a href="https://github.com/SHITICHY21"
+                   class="footer-social footer-github"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/shiti-chowdhury/"
+                   class="footer-social footer-linkedin"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://www.researchgate.net/profile/Shiti-Chowdhury"
+                   class="footer-social footer-researchgate"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="ResearchGate">
+                    <i class="fa-brands fa-researchgate"></i>
+                </a>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ========================================
+         EXISTING PORTFOLIO SCRIPT
+    ======================================== -->
+
+    <script src="js/script.js"></script>
+
+    <script>
+
+        /*
+         * Image fallback:
+         * If a project figure does not exist,
+         * show a clean icon instead of a broken image.
+         */
+
+        function showProjectFallback(image) {
+
+            image.style.display = "none";
+
+            const placeholder =
+                image.parentElement.querySelector(
+                    ".project-placeholder"
+                );
+
+            if (placeholder) {
+                placeholder.style.display = "flex";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
